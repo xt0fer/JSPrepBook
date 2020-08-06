@@ -5,7 +5,9 @@ v1.0, 2020-07-24
 :imagesdir: assets/images
 :homepage: https://zipcodewilmington.com/jsprep
 
+
 Zip Code Wilmington is a coding boot-camp for people who wish to change their lives by becoming proficient at coding.
+
 
 == About this book
 
@@ -39,7 +41,7 @@ Many have heard my often-repeated admonition: *If you coded today, you're a code
 
 === Dedication to the mission
 
-I happen to be among those who feel anyone can learn to code. It's a 21st century superpower. When you code, you can change the world. Being profiecient at coding can be a life-changing skill that impacts your life, your family's life and you future forever. I've seen time and time again, the ability to learn to code is evenly distrubuted across the population, but the opportunity to learn to code is not. So, we run Zip Code, to give people a shot at learning a 21st century superpower, no matter where you come from.
+I happen to be among those who feel anyone can learn to code. It's a 21st century superpower. When you code, you can change the world. Being proficient at coding can be a life-changing skill that impacts your life, your family's life and you future forever. I've seen time and time again, the ability to learn to code is evenly distributed across the population, but the opportunity to learn to code is not. So, we run Zip Code, to give people a shot at learning a 21st century superpower, no matter where you come from.
 
 So fortune favors the prepared. Some day, you may be working at a great company, making a decent living, working with professionals in technical job. Your friends may say "You are so lucky!"
 
@@ -53,7 +55,7 @@ Spending even 20 minutes a day, making progress on a programming task can make a
 
 Working on code, everyday, makes you a coder. And coding everyday will help with your ability to eventually score high enough on the Zip Code admissions assessment that you get asked to final interviews.
 
-== Contents: Programming with Javascript
+== Programming with Javascript
 
 include::consolelog.adoc[]
 include::variables.adoc[]

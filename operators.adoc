@@ -1,51 +1,17 @@
 == Operators
 === Arithmetic Operators
-<table>
-<thead>
-<tr>
-<th>Operator</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>+</td>
-<td>Addition</td>
-<td>Add two values</td>
-</tr>
-<tr>
-<td>-</td>
-<td>Subtraction</td>
-<td>Subtract one from another</td>
-</tr>
-<tr>
-<td>*</td>
-<td>Multiplication</td>
-<td>Multiply 2 values</td>
-</tr>
-<tr>
-<td>/</td>
-<td>Division</td>
-<td>Divide 2 numbers</td>
-</tr>
-<tr>
-<td>%</td>
-<td>Modulus</td>
-<td>returns the remainder</td>
-</tr>
-<tr>
-<td>++</td>
-<td>Increment</td>
-<td>Increase value by 1</td>
-</tr>
-<tr>
-<td>--</td>
-<td>Decrement</td>
-<td>Decrease value by 1</td>
-</tr>
-</tbody>
-</table>
+
+[cols=",,",options="header",]
+|===
+|Operator |Name |Description
+|+ |Addition |Add two values
+|- |Subtraction |Subtract one from another
+|* |Multiplication |Multiply 2 values
+|/ |Division |Divide 2 numbers
+|% |Modulus |returns the remainder
+|++ |Increment |Increase value by 1
+|- - |Decrement |Decrease value by 1
+|===
 
 === Demo of Arithmetic Operators
 [source, js]

@@ -24,18 +24,17 @@ if (timeOfDay == "Morning") {
 
 Write code to check if a user is old enough to drink.
 
-if the user is under 18. Print out cannot party with us
+* if the user is under 18. Print out "Cannot party with us"
+* Else if the user is 18 or over, Print out "Party over here"
+* Else print out, "I do not recognize your age"
 
-Else if the user is 18 or over. Print out party over here
+You should use an if statement for your solution!
 
-Else print out. I do not recognize your age
+Finally, make sure to change the value of the age variable in the repl, to output out different results and test that all three options can happen. What do you have to do to make the `else` clause happen?
 
-You can use either an if or switch statement
+(should there be a page break here?)
 
-Finally, make sure to change the value of the age variable to output out different results
-
-
-==== Conditional Statements
+==== If Statement solution
 [source, js]
 ----
 let userAge = 17;
