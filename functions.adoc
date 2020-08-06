@@ -1,4 +1,4 @@
-=== Functions in JavaScript
+== Functions in JavaScript
 
  A function is a block of code designed to perform a particular task. Functions get executed when invoked
 

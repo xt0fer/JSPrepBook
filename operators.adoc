@@ -1,4 +1,4 @@
-=== Operators
+== Operators
 === Arithmetic Operators
 <table>
 <thead>

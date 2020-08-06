@@ -1,4 +1,4 @@
-=== Boolean Expressions
+== Boolean Expressions
 
 ==== Comparison Operators
 let x = 5;

@@ -1,13 +1,13 @@
+== JS Algebraic equations
 
-==== Js and algebraic equations
-
-
-=== JS Algebraic equations
+Given a simple math equation like:
+****
 a = b3 - 6 
 
-if b = 3, then a = ?
+if b equals 3, then a equals ?
+****
 
-How do we solve for a ?
+In math class, your teacher would have said "How do we solve for a?"
 
 
 Best way to solve for a = b3 - 6 

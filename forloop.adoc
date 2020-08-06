@@ -1,4 +1,4 @@
-==== For Loop
+=== For Loop
 [source, js]
 ----
 for(let j = 1&#59 j &lt 6&#59  j++){

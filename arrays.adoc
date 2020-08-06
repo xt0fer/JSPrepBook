@@ -1,5 +1,5 @@
 
-==== Arrays
+== Arrays
 
 === JavaScript Arrays
 <ol>

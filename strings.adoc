@@ -1,6 +1,4 @@
-
-==== Strings
-
+== Strings
 
 === What is a String?
 A string stores a string of characters like "Mike Jones" or 'Hello'

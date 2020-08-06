@@ -16,6 +16,8 @@ default:
 console.log("Time to eat dinner");
 }
 ----
+
+
 === Mini Lab
 
 Write code to check if a user is old enough to drink.

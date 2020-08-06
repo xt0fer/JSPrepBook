@@ -1,7 +1,10 @@
 
-==== Conditional Statements
+== Conditional Statements
 
-==== If statement
+While we have been seeing programs which consist of of a list of statements, one after another, where the "flow of control" goes from one line to the next, and so on to the end of the list of lines.
+There are more useful ways of breaking up the "control flow" of a program.
+
+== If statement
 
 (start simple)
 
@@ -9,11 +12,11 @@
 ----
 let timeOfDay = "Afternoon";
 if (timeOfDay == "Morning") {
-console.log("Time to eat breakfast");
+    console.log("Time to eat breakfast");
 } else if (timeOfDay == "Afternoon") {
-console.log("Time to eat lunch");
+    console.log("Time to eat lunch");
 } else {
-console.log("Time to eat dinner");
+    console.log("Time to eat dinner");
 }
 ----
 

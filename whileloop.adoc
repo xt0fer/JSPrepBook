@@ -1,7 +1,7 @@
 
-==== Loops
+== Loops
 
-==== While Loop
+=== While Loop
 [source, js]
 ----
 let x = 1;

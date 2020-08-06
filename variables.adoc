@@ -4,6 +4,7 @@
 
 JS variables are containers used to store data.
 
+(need more)
     
 Variables must be named.
 Names can contain letters, digits, underscores, and dollar signs

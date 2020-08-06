@@ -37,3 +37,11 @@ as the program's output.
 
 Cool, huh? The ability to communicate with you is one of Javascript's most fundamental capabilities. And you've run two js programs. Congratulations, you're a coder. (well, at least for today you are.)
 
+== Statements and Expressions
+
+difference, and why,
+
+how a program is just a list of lines of statements, with expressions within them, from start to finish.
+
+the notion of a script. a script equalling a program, and maybe a foreshadowing to functions, modules and an other library/organizational tricks.
+
