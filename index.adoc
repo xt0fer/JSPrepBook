@@ -53,3 +53,21 @@ Spending even 20 minutes a day, making progress on a programming task can make a
 
 Working on code, everyday, makes you a coder. And coding everyday will help with your ability to eventually score high enough on the Zip Code admissions assessment that you get asked to final interviews.
 
+== Contents: Programming with Javascript
+
+include::consolelog.adoc[]
+include::variables.adoc[]
+include::operators.adoc[]
+include::arithmeticexpressions.adoc[]
+include::simplecalc.adoc[]
+include::booleanexpr.adoc[]
+include::controlflow.adoc[]
+include::if.adoc[]
+include::switch.adoc[]
+include::whileloop.adoc[]
+include::forloop.adoc[]
+include::break.adoc[]
+include::functions.adoc[]
+include::return.adoc[]
+include::modules.adoc[]
+include::objectsmethods.adoc[]
