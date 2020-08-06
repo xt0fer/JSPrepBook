@@ -1,0 +1,51 @@
+==== For Loop
+[source, js]
+----
+for(let j = 1&#59 j &lt 6&#59  j++){
+console.log(j)&#59
+}
+// print 1 2 3 4 5 
+----
+
+Loop a block of code a CERTAIN amount of times
+
+
+==== Break
+[source, js]
+----
+for(let p = 1; p &lt; 6; p++){
+if(p == 4){
+break;
+}
+console.log("Loop " + p + " times");
+}	
+----
+
+Jumps out of the loop when p is equal to 4
+
+
+
+=== Mini Lab
+<ol>
+* Print from 10 to 1 with a for loop and a while loop (hint use decrement)
+* Write a loop that prints 1 - 5 but break out at 3
+</ol>
+
+=== Mini Lab
+
+Stretch Goal: S/he who dares wins!
+
+
+* Create an array of donuts
+* Loop through the array of donuts and print them
+
+
+
+
+=== Solution
+[source, js]
+----
+for(let x = 0; x &lt; donuts.length; x++){
+console.log(donuts[x]);
+}
+----

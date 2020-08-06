@@ -1,0 +1,34 @@
+
+==== Loops
+
+==== While Loop
+[source, js]
+----
+let x = 1;
+while (x &lt 6) {
+console.log(x)&semi;
+x++;
+}
+// or
+while (playerOne.Alive() == true) {
+playerOne.takeTurn();
+}
+----
+
+Loop through a block of code WHILE condition is true
+
+<!-- 
+==== Do While Loop
+[source, js]
+----
+let x = 0;
+do {
+console.log(x)&semi;
+x++;
+}
+while (x &lt; 5);
+----
+
+Loop will execute ONCE no matter what 
+-->
+

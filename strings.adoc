@@ -1,0 +1,113 @@
+
+==== Strings
+
+
+=== What is a String?
+A string stores a string of characters like "Mike Jones" or 'Hello'
+
+Any text inside double or single quotes is a string (even SPACES)
+
+String indexes are zero-based therefore the first character(element) is in index position 0
+<pre>
+012345
+Hello
+</pre>
+=== Declaring a string let name = "Wacka Flocka";
+=== String Properties
+A common and often used string property is <strong>length</strong>
+
+We can use .length to find the length of a string
+[source, js]
+----
+let str = "Wakanda Forever!";
+let answer = str.length;
+console.log(answer); // -> 16
+----
+=== Accessing Characters in a String
+[source, js]
+----
+let word = "Hello";
+// Access the the first character (first by index, second by function)
+console.log( word[0] ); // H
+console.log( word.charAt(0) ); // H
+// the last character
+console.log( word[word.length - 1] ); // o
+console.log( word.charAt(word.length - 1)); // o
+----
+=== String Methods
+=== String Concatenation
+This simply means joining together using the + operator or the concat( ) method 
+[source, js]
+----
+let price = 20;
+let dollarSign = "$";
+let priceTag = dollarSign + price; // $20
+//or
+let priceTag = dollarSign.concat(price); // $20
+console.log(priceTag); // -> $20
+----
+=== SubStrings
+The substring() method extracts the characters from a string, between two specified indices
+
+There are 3 methods in JavaScript to get a substring: substring, substr and slice
+
+
+=== How Substring works
+string.substring(start, end)
+
+A start position is required. The position where to begin the extraction. First character is at position 0.
+
+Characters are extracted from a string between "start" and "end", not including "end" itself.
+
+[source, js]
+----
+String firstName = "Christopher";
+----
+<ol>
+* let's use the 3 substring methods on firstName
+- To extract and print out "Chris"
+</ol>
+
+=== Substring Solution
+[source, js]
+----
+let firstName = "Christopher";
+console.log(firstName.substring(0,5)); // "Chris"
+//or
+let a = firstName.slice(0,5); // "Chris"
+console.log(a);
+//or
+let b = firstName.substr(0,5); // "Chris"
+console.log(b);
+----
+=== Mini Lab
+[source, js]
+----
+let firstName = "Christopher";
+----
+<ol>
+* Your turn to use the substring method on firstName
+- To extract and print out "STOP"
+</ol>
+Google how to make it uppercase!
+
+
+=== Substring Solution
+[source, js]
+----
+let firstName = "Christopher";
+console.log(firstName.substring(4,8).toUpperCase());
+----
+=== Summary of substring methods with code
+[source, js]
+----
+let rapper = "mikejones";
+console.log(rapper.substr(0,4));  // mike  //includes second index
+console.log(rapper.substr(1,3));  // ike
+console.log(rapper.substring(0,4));  //mikeik   //excludes second index
+console.log(rapper.substring(1,4));  //ike   //excludes second index
+console.log(rapper.slice(0,4)); //mike  //excludes second index
+console.log(rapper.slice(1,4)); //ike
+console.log(rapper.slice(1,3)); //ik
+----
+

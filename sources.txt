@@ -1,0 +1,820 @@
+=== Operators
+=== Arithmetic Operators
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Addition</td>
+<td>Add two values</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+<td>Subtract one from another</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+<td>Multiply 2 values</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+<td>Divide 2 numbers</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Modulus</td>
+<td>returns the remainder</td>
+</tr>
+<tr>
+<td>++</td>
+<td>Increment</td>
+<td>Increase value by 1</td>
+</tr>
+<tr>
+<td>--</td>
+<td>Decrement</td>
+<td>Decrease value by 1</td>
+</tr>
+</tbody>
+</table>
+
+=== Demo of Arithmetic Operators
+[source, js]
+----
+let a = 2; let b = 3;
+//Multiply
+let answer = a * b;
+console.log(answer); // -> 6
+----
+=== Mini Lab
+Lab 1: Subtract A from B and print the result
+
+Lab 2: Divide A by B and print the result
+
+Lab 3: Use an operator to increase A by 1. Print result
+
+=== Mini Lab 3 Solution(s )
+[source, js]
+----
+let a = 2;
+let aPlusOne = a++;
+console.log(aPlusOne); // -> 3
+console.log(a); // -> 2
+// or
+let answer = ++a;
+console.log(answer); // -> 3
+----
+=== How about Modulus|remainder
+[source, js]
+----
+let a = 2; let b = 3;
+//Modulus
+let answer = b % a;
+console.log(answer); // -> 1
+----
+=== How about Modulus|remainder
+[source, js]
+----
+let a = 4; let b = 19;
+//Modulus
+let answer = b % a;
+console.log(answer); // -> 3
+----
+=== order of operations
+
+==== P.E.M.D.A.S
+"Please Excuse My Dear Aunt Sally"
+
+* Parenthesis ( )
+* Exponents 2<sup>3</sup>
+* Multiplication *
+* Division / 
+* Addition + 
+* Subtraction - 
+
+
+=== Note
+Divide and Multiply rank equally (and go left to right).
+
+Add and Subtract rank equally (and go left to right)
+
+
+=== Order of operations
+30 + 6 × 2
+
+what should be solved first?
+
+
+Best way to solve for 30 + 6 × 2
+
+is
+
+* First 6 × 2 = 12, then 30 + 12 = 42
+
+
+=== Solve using JavaScript
+[source, js]
+----
+let a = 30;
+let b = 6;
+let c = 2;
+let multi = b * c;
+let result = a + multi;
+console.log(result);
+----
+=== Order of operations
+(30 + 6) × 2
+
+What should be solved first?
+
+
+Best way to solve for (30 + 6) × 2 
+
+is
+* First 30 + 6 = 36 , then 36 × 2 = 72
+
+
+=== Micro Lab
+(30 + 6) × 2
+
+Now, Your turn to solve the equation with JS
+
+
+=== Solution to Micro Lab
+[source, js]
+----
+let a = 30;
+let b = 6;
+let c = 2;
+let multi = a + b;
+let result = multi * c;
+console.log(result);
+----
+=== JavaScript Math Object
+The JavaScript Math object allows you to perform mathematical tasks on numbers.
+
+
+=== JS Math Object Methods
+
+* Math.PI; - returns 3.141592653589793
+* Math.pow(x, y) - the value of x to the power of y - x<sup>y</sup>
+* Math.sqrt(x) - returns the square root of x
+
+
+
+=== Math.Pow( ) Demo
+
+* 30 + 6<sup>2</sup> × 2
+How to solve?
+* First 6 * 6 = 36 , then 36 * 2 = 72 , then + 30 = 102
+
+
+=== Micro Lab
+30 + 6<sup>2</sup> × 2
+
+Now, Your turn to solve the equation with JS
+
+=== Solution to Micro Lab
+[source, js]
+----
+let a = 30;
+let b = 6;
+let c = 2;
+let powerOf = Math.pow(b, c); // (6, 2) -> 36
+let multi = powerOf * c; // 36 * 2 -> 72
+let result = multi + a; // 72 + 30 -> 102
+console.log(result); // -> 72
+----
+
+
+==== Js and algebraic equations
+
+
+=== JS Algebraic equations
+a = b3 - 6 
+
+if b = 3, then a = ?
+
+How do we solve for a ?
+
+
+Best way to solve for a = b3 - 6 
+
+is
+
+* First (b=3) × 3 = 9, then 9 - 6 = 3
+
+
+=== Using JavaScript
+a = b3 - 6 
+[source, js]
+----
+let b = 3;
+let a = b * 3 - 6;
+console.log(a); // -> 3
+----
+=== Micro Lab
+q = 2j + 20
+
+if j = 5, then q = ?
+
+Now, Your turn to solve the equation with JS
+
+
+=== Solution to micro lab
+q = 2j + 20
+
+if j = 5
+[source, js]
+----
+let q = 0; 
+let j = 5;
+q = 2 * j + 20;
+console.log(q); // -> 30
+----
+=== Micro Lab
+f(y) = 5y + y <sup>3</sup> - 7
+
+if y=2, f(2) = ?
+
+Now, Your turn to solve the equation with JS
+
+
+=== Solution to micro lab
+f(y) = 5y + y <sup>3</sup> - 7
+[source, js]
+----
+let y = 2; 
+y = 5 * y + Math.pow(y, 3) - 7;
+console.log(y); // -> 11
+----
+=== Comparison Operators
+let x = 5;
+
+is x less than 7??
+
+is x greater than or equal to 3??
+
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>Equal to</td>
+<td>x == 5</td>
+</tr>
+<tr>
+<td>===</td>
+<td>Equal value and type</td>
+<td>x
+=== '5'</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equal to</td>
+<td>x != 55</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equal to value and type</td>
+<td>x != '5'</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+<td>x &gt; 1</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Less than</td>
+<td>x &lt; 10</td>
+</tr>
+<tr>
+<td>>=</td>
+<td>Greater than or equal to</td>
+<td>x &gt;= 5</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal to</td>
+<td>x &lt;= 5</td>
+</tr>
+</tbody>
+</table>
+
+
+=== Logical Operators
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&&</td>
+<td>Logical AND</td>
+<td>playerOneStatus == 'alive' && spacecraft.hasAir()</td>
+</tr>
+<tr>
+<td>||</td>
+<td>Logical OR</td>
+<td>room.Temp &gt; 70 || room.Temp &lt; 75</td>
+</tr>
+</tbody>
+</table>
+Both sides need to be Boolean expressions
+
+
+=== Mini Lab
+<ol>
+* Create 2 variables to use for comparison 
+* Use at least two comparison operators in JS
+* Just put them in a console.log(2 > 1)
+</ol>
+
+
+=== Trigonometry
+The word trigonometry comes from the greek word - trigonon "triangle" + metron "measure. We use trigonometry to find angles and distances
+
+Eg: AreaOfaTriangle = height * base / 2
+
+Therefore we just need to create variables for each and use the operators to calculate the area
+
+
+=== Let's google - area of a triangle
+<img width="678" height="438" data-src="areaoftriangle.png">
+Let's use javascript to build this out!
+
+
+=== Calculate Area of a Triangle in JS
+Formula: A = h * b / 2
+[source, js]
+----
+let height = 20;
+let base = 10;	
+let areaOfaTriangle  =  height * base / 2;
+console.log(areaOfaTriangle); // -> 100
+----
+=== Mini Lab
+Calculate the area of a circle whose radius is 7.7
+
+Hit: You'll need to use a constant Math property
+
+
+=== Calculate Area of a Circle in JS
+Formula: A = &#x03C0; * r<sup>2</sup>
+[source, js]
+----
+let radius = 7.7;	
+let areaCircle  =  Math.PI * Math.pow(radius, 2);
+console.log(areaCircle); // -> 186.26502843133886 (wow)
+----
+
+
+==== Strings
+
+
+=== What is a String?
+A string stores a string of characters like "Mike Jones" or 'Hello'
+
+Any text inside double or single quotes is a string (even SPACES)
+
+String indexes are zero-based therefore the first character(element) is in index position 0
+<pre>
+012345
+Hello
+</pre>
+=== Declaring a string let name = "Wacka Flocka";
+=== String Properties
+A common and often used string property is <strong>length</strong>
+
+We can use .length to find the length of a string
+[source, js]
+----
+let str = "Wakanda Forever!";
+let answer = str.length;
+console.log(answer); // -> 16
+----
+=== Accessing Characters in a String
+[source, js]
+----
+let word = "Hello";
+// Access the the first character (first by index, second by function)
+console.log( word[0] ); // H
+console.log( word.charAt(0) ); // H
+// the last character
+console.log( word[word.length - 1] ); // o
+console.log( word.charAt(word.length - 1)); // o
+----
+=== String Methods
+=== String Concatenation
+This simply means joining together using the + operator or the concat( ) method 
+[source, js]
+----
+let price = 20;
+let dollarSign = "$";
+let priceTag = dollarSign + price; // $20
+//or
+let priceTag = dollarSign.concat(price); // $20
+console.log(priceTag); // -> $20
+----
+=== SubStrings
+The substring() method extracts the characters from a string, between two specified indices
+
+There are 3 methods in JavaScript to get a substring: substring, substr and slice
+
+
+=== How Substring works
+string.substring(start, end)
+
+A start position is required. The position where to begin the extraction. First character is at position 0.
+
+Characters are extracted from a string between "start" and "end", not including "end" itself.
+
+[source, js]
+----
+String firstName = "Christopher";
+----
+<ol>
+* let's use the 3 substring methods on firstName
+- To extract and print out "Chris"
+</ol>
+
+=== Substring Solution
+[source, js]
+----
+let firstName = "Christopher";
+console.log(firstName.substring(0,5)); // "Chris"
+//or
+let a = firstName.slice(0,5); // "Chris"
+console.log(a);
+//or
+let b = firstName.substr(0,5); // "Chris"
+console.log(b);
+----
+=== Mini Lab
+[source, js]
+----
+let firstName = "Christopher";
+----
+<ol>
+* Your turn to use the substring method on firstName
+- To extract and print out "STOP"
+</ol>
+Google how to make it uppercase!
+
+
+=== Substring Solution
+[source, js]
+----
+let firstName = "Christopher";
+console.log(firstName.substring(4,8).toUpperCase());
+----
+=== Summary of substring methods with code
+[source, js]
+----
+let rapper = "mikejones";
+console.log(rapper.substr(0,4));  // mike  //includes second index
+console.log(rapper.substr(1,3));  // ike
+console.log(rapper.substring(0,4));  //mikeik   //excludes second index
+console.log(rapper.substring(1,4));  //ike   //excludes second index
+console.log(rapper.slice(0,4)); //mike  //excludes second index
+console.log(rapper.slice(1,4)); //ike
+console.log(rapper.slice(1,3)); //ik
+----
+
+
+==== Arrays
+
+=== JavaScript Arrays
+<ol>
+* Can store multiple values in a single variable
+* We start counting from index position zero
+* Elements can be primitive or/and Objects
+</ol>
+
+=== Declaring Arrays
+Creating an arrays in JavaScript:
+[source, js]
+----
+let donuts = ["chocolate", "glazed", "Jelly"];
+let arrayofCharacters = ['c','h','r','i','s'];
+let mixed = ['one', 2, true];
+----
+
+<section data-background="https://media.giphy.com/media/3ofSBlkao9ggDDU0Kc/giphy.gif">
+
+=== Accessing elements of an Array
+
+Use square brackets to grabs elements by index
+
+[source, js]
+----
+let donuts = ["chocolate", "glazed", "Jelly"];
+console.log(donuts[0]);
+console.log(donuts[1]);
+console.log(donuts[2]);
+----
+=== Insert elements into an Array
+
+Use square brackets to grabs elements by index
+
+[source, js]
+----
+let donuts = ["chocolate", "glazed", "Jelly"];
+donuts[3] = "strawberry"
+console.log(donuts);
+----
+=== Getting the size of an Array
+
+We can use the length property to find the size
+
+[source, js]
+----
+let donuts = ["chocolate", "glazed", "Jelly"];
+console.log(donuts.length);
+----
+
+Note: A string is an ARRAY of single characters
+
+
+=== Grabbing the last element of an array no matter the size
+[source, js]
+----
+let donuts = ["chocolate", "glazed", "Jelly"];
+donuts[3] = "strawberry";    // -> ["chocolate", "glazed", "Jelly", "strawberry"]
+console.log(donuts[donuts.length - 1]); // strawberry
+donuts[4] = "powdered"    // -> ["chocolate", "glazed", "Jelly", "strawberry", "powdered"]
+console.log(donuts[donuts.length - 1]); // powdered
+----
+=== Mini Lab - Reverse a String
+
+Now let's reverse the string STOP to say POTS
+
+Step 1 - Use the split() to return an array of strings
+
+Step2 - Use the reverse() method to reverse the newly created array of string characters
+
+Use the join() method to join all elements into a String
+
+Print out the reversed string
+
+<a href="https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/"></a>
+
+
+=== Solution
+[source, js]
+----
+var str = "Christopher";
+var res = str.substring(4, 8).toUpperCase();   // -> "STOP"
+var spl = res.split("");                       // -> ["S", "T", "O", "P"]
+var rev = spl.reverse();                       // -> ["P", "O", "T", "S"]
+var result = rev.join("");                     // -> "POTS"
+console.log(result); // -> POTS
+----
+
+
+==== Control Flow
+
+
+==== Conditional Statements
+[source, js]
+----
+let timeOfDay = "Afternoon";
+if (timeOfDay == "Morning") {
+console.log("Time to eat breakfast");
+} else if (timeOfDay == "Afternoon") {
+console.log("Time to eat lunch");
+} else {
+console.log("Time to eat dinner");
+}
+----
+=== Switch Statements
+
+Switch statements are used to perform different actions based on different conditions.
+
+[source, js]
+----
+let timeOfDay = "Afternoon";
+switch(timeOfDay){
+case "Morning": 
+console.log("Time to eat breakfast");
+break;
+case "Afternoon":
+console.log("Time to eat lunch");
+break;
+default:
+console.log("Time to eat dinner");
+}
+----
+=== Mini Lab
+
+Write code to check if a user is old enough to drink.
+
+if the user is under 18. Print out cannot party with us
+
+Else if the user is 18 or over. Print out party over here
+
+Else print out. I do not recognize your age
+
+You can use either an if or switch statement
+
+Finally, make sure to change the value of the age variable to output out different results
+
+
+==== Conditional Statements
+[source, js]
+----
+let userAge = 17;
+if (userAge < 18) {
+console.log("Cannot party with us");
+} else if (userAge >= 18) {
+console.log("Party over here");
+} else {
+console.log("I do not recognize your age");
+}
+----
+
+
+==== Loops
+
+==== While Loop
+[source, js]
+----
+let x = 1;
+while (x &lt 6) {
+console.log(x)&semi;
+x++;
+}
+// or
+while (playerOne.Alive() == true) {
+playerOne.takeTurn();
+}
+----
+
+Loop through a block of code WHILE condition is true
+
+<!-- 
+==== Do While Loop
+[source, js]
+----
+let x = 0;
+do {
+console.log(x)&semi;
+x++;
+}
+while (x &lt; 5);
+----
+
+Loop will execute ONCE no matter what 
+-->
+
+==== For Loop
+[source, js]
+----
+for(let j = 1&#59 j &lt 6&#59  j++){
+console.log(j)&#59
+}
+// print 1 2 3 4 5 
+----
+
+Loop a block of code a CERTAIN amount of times
+
+
+
+==== Break
+[source, js]
+----
+for(let p = 1; p &lt; 6; p++){
+if(p == 4){
+break;
+}
+console.log("Loop " + p + " times");
+}	
+----
+
+Jumps out of the loop when p is equal to 4
+
+
+
+=== Mini Lab
+<ol>
+* Print from 10 to 1 with a for loop and a while loop (hint use decrement)
+* Write a loop that prints 1 - 5 but break out at 3
+</ol>
+
+=== Mini Lab
+
+Stretch Goal: S/he who dares wins!
+
+
+* Create an array of donuts
+* Loop through the array of donuts and print them
+
+
+
+
+=== Solution
+[source, js]
+----
+for(let x = 0; x &lt; donuts.length; x++){
+console.log(donuts[x]);
+}
+----
+=== Functions in JavaScript
+
+ A function is a block of code designed to perform a particular task. Functions get executed when invoked
+
+Functions let you avoid duplicating code and organize your code.
+
+Functions are invoked when:
+
+<ol>
+* An event occurs (when a user clicks a button)
+* It is invoked (called) from JavaScript code
+</ol>
+
+=== JS Function Syntax
+[source, js]
+----
+function | NameOfFunction | (Parameters){
+//Logic goes here
+}
+//------------------------------------------ 
+function myFunction(parameter1, parameter2) {
+return parameter1 * parameter2; 
+}
+----
+=== Creating and using a function
+[source, js]
+----
+function greetUser(username) {
+console.log( "Hello " + username);
+}
+
+//calling/Invoking the function
+greetUser("Mike Jones");
+----
+=== Function Return
+
+ Once JavaScript reaches a return statement, the function will stop executing
+
+Functions often compute a return value. The return value is "returned" back to the "caller"
+
+[source, js]
+----
+function greetUser(username) {
+return "Hello " + username;
+}
+console.log(greetUser("Welcome back, Mike Jones")); 
+// function returns a string to be printed on console
+----
+=== Function Parameters
+
+[source, js]
+----
+function printReceipt(price, productName, tax) {
+//this method has 3 parameters
+}
+----
+=== Mini Lab
+
+* Create a function called zipCoder
+* Your function takes one parameter of type number
+* Your function checks and does the following
+* If parameter is divisible by 3. Print Zip
+* If parameter is divisible by 5. Print Coder
+* If parameter is divisible by 3 and 5. Print ZipCoder
+Phew...Finally
+* Call the method and pass in 45 as your parameter
+=== Function ZipCoder
+
+[source, js]
+----
+function zipCoder(aNumber) {
+if (aNumber % 15 == 0) console.log("ZipCoder");
+else if (aNumber % 3 == 0) console.log("Zip");
+else if (aNumber % 5 == 0) console.log("Coder");
+}
+zipCoder(45); // -> ZipCoder
+----

@@ -1,0 +1,197 @@
+=== Operators
+=== Arithmetic Operators
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Addition</td>
+<td>Add two values</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+<td>Subtract one from another</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+<td>Multiply 2 values</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+<td>Divide 2 numbers</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Modulus</td>
+<td>returns the remainder</td>
+</tr>
+<tr>
+<td>++</td>
+<td>Increment</td>
+<td>Increase value by 1</td>
+</tr>
+<tr>
+<td>--</td>
+<td>Decrement</td>
+<td>Decrease value by 1</td>
+</tr>
+</tbody>
+</table>
+
+=== Demo of Arithmetic Operators
+[source, js]
+----
+let a = 2; let b = 3;
+//Multiply
+let answer = a * b;
+console.log(answer); // -> 6
+----
+=== Mini Lab
+Lab 1: Subtract A from B and print the result
+
+Lab 2: Divide A by B and print the result
+
+Lab 3: Use an operator to increase A by 1. Print result
+
+=== Mini Lab 3 Solution(s )
+[source, js]
+----
+let a = 2;
+let aPlusOne = a++;
+console.log(aPlusOne); // -> 3
+console.log(a); // -> 2
+// or
+let answer = ++a;
+console.log(answer); // -> 3
+----
+=== How about Modulus|remainder
+[source, js]
+----
+let a = 2; let b = 3;
+//Modulus
+let answer = b % a;
+console.log(answer); // -> 1
+----
+=== How about Modulus|remainder
+[source, js]
+----
+let a = 4; let b = 19;
+//Modulus
+let answer = b % a;
+console.log(answer); // -> 3
+----
+=== order of operations
+
+==== P.E.M.D.A.S
+"Please Excuse My Dear Aunt Sally"
+
+* Parenthesis ( )
+* Exponents 2<sup>3</sup>
+* Multiplication *
+* Division / 
+* Addition + 
+* Subtraction - 
+
+
+=== Note
+Divide and Multiply rank equally (and go left to right).
+
+Add and Subtract rank equally (and go left to right)
+
+
+=== Order of operations
+30 + 6 × 2
+
+what should be solved first?
+
+
+Best way to solve for 30 + 6 × 2
+
+is
+
+* First 6 × 2 = 12, then 30 + 12 = 42
+
+
+=== Solve using JavaScript
+[source, js]
+----
+let a = 30;
+let b = 6;
+let c = 2;
+let multi = b * c;
+let result = a + multi;
+console.log(result);
+----
+=== Order of operations
+(30 + 6) × 2
+
+What should be solved first?
+
+
+Best way to solve for (30 + 6) × 2 
+
+is
+* First 30 + 6 = 36 , then 36 × 2 = 72
+
+
+=== Micro Lab
+(30 + 6) × 2
+
+Now, Your turn to solve the equation with JS
+
+
+=== Solution to Micro Lab
+[source, js]
+----
+let a = 30;
+let b = 6;
+let c = 2;
+let multi = a + b;
+let result = multi * c;
+console.log(result);
+----
+
+=== JavaScript Math Object
+The JavaScript Math object allows you to perform mathematical tasks on numbers.
+
+
+=== JS Math Object Methods
+
+* Math.PI; - returns 3.141592653589793
+* Math.pow(x, y) - the value of x to the power of y - x<sup>y</sup>
+* Math.sqrt(x) - returns the square root of x
+
+
+
+=== Math.Pow( ) Demo
+
+* 30 + 6<sup>2</sup> × 2
+How to solve?
+* First 6 * 6 = 36 , then 36 * 2 = 72 , then + 30 = 102
+
+
+=== Micro Lab
+30 + 6<sup>2</sup> × 2
+
+Now, Your turn to solve the equation with JS
+
+=== Solution to Micro Lab
+[source, js]
+----
+let a = 30;
+let b = 6;
+let c = 2;
+let powerOf = Math.pow(b, c); // (6, 2) -> 36
+let multi = powerOf * c; // 36 * 2 -> 72
+let result = multi + a; // 72 + 30 -> 102
+console.log(result); // -> 72
+----

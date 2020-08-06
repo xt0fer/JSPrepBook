@@ -1,0 +1,78 @@
+=== Functions in JavaScript
+
+ A function is a block of code designed to perform a particular task. Functions get executed when invoked
+
+Functions let you avoid duplicating code and organize your code.
+
+Functions are invoked when:
+
+<ol>
+* An event occurs (when a user clicks a button)
+* It is invoked (called) from JavaScript code
+</ol>
+
+=== JS Function Syntax
+[source, js]
+----
+function | NameOfFunction | (Parameters){
+//Logic goes here
+}
+//------------------------------------------ 
+function myFunction(parameter1, parameter2) {
+return parameter1 * parameter2; 
+}
+----
+=== Creating and using a function
+[source, js]
+----
+function greetUser(username) {
+console.log( "Hello " + username);
+}
+
+//calling/Invoking the function
+greetUser("Mike Jones");
+----
+=== Function Return
+
+ Once JavaScript reaches a return statement, the function will stop executing
+
+Functions often compute a return value. The return value is "returned" back to the "caller"
+
+[source, js]
+----
+function greetUser(username) {
+return "Hello " + username;
+}
+console.log(greetUser("Welcome back, Mike Jones")); 
+// function returns a string to be printed on console
+----
+=== Function Parameters
+
+[source, js]
+----
+function printReceipt(price, productName, tax) {
+//this method has 3 parameters
+}
+----
+=== Mini Lab
+
+* Create a function called zipCoder
+* Your function takes one parameter of type number
+* Your function checks and does the following
+* If parameter is divisible by 3. Print Zip
+* If parameter is divisible by 5. Print Coder
+* If parameter is divisible by 3 and 5. Print ZipCoder
+Phew...Finally
+* Call the method and pass in 45 as your parameter
+=== Function ZipCoder
+
+[source, js]
+----
+function zipCoder(aNumber) {
+if (aNumber % 15 == 0) console.log("ZipCoder");
+else if (aNumber % 3 == 0) console.log("Zip");
+else if (aNumber % 5 == 0) console.log("Coder");
+}
+zipCoder(45); // -> ZipCoder
+----
+

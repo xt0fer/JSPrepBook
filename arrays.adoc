@@ -1,0 +1,90 @@
+
+==== Arrays
+
+=== JavaScript Arrays
+<ol>
+* Can store multiple values in a single variable
+* We start counting from index position zero
+* Elements can be primitive or/and Objects
+</ol>
+
+=== Declaring Arrays
+Creating an arrays in JavaScript:
+[source, js]
+----
+let donuts = ["chocolate", "glazed", "Jelly"];
+let arrayofCharacters = ['c','h','r','i','s'];
+let mixed = ['one', 2, true];
+----
+
+<section data-background="https://media.giphy.com/media/3ofSBlkao9ggDDU0Kc/giphy.gif">
+
+=== Accessing elements of an Array
+
+Use square brackets to grabs elements by index
+
+[source, js]
+----
+let donuts = ["chocolate", "glazed", "Jelly"];
+console.log(donuts[0]);
+console.log(donuts[1]);
+console.log(donuts[2]);
+----
+=== Insert elements into an Array
+
+Use square brackets to grabs elements by index
+
+[source, js]
+----
+let donuts = ["chocolate", "glazed", "Jelly"];
+donuts[3] = "strawberry"
+console.log(donuts);
+----
+=== Getting the size of an Array
+
+We can use the length property to find the size
+
+[source, js]
+----
+let donuts = ["chocolate", "glazed", "Jelly"];
+console.log(donuts.length);
+----
+
+Note: A string is an ARRAY of single characters
+
+
+=== Grabbing the last element of an array no matter the size
+[source, js]
+----
+let donuts = ["chocolate", "glazed", "Jelly"];
+donuts[3] = "strawberry";    // -> ["chocolate", "glazed", "Jelly", "strawberry"]
+console.log(donuts[donuts.length - 1]); // strawberry
+donuts[4] = "powdered"    // -> ["chocolate", "glazed", "Jelly", "strawberry", "powdered"]
+console.log(donuts[donuts.length - 1]); // powdered
+----
+=== Mini Lab - Reverse a String
+
+Now let's reverse the string STOP to say POTS
+
+Step 1 - Use the split() to return an array of strings
+
+Step2 - Use the reverse() method to reverse the newly created array of string characters
+
+Use the join() method to join all elements into a String
+
+Print out the reversed string
+
+<a href="https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/"></a>
+
+
+=== Solution
+[source, js]
+----
+var str = "Christopher";
+var res = str.substring(4, 8).toUpperCase();   // -> "STOP"
+var spl = res.split("");                       // -> ["S", "T", "O", "P"]
+var rev = spl.reverse();                       // -> ["P", "O", "T", "S"]
+var result = rev.join("");                     // -> "POTS"
+console.log(result); // -> POTS
+----
+

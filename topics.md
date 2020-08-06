@@ -6,6 +6,8 @@
 - arithmetic expressions
 - simple calculation programs
 - boolean expressions
+- strings
+- arrays
 - control flow
   - if
   - switch

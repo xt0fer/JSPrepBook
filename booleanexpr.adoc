@@ -1,0 +1,97 @@
+=== Boolean Expressions
+
+==== Comparison Operators
+let x = 5;
+
+is x less than 7??
+
+is x greater than or equal to 3??
+
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>Equal to</td>
+<td>x == 5</td>
+</tr>
+<tr>
+<td>===</td>
+<td>Equal value and type</td>
+<td>x
+=== '5'</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equal to</td>
+<td>x != 55</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equal to value and type</td>
+<td>x != '5'</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+<td>x &gt; 1</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Less than</td>
+<td>x &lt; 10</td>
+</tr>
+<tr>
+<td>>=</td>
+<td>Greater than or equal to</td>
+<td>x &gt;= 5</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal to</td>
+<td>x &lt;= 5</td>
+</tr>
+</tbody>
+</table>
+
+
+=== Logical Operators
+
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&&</td>
+<td>Logical AND</td>
+<td>playerOneStatus == 'alive' && spacecraft.hasAir()</td>
+</tr>
+<tr>
+<td>||</td>
+<td>Logical OR</td>
+<td>room.Temp &gt; 70 || room.Temp &lt; 75</td>
+</tr>
+</tbody>
+</table>
+Both sides need to be Boolean expressions
+
+
+=== Mini Lab
+<ol>
+* Create 2 variables to use for comparison 
+* Use at least two comparison operators in JS
+* Just put them in a console.log(2 > 1)
+</ol>
+

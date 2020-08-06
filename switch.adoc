@@ -1,0 +1,32 @@
+=== Switch Statements
+
+Switch statements are used to perform different actions based on different conditions.
+
+[source, js]
+----
+let timeOfDay = "Afternoon";
+switch(timeOfDay){
+case "Morning": 
+console.log("Time to eat breakfast");
+break;
+case "Afternoon":
+console.log("Time to eat lunch");
+break;
+default:
+console.log("Time to eat dinner");
+}
+----
+=== Mini Lab
+
+Write code to check if a user is old enough to drink.
+
+if the user is under 18. Print out cannot party with us
+
+Else if the user is 18 or over. Print out party over here
+
+Else print out. I do not recognize your age
+
+You can use either an if or switch statement
+
+Finally, make sure to change the value of the age variable to output out different results
+
