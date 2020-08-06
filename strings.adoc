@@ -78,17 +78,16 @@ console.log(a);
 let b = firstName.substr(0,5); // "Chris"
 console.log(b);
 ----
-=== Mini Lab
+[TIP]
+====
 [source, js]
 ----
 let firstName = "Christopher";
 ----
-<ol>
-* Your turn to use the substring method on firstName
+- Your turn to use the substring method on firstName
 - To extract and print out "STOP"
-</ol>
-Google how to make it uppercase!
-
+- Google how to make it uppercase!
+====
 
 === Substring Solution
 [source, js]

@@ -1,42 +1,45 @@
-== JS Algebraic equations
+== JavaScript Algebraic Equations
+
+Some of the most fundamental of computer programs have been ones that
+take the drudgery of doing math by a person, and making the computer do the math.
+These kinds of _computations_ rely on the fact that the computer won't do the wrong thing, if it's programed
+carefully.
 
 Given a simple math equation like:
-****
-a = b3 - 6 
+[TIP]
+====
+a = b3 - 6 and if b equals 3, then a equals ?
+====
 
-if b equals 3, then a equals ?
-****
+In math class, your teacher would have said "How do we solve for a?" The best way to solve for `a = b3 - 6`
+is to
 
-In math class, your teacher would have said "How do we solve for a?"
+- figure out what b times 3 is (well, if b equals 3, then 3 times 3 is 9)
+- subtract 6 from b times 3 (and then 9 minus 6 is 3)
 
-
-Best way to solve for a = b3 - 6 
-
-is
-
-* First (b=3) × 3 = 9, then 9 - 6 = 3
-
-
-=== Using JavaScript
-a = b3 - 6 
 [source, js]
 ----
+// And in JavaScript:
+// a = b3 - 6 
+
 let b = 3;
 let a = b * 3 - 6;
 console.log(a); // -> 3
 ----
-=== Micro Lab
+
+Now you try it. 
+
+[TIP]
+====
+Solve the equation with JavaScript...
+
 q = 2j + 20
 
 if j = 5, then q = ?
+====
 
-Now, Your turn to solve the equation with JS
+Takes a moment and write down your solution before looking this one.
 
-
-=== Solution to micro lab
-q = 2j + 20
-
-if j = 5
 [source, js]
 ----
 let q = 0; 
@@ -44,39 +47,47 @@ let j = 5;
 q = 2 * j + 20;
 console.log(q); // -> 30
 ----
-=== Micro Lab
-f(y) = 5y + y <sup>3</sup> - 7
 
-if y=2, f(2) = ?
+Let's try another...
 
-Now, Your turn to solve the equation with JS
+[TIP]
+====
+Solve the equation with JavaScript...
+
+x = 5y + y^3^ - 7
+
+if y=2, x = ?
+
+and print out x.
+====
 
 
-=== Solution to micro lab
-f(y) = 5y + y <sup>3</sup> - 7
+My solution is pretty simple.
 [source, js]
 ----
 let y = 2; 
-y = 5 * y + Math.pow(y, 3) - 7;
-console.log(y); // -> 11
+let x = 5 * y + Math.pow(y, 3) - 7;
+console.log(x); // -> 11
 ----
 
+_Trigonometry_
 
-=== Trigonometry
-The word trigonometry comes from the greek word - trigonon "triangle" + metron "measure. We use trigonometry to find angles and distances
+The word trigonometry comes from the greek word - trigonon "triangle" + metron "measure. 
+We use trigonometry to find angles, distances and areas.
 
-Eg: AreaOfaTriangle = height * base / 2
+For example, if we wanted to find the area of a triangular piece of land, we could use the
+equation *AreaOfaTriangle = height * base / 2*
 
 Therefore we just need to create variables for each and use the operators to calculate the area
 
-
-=== Let's google - area of a triangle
-<img width="678" height="438" data-src="areaoftriangle.png">
-Let's use JavaScript to build this out!
-
-
-=== Calculate Area of a Triangle in JS
+[TIP]
+====
+Calculate Area of a Triangle in JavaScript
+Height is 20
+Base is 10
 Formula: A = h * b / 2
+====
+
 [source, js]
 ----
 let height = 20;
@@ -84,17 +95,19 @@ let base = 10;
 let areaOfaTriangle  =  height * base / 2;
 console.log(areaOfaTriangle); // -> 100
 ----
-=== Mini Lab
-Calculate the area of a circle whose radius is 7.7
 
+
+[TIP]
+====
+Calculate the area of a circle whose radius is 7.7
+Formula: area = Pi * radius^2^
+====
 Hit: You'll need to use a constant Math property
 
 
-=== Calculate Area of a Circle in JS
-Formula: A = Pi * r<sup>2</sup>
 [source, js]
 ----
 let radius = 7.7;	
-let areaCircle  =  Math.PI * Math.pow(radius, 2);
-console.log(areaCircle); // -> 186.26502843133886 (wow)
+let area  =  Math.PI * Math.pow(radius, 2);
+console.log(area); // -> 186.26502843133886 (wow)
 ----

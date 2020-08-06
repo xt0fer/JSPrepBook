@@ -20,14 +20,14 @@ if (timeOfDay == "Morning") {
 }
 ----
 
-=== Mini Lab
-
+[TIP]
+====
 Write code to check if a user is old enough to drink.
 
 * if the user is under 18. Print out "Cannot party with us"
 * Else if the user is 18 or over, Print out "Party over here"
 * Else print out, "I do not recognize your age"
-
+====
 You should use an if statement for your solution!
 
 Finally, make sure to change the value of the age variable in the repl, to output out different results and test that all three options can happen. What do you have to do to make the `else` clause happen?

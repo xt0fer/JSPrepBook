@@ -6,10 +6,8 @@ Functions let you avoid duplicating code and organize your code.
 
 Functions are invoked when:
 
-<ol>
 * An event occurs (when a user clicks a button)
 * It is invoked (called) from JavaScript code
-</ol>
 
 === JS Function Syntax
 [source, js]
@@ -54,8 +52,9 @@ function printReceipt(price, productName, tax) {
 //this method has 3 parameters
 }
 ----
-=== Mini Lab
 
+[TIP]
+====
 * Create a function called zipCoder
 * Your function takes one parameter of type number
 * Your function checks and does the following
@@ -64,6 +63,8 @@ function printReceipt(price, productName, tax) {
 * If parameter is divisible by 3 and 5. Print ZipCoder
 Phew...Finally
 * Call the method and pass in 45 as your parameter
+====
+
 === Function ZipCoder
 
 [source, js]

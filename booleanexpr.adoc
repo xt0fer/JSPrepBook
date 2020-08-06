@@ -42,9 +42,9 @@ is x greater than or equal to 3??
 Both sides need to be Boolean expressions
 
 
-=== Mini Lab
-
+[TIP]
+====
 * Create 2 variables to use for comparison 
 * Use at least two comparison operators in JS
 * Just put them in a console.log(2 > 1)
-
+====

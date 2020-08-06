@@ -62,7 +62,8 @@ console.log(donuts[donuts.length - 1]); // strawberry
 donuts[4] = "powdered"    // -> ["chocolate", "glazed", "Jelly", "strawberry", "powdered"]
 console.log(donuts[donuts.length - 1]); // powdered
 ----
-=== Mini Lab - Reverse a String
+[TIP]
+==== - Reverse a String
 
 Now let's reverse the string STOP to say POTS
 
@@ -73,11 +74,9 @@ Step2 - Use the reverse() method to reverse the newly created array of string ch
 Use the join() method to join all elements into a String
 
 Print out the reversed string
+====
 
-<a href="https://www.freecodecamp.org/news/how-to-reverse-a-string-in-JavaScript-in-3-different-ways-75e4763c68cb/"></a>
-
-
-=== Solution
+Solution
 [source, js]
 ----
 var str = "Christopher";

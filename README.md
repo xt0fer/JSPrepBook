@@ -14,3 +14,5 @@ asciidoctor-pdf -v
 Asciidoctor PDF is a native PDF converter for AsciiDoc.
 
 use `asciidoctor-pdf index.adoc` to get index.pdf
+
+remember https://javascript.info/object-basics really good site.

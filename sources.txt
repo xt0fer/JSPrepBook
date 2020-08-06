@@ -55,14 +55,16 @@ let a = 2; let b = 3;
 let answer = a * b;
 console.log(answer); // -> 6
 ----
-=== Mini Lab
+[TIP]
+====
 Lab 1: Subtract A from B and print the result
 
 Lab 2: Divide A by B and print the result
 
 Lab 3: Use an operator to increase A by 1. Print result
 
-=== Mini Lab 3 Solution(s )
+[TIP]
+==== 3 Solution(s )
 [source, js]
 ----
 let a = 2;
@@ -345,7 +347,8 @@ is x greater than or equal to 3??
 Both sides need to be Boolean expressions
 
 
-=== Mini Lab
+[TIP]
+====
 <ol>
 * Create 2 variables to use for comparison 
 * Use at least two comparison operators in JS
@@ -375,7 +378,8 @@ let base = 10;
 let areaOfaTriangle  =  height * base / 2;
 console.log(areaOfaTriangle); // -> 100
 ----
-=== Mini Lab
+[TIP]
+====
 Calculate the area of a circle whose radius is 7.7
 
 Hit: You'll need to use a constant Math property
@@ -472,7 +476,8 @@ console.log(a);
 let b = firstName.substr(0,5); // "Chris"
 console.log(b);
 ----
-=== Mini Lab
+[TIP]
+====
 [source, js]
 ----
 let firstName = "Christopher";
@@ -567,7 +572,8 @@ console.log(donuts[donuts.length - 1]); // strawberry
 donuts[4] = "powdered"    // -> ["chocolate", "glazed", "Jelly", "strawberry", "powdered"]
 console.log(donuts[donuts.length - 1]); // powdered
 ----
-=== Mini Lab - Reverse a String
+[TIP]
+==== - Reverse a String
 
 Now let's reverse the string STOP to say POTS
 
@@ -627,7 +633,8 @@ default:
 console.log("Time to eat dinner");
 }
 ----
-=== Mini Lab
+[TIP]
+====
 
 Write code to check if a user is old enough to drink.
 
@@ -717,13 +724,15 @@ Jumps out of the loop when p is equal to 4
 
 
 
-=== Mini Lab
+[TIP]
+====
 <ol>
 * Print from 10 to 1 with a for loop and a while loop (hint use decrement)
 * Write a loop that prints 1 - 5 but break out at 3
 </ol>
 
-=== Mini Lab
+[TIP]
+====
 
 Stretch Goal: S/he who dares wins!
 
@@ -797,7 +806,8 @@ function printReceipt(price, productName, tax) {
 //this method has 3 parameters
 }
 ----
-=== Mini Lab
+[TIP]
+====
 
 * Create a function called zipCoder
 * Your function takes one parameter of type number
