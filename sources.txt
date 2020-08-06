@@ -363,7 +363,7 @@ Therefore we just need to create variables for each and use the operators to cal
 
 === Let's google - area of a triangle
 <img width="678" height="438" data-src="areaoftriangle.png">
-Let's use javascript to build this out!
+Let's use JavaScript to build this out!
 
 
 === Calculate Area of a Triangle in JS
@@ -579,7 +579,7 @@ Use the join() method to join all elements into a String
 
 Print out the reversed string
 
-<a href="https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/"></a>
+<a href="https://www.freecodecamp.org/news/how-to-reverse-a-string-in-JavaScript-in-3-different-ways-75e4763c68cb/"></a>
 
 
 === Solution

@@ -72,7 +72,7 @@ Therefore we just need to create variables for each and use the operators to cal
 
 === Let's google - area of a triangle
 <img width="678" height="438" data-src="areaoftriangle.png">
-Let's use javascript to build this out!
+Let's use JavaScript to build this out!
 
 
 === Calculate Area of a Triangle in JS
@@ -91,7 +91,7 @@ Hit: You'll need to use a constant Math property
 
 
 === Calculate Area of a Circle in JS
-Formula: A = &#x03C0; * r<sup>2</sup>
+Formula: A = Pi * r<sup>2</sup>
 [source, js]
 ----
 let radius = 7.7;	

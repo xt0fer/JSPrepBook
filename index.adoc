@@ -1,23 +1,24 @@
-= ZCW's Javascript Preparation
+:title-page:
+= Zip Code Wilmington's Programming in JavaScript
 Kristofer Younger <kris@zipcodewilmington.com>
-v1.0, 2020-07-24
+v1.3, 2020-08-6
+:doctype: book
 :toc:
 :imagesdir: assets/images
 :homepage: https://zipcodewilmington.com/jsprep
-
+:pdf-page-size:  [5.5in, 8.5in]
 
 Zip Code Wilmington is a coding boot-camp for people who wish to change their lives by becoming proficient at coding.
 
-
 == About this book
 
-This book's aim is to provide you with the barest of fundamentals regarding Javascript, the world's most popular programming language. You may be aware that Zip Code doesn't focus on Javascript _per se_, and that can leave you wondering why the first book we wrote was all about Javascript. Well...
+This book's aim is to provide you with the barest of fundamentals regarding JavaScript, the world's most popular programming language. You may be aware that Zip Code doesn't focus on JavaScript _per se_, and that can leave you wondering why the first book we wrote was all about JavaScript. Well...
 
-=== Javascript: Easy to understand
+=== JavaScript: Easy to Understand
 
-Javascript is a fairly easy programming language to learn, and we're going to use it in this book to describe the basic fundamentals of coding. Its form is modern and it is widely used. It can be used for many purposes, from web applications to back-end server processing. 
+JavaScript is a fairly easy programming language to learn, and we're going to use it in this book to describe the basic fundamentals of coding. Its form is modern and it is widely used. It can be used for many purposes, from web applications to back-end server processing. We're going to use it for learning simple, programming-in-the-small, methods and concepts; but make no mistake - JavaScript is world-class language capable of amazing things.
 
-Javascript also has the advantage that one can learn to use it without a lot of setup on a computer. In fact, we recommend use of the <repl.it> web site for the running of the javascript examples you'll find in this book.
+JavaScript also has the advantage that one can learn to use it without a lot of setup on a computer. In fact, we recommend use of the <repl.it> web site for the running of the JavaScript examples you'll find in this book.
 
 Finally, because in this book all we aim to teach you is "programming in the small". Many of the examples here are significantly less that 20 lines in length. We want you to get better at looking at small blocks of code to see how they work. These smaller examples and concepts are a core building block as you become proficient in coding. 
 
@@ -55,7 +56,7 @@ Spending even 20 minutes a day, making progress on a programming task can make a
 
 Working on code, everyday, makes you a coder. And coding everyday will help with your ability to eventually score high enough on the Zip Code admissions assessment that you get asked to final interviews.
 
-== Programming with Javascript
+== Programming with JavaScript
 
 include::consolelog.adoc[]
 include::variables.adoc[]

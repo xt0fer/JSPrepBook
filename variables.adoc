@@ -2,91 +2,97 @@
 
 === What are variables?
 
-JS variables are containers used to store data.
+In JavaScript, variables are containers used to store data while the program is running. Variables can be named just about anything, and often are named things that make you think about what you store there.
+
+```
+
+```
 
 (need more)
-    
-Variables must be named.
-Names can contain letters, digits, underscores, and dollar signs
-Names must begin with a letter
-Names can also begin with $ and _ 
-Names are case sensitive (y and Y are different variables)
-Reserved words (like JavaScript keywords) cannot be used as names
-All variable names must be unique (no two alike)
+
+- Variables must be named.
+- Names can contain letters, digits, underscores, and dollar signs
+- Names must begin with a letter
+- Names can also begin with $ and _ 
+- Names are case sensitive (y and Y are different variables)
+- Reserved words (like JavaScript keywords) cannot be used as names
+- All variable names must be unique (no two alike)
 
 === JavaScript Data Types
- JS, variables are dynamic (can contain any data)
- - A variable can be a string and later be a number\n
 
+JavaScript primitive Data Types:
 
+- Number - integers, floats - 1, 1.7
+- String - an array of characters - 'text' or "Hello!"
+- Boolean - true or false
+- Null - no value
+- Undefined - a variable not yet assigned - let x;
 
+==== Declaring a Variable
 
-<h3>Javascript primitive Data Types: </h3>
-
-
-Number - integers, floats - 1, 1.7
-String - an array of characters - 'text' or "Hello!"
-Boolean - true or false
-Null - no value
-Undefined - a variable not yet assigned - let x;
-
-
-
-
-<h3>Declaring a Variable</h3>
-<pre><code class="hljs" data-trim data-line-numbers="1,2" >
+```
 let x;
-console.log(x);  //undefined
-</code></pre>
+```
+This creates a variable *x* that can hold any primitive type. But it has NO value assigned to it, so if we...
 
+```
+console.log(x);  // -> undefined
+```
+There is _nothing_ there. 
 
+If we were to, declare a variable named cats, and assign it the value 3. 
 
+```
+let cats = 3;
+console.log(cats);  // -> 3
+```
 
+==== Assign a value to a variable
 
-
-<h3>Assign a value to a variable </h3>
-<pre><code class="hljs" data-trim data-line-numbers="1,2" >
+```
 let x = 19; 
 console.log(x); // -> 19
-</code></pre>
+```
 
+==== Reassigning a value to a variable
 
-
-<h3>Reassigning a value to a variable </h3>
-<pre><code class="hljs" data-trim data-line-numbers="1,2" >
+```
 x = "nineteen";
 console.log(x); // -> nineteen
-</code></pre>
+```
 
+In JS, variables are dynamic (can contain any data) which means a variable can be a string and later be a number.
 
+=== Constants
 
-<h2>Constants</h2>
-Constants are like let variables but they contain values that do NOT change such as a person’s date of birth. Convention is to capitalized constant variable names\n
-<pre><code class="hljs" data-trim data-line-numbers="1,2" >
+Constants are like let variables but they contain values that do NOT change such as a person’s date of birth. Convention is to capitalized constant variable names.
+
+```
 const DATE_OF_BIRTH = "04-02-2005";
 DATE_OF_BIRTH = "04-10-2005"; // <-error
-</code></pre>
-An attempt to re-assign a value to a constant will fail\n
+```
+An attempt to re-assign a value to a constant will fail.
 
 
 
 
-<h3>Mini Lab</h3>
-<ol>
-Create variables for primitive data type below:\n
+==== Mini Lab
+
+Create variables for primitive data type below:
 boolean, float, integer, string and a constant
 Store some values in each and print them out
-</ol>
 
 
 
-<h3>Mini Lab</h3>
-<pre><code class="hljs" data-trim data-line-numbers="1-5" >
+
+==== Mini Lab
+
+```
 let x=0;
 let playerOneAlive = true;
 let currentSpeed = 55.0;
 let playerOneName = "Rocco";
 const maxPainScore = 150000;
-</code></pre>
+```
 
 

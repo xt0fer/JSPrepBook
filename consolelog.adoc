@@ -1,8 +1,9 @@
 == Output: console.log()
 
-Perhaps the simplest javascript program is 
+Let's start with a really simple program.
+Perhaps the simplest JavaScript program is 
 
-[source,javascript]
+[source,JavaScript]
 ----
 console.log("Hello, World!");
 ----
@@ -13,19 +14,18 @@ And while you might _not yet_ understand this _technical description_,
 it is a program of one _line_ of code, which says "call the 'log' method on the 'console' object, using the string "Hello, World!" as the argument to be logged."
 ****
 
-Logging, in this case, means _outputting_ the string "Hello, World!" somewhere. That somewhere is the _console_ a place javascript uses to communicate with a user (in this case, us, the programmers.)
+Logging, in this case, means _outputting_ the string "Hello, World!" somewhere. That somewhere is the _console_ a place JavaScript uses to communicate with a user (in this case, us, the programmers.)
 
-(And if you haven't done it yet, go to https://repl.it and create an account for yourself. Once that's done you should create a javascript repl, a place where you can type the code from this book to the repl and run it, to see what each code snippet does.)
+(And if you haven't done it yet, go to https://repl.it and create an account for yourself. Once that's done you should create a JavaScript repl, a place where you can type the code from this book to the repl and run it, to see what each code snippet does.)
 
 We will is `console.log` to do a lot in the coming pages. It's a simple statement, one that in other languages might be `print` or `write` or `puts` (and why we all cannot just agree on one way to do this, well, beats me.)
 
-Here's your second js program: (I'm gonna use js or JS for the word javascript. Life is too short for me to type the hundreds of times I plan to use it in this book.)
+Here's your second js footnote:[I'm gonna use *js* or *JS* for the word JavaScript. Life is too short for me to type the hundreds of times I plan to use it in this book.] program: 
 
-[source, js]
-----
+```JavaScript
 let milesPerHour = 55.0;
 console.log("Car's Speed: ", milesPerHour);
-----
+```
 
 Which, if you typed into your repl and clicked the "Run >" button, you saw
 
@@ -35,7 +35,20 @@ Car's Speed:  55
 
 as the program's output.
 
-Cool, huh? The ability to communicate with you is one of Javascript's most fundamental capabilities. And you've run two js programs. Congratulations, you're a coder. (well, at least for today you are.)
+Cool, huh? The ability to communicate with you is one of JavaScript's most fundamental capabilities. And you've run two js programs. Congratulations, you're a coder. (well, at least for today you are.)
+
+== Comments
+
+While you're not thinking about the long term, or about large JavaScript programs, there is a powerful thing in JS that helps with tracking comments and notes about the code.
+
+In your program you can write stuff that JavaScript will ignore, it's just there for you (or readers of your code).
+
+```
+// This comment occupies a line of its own
+console.log('Hello');
+
+console.log('World'); // This comment follows the statement
+```
 
 == Statements and Expressions
 
