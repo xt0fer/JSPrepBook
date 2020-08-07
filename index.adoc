@@ -57,9 +57,9 @@ Many have heard my often-repeated admonition: *If you coded today, you're a code
 
 === Dedication to the mission
 
-I happen to be among those who feel anyone can learn to code. It's a 21st century superpower. When you code, you can change the world. Being proficient at coding can be a life-changing skill that impacts your life, your family's life and you future forever. I've seen time and time again, the ability to learn to code is evenly distributed across the population, but the opportunity to learn to code is not. So, we run Zip Code, to give people a shot at learning a 21st century superpower, no matter where you come from.
+I happen to be among those who feel anyone can learn to code. It's a 21st century superpower. When you code, you can change the world. Being proficient at coding can be a life-changing skill that impacts your life, your family's life and your future forever. I've seen time and time again, the ability to learn to code is evenly distributed across the population, but the _opportunity to learn to code is not_. So, we run Zip Code to give people a shot at learning a 21st century superpower, no matter where you come from.
 
-And fortune favors the prepared. Some day, you may be working at a great company, making a decent living, working with professionals in a technical job. Your friends may say "You are so lucky!"
+And fortune favors the prepared. Some day, you may be working at a great company, making a decent living, working with professionals in a great technical job. Your friends may say "You are so lucky!"
 
 And you will think: Nope. It wasn't luck. You'll know that truly. You got there by preparing yourself to get there, and by working to get there, working _very hard_. Ain't no luck involved, just hard work. You make your own luck by working hard.
 
@@ -69,7 +69,9 @@ The best way is to start solving coding problems on sites like <HackerRank>. Hac
 
 Spending even 20 minutes a day, making progress on a programming task can make all the difference. Day after day your skills will grow, and before long you'll look back on the early things you did and be astonished as to how simple the assignments were. You may even experience embarrassment at remembering how hard these simple exercises seemed at the time you did them. (It's okay, we've all felt it.)
 
-Working on code, everyday, makes you a coder. And coding everyday will help with your ability to eventually score high enough on the Zip Code admissions assessment that you get asked to final interviews.
+Working on code, everyday, makes you a coder. And coding everyday will help with your ability to eventually score high enough on the Zip Code admissions assessment that you get asked to final interviews. And then, well, then you get to learn Java or Python and work yourself to exhaustion doing so. Why? You do that hard work, you put in those hours, you create lots of great code, you'll make your own luck, and someone will be impressed and they will offer you a job. And that is the point, right? Right? RIGHT?
+
+Okay, let go. 
 
 == Programming with JavaScript
 
