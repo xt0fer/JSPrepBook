@@ -1,27 +1,75 @@
 == Strings
 
+Strings are perhaps the most important data type in JavaScript. Many other computer languages have strings, and they are used in almost ALL modern program. Knowing how to manage them, create and modify them to do what you need them to do, is a "sub-superpower" within JavaScript.
+
+Pay close attention, this stuff is Very Important.
+
 === What is a String?
-A string stores a string of characters like "Mike Jones" or 'Hello'
 
-Any text inside double or single quotes is a string (even SPACES)
+Think about the words on this page. The text here is made up of a bunch of letters, and spaces. Now, when we write by hand, we don't
+really think about the space between the words, do we? If we truly ignored the notion of space between the words, wewouldendupwithtextlikethis. And while it is possible to read, our modern eyes are trained on well-edited texts, no spaces tires us pretty quickly.
 
+So yes, what we see as text in this book is really a series of letters and spaces strung together in a line - line after line, paragraph after paragraph.
+In modern computing, that kind of data is often called a *String*.
+It is one of the most fundamental aspects of coding, the manipulation of strings by programs to transform, present or store text in some fashion.
+
+Many programming languages use some kind of quote or double quote to show where strings start and end.
+So a string like "the quick brown fox" would be a string from the 't' to the 'x'. And notice the three spaces within the string.
+If they were not there, the string would be "thequickbrownfox".
+And that's important, because to the computer, if it keeps these two strings around, it doesn't really understand that 'the' and 'quick' are just two common english words, the spaces are there to retain more of what the human meant.
+
+No, to the computer, each letter, including the space 'letter', is just a piece of data and very important.
+
+String - a string of letters and numbers and spaces and punctuation, kept altogether for some use.
+Here are some strings for you to consider.
+
+```
+"the quick brown fox"
+"The New York Times"
+"And lo, like wave was he..."
+"oops"
+"Hello, World!"
+"supercalifraglisticexpealadocious"
+"On sale for $123.99!!"
+"Pi is approximately 3.14159"
+"Merge left at the ramp to the right, the restaurant is on the right"
+"He said, \"Wait there is more!\""
+```
+
+Strings can be thought of tightly packed list. Each item, each letter, is numbered. The entire string can be "indexed", meaning I can reach in copy out, say, the fifth letter easily.
 String indexes are zero-based therefore the first character(element) is in index position 0
-<pre>
+
+```
 012345
 Hello
-</pre>
-=== Declaring a string let name = "Wacka Flocka";
+```
+So here, "H" is at 0, "e" is at 1, 'l' is at 2 and 3, 'o' is at index position 4.
+Computers often start lists at 0, not at one. It just one of those things.
+
+=== Declaring a string 
+
+```
+let name = "Wacka Flocka";
+```
+
+Now we have a string variable named *name* and it's value is "Wacka Flocka".
+
 === String Properties
-A common and often used string property is <strong>length</strong>
+
+A common and often used string property is *length*.
 
 We can use .length to find the length of a string
-[source, js]
-----
+
+```
 let str = "Wakanda Forever!";
 let answer = str.length;
 console.log(answer); // -> 16
-----
+```
+
 === Accessing Characters in a String
+
+As mentioned before, we can reach into a string and copy out the stuff we find there.
+
 [source, js]
 ----
 let word = "Hello";
@@ -32,41 +80,61 @@ console.log( word.charAt(0) ); // H
 console.log( word[word.length - 1] ); // o
 console.log( word.charAt(word.length - 1)); // o
 ----
-=== String Methods
-=== String Concatenation
-This simply means joining together using the + operator or the concat( ) method 
-[source, js]
-----
+
+When you see something like *word[0]*, it is pronounced like "word sub zero". If you have
+*word[5]*, you would say "word sub five". This is just verbal shorthand for the expression.
+
+=== String Concatenation (Joining strings)
+
+This simply means joining strings together using the + operator or the concat( ) method. Either one is commonly used. 
+
+```
 let price = 20;
 let dollarSign = "$";
 let priceTag = dollarSign + price; // $20
 //or
 let priceTag = dollarSign.concat(price); // $20
 console.log(priceTag); // -> $20
-----
+```
+
+Or perhaps a little more useful example:
+
+```
+let name = "Mikaila"
+let hoursWorked = 12;
+
+let workReport = "Today, " + name + " worked a total of " + hoursWorked + " hours."
+console.log(workReport);
+```
+
+The output would be 
+
+****
+Today, Mikaila worked a total of 12 hours.
+****
+
 === SubStrings
-The substring() method extracts the characters from a string, between two specified indices
 
-There are 3 methods in JavaScript to get a substring: substring, substr and slice
+The getting a substring is a common operation. This is how we extract the characters from a string, between two specified indices. (Which is why it's important to remember the indexes start at 0.)
+There are 3 methods in JavaScript to get a substring: substring, substr and slice. Let's look
+at each one. (Although, honestly, they all do exactly the _same thing!_)
 
+_someString.substring(start, end)_
 
-=== How Substring works
-string.substring(start, end)
+_someString.substr(start, end)_
 
-A start position is required. The position where to begin the extraction. First character is at position 0.
+_someString.slice(start, end)_
 
+A start position is required, where to begin the extraction. Remember, first character is at position 0. 
 Characters are extracted from a string between "start" and "end", not including "end" itself.
 
 [source, js]
 ----
-String firstName = "Christopher";
+let firstName = "Christopher";
 ----
-<ol>
-* let's use the 3 substring methods on firstName
-- To extract and print out "Chris"
-</ol>
 
-=== Substring Solution
+Now let's use the 3 substring methods on firstName and extract and print out "Chris"
+
 [source, js]
 ----
 let firstName = "Christopher";
@@ -78,33 +146,43 @@ console.log(a);
 let b = firstName.substr(0,5); // "Chris"
 console.log(b);
 ----
+
+Yep. They all print "Chris". (Act impressed... thanks!)
+
+Let's try a little harder idea...
+
 [TIP]
 ====
 [source, js]
 ----
 let firstName = "Christopher";
 ----
-- Your turn to use the substring method on firstName
-- To extract and print out "STOP"
-- Google how to make it uppercase!
+- Your turn to use the substring/substr/slice method on firstName
+- Extract and print out "STOP" from inside the string above
+- And make it uppercase! ("stop" to "STOP")
 ====
 
-=== Substring Solution
+Well?
+
 [source, js]
 ----
 let firstName = "Christopher";
 console.log(firstName.substring(4,8).toUpperCase());
 ----
-=== Summary of substring methods with code
-[source, js]
-----
-let rapper = "mikejones";
-console.log(rapper.substr(0,4));  // mike  //includes second index
-console.log(rapper.substr(1,3));  // ike
-console.log(rapper.substring(0,4));  //mikeik   //excludes second index
-console.log(rapper.substring(1,4));  //ike   //excludes second index
-console.log(rapper.slice(0,4)); //mike  //excludes second index
-console.log(rapper.slice(1,4)); //ike
-console.log(rapper.slice(1,3)); //ik
-----
 
+Want to bet there is also a "toLowerCase()" method as well?
+
+=== Summary of substring methods
+
+```
+let rapper = "mikaila";
+console.log(rapper.substr(0,4));  // mika
+console.log(rapper.substr(1,3));  // ika
+console.log(rapper.substring(0,4));  // mika  
+console.log(rapper.substring(1,4));  // ika 
+console.log(rapper.slice(0,4)); // mika
+console.log(rapper.slice(1,4)); // ika
+console.log(rapper.slice(1,3)); // ik
+```
+
+Strings are perhaps the most important data type in almost any language. Being able to manipulate them easily and do powerful things with them in JavaScript, makes you a better coder.
