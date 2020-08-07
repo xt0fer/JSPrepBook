@@ -50,7 +50,7 @@ let b = 3;
 let L1 = b - a;
 let L2 = a / b;
 let L3 = a + 1;
-//or
+//or using increment
 L3 = a++;
 console.log(L1); // -> -6
 console.log(L2); // -> 3
@@ -78,109 +78,131 @@ let answer = b % a;
 console.log(answer); // -> 3
 ----
 
-=== order of operations
+=== Order of Operations
+
+A strange thing about these operators is the order in which they evaluated. Let's take a look at this expression.
+
+****
+6 × 2 + 30
+****
+
+We can do this one of two ways:
+
+* Say we like to do multiplication (I know, who is that?)
+** we would then do the "6 x 2" part first, giving us 12.
+** then we'd add the 30 to 12 giving us 42 footnote:[The answer to life, the universe and Everything.]
+* But say we don't like multiplication, and want to save it for later
+** we would then do the add first, 2 + 30 giving us 32
+** and then we multiply it by 6, and whoa we get 192!
+
+Wait! Which is right? How can they be that different, depending on the Order we do the math in?
+Well, this shows us that the Order of Operations is important. And people have decided upon
+that order so that this kind of confusion goes away.
+
+Basically, multiply and divide are higher priority than add and subtract. And exponents (powers) are highest priority of all.
+
+There is a simple way to remember this.
 
 ==== P.E.M.D.A.S
+
+Use this phrase to memorize the default order of operations in JavaScript.
+
+****
 "Please Excuse My Dear Aunt Sally"
 
 * Parenthesis ( )
-* Exponents 2<sup>3</sup>
-* Multiplication *
-* Division / 
-* Addition + 
-* Subtraction - 
+* Exponents 2^3^
+* Multiplication * and Division / 
+* Addition + and Subtraction - 
+****
 
-
-=== Note
-Divide and Multiply rank equally (and go left to right).
+[WARNING]
+====
+Divide and Multiply rank equally (and go left to right)
+So, if we have 5 * 3 / 2, we would do the multiply first and then the divide.
+6 * 3 / 2 is 9
 
 Add and Subtract rank equally (and go left to right)
+So if we have 9 - 6 + 5, we do the subtract first and then the add.
+9 - 6 + 5 is 8
+====
 
+=== Order of Operations
 
-=== Order of operations
-30 + 6 × 2
+[TIP]
+====
+30 + 6 × 2   How should this be solved?
 
-what should be solved first?
+Right way to solve 30 + 6 × 2 is first multiply, 6 × 2 = 12, then add 30 + 12 = 42
+====
 
+This is because the multiply is _higher priority_ than the addition, _even though the addition is before the multiply in the expression. Let's check it in JavaScript.
 
-Best way to solve for 30 + 6 × 2
-
-is
-
-* First 6 × 2 = 12, then 30 + 12 = 42
-
-
-=== Solve using JavaScript
 [source, js]
 ----
-let a = 30;
-let b = 6;
-let c = 2;
-let multi = b * c;
-let result = a + multi;
+let result = 30 + 6 * 2;
 console.log(result);
 ----
-=== Order of operations
+
+Gives us 42. 
+
+Now there is another way to force JavaScript to do things "out of order" with parenthesis. 
+
+[TIP]
+====
 (30 + 6) × 2
 
-What should be solved first?
-
-
-Best way to solve for (30 + 6) × 2 
-
-is
-* First 30 + 6 = 36 , then 36 × 2 = 72
-
-
-=== Micro Lab
-(30 + 6) × 2
-
-Now, Your turn to solve the equation with JS
-
+What happens now?
+====
 
 === Solution to Micro Lab
 [source, js]
 ----
-let a = 30;
-let b = 6;
-let c = 2;
-let multi = a + b;
-let result = multi * c;
+let result = (30 + 6) * 2;
 console.log(result);
 ----
 
-=== JavaScript Math Object
-The JavaScript Math object allows you to perform mathematical tasks on numbers.
+What's going to happen? Will the answer be 42 or 72?
 
+==== JavaScript Math Object
 
-=== JS Math Object Methods
+There is a useful thing in JavaScript called the Math object which allows you to perform mathematical tasks on numbers.
+
 
 * Math.PI; - returns 3.141592653589793
-* Math.pow(x, y) - the value of x to the power of y - x<sup>y</sup>
+* Math.round(4.7);    // returns 5
+* Math.round(4.4);    // returns 4
+* Math.pow(x, y) - the value of x to the power of y - x^y^
+* Math.pow(8, 2);      // returns 64
 * Math.sqrt(x) - returns the square root of x
+* Math.sqrt(64);      // returns 8
 
+[IMPORTANT]
+====
+What does this "returns" mean?
 
+When we ask a 'function' like sqrt to some work for us, we have code something like:
+```
+let squareRootOfTwo = Math.sqrt(2.0);
+console.log(squareRootOfTwo);
+```
+We will get "1.4142135623730951" in the output. That number is the square root of 2, and it is 
+the result of the function and what the function sqrt "returns".
+====
 
-=== Math.Pow( ) Demo
+*Math.pow() Example*
 
-* 30 + 6<sup>2</sup> × 2
-How to solve?
-* First 6 * 6 = 36 , then 36 * 2 = 72 , then + 30 = 102
+Say we need to compute "6^2^ + 5"
+```
+let result = Math.pow(6,2) + 5;
+console.log(result);
+```
+What will the answer be? 279936 or 41?
 
+How did JavaScript solve it?
 
-=== Micro Lab
-30 + 6<sup>2</sup> × 2
+Well, 6^2^ is the same as 6 * 6.
+And 6 * 6 = 36,
+then add 36 + 5 = 41.
 
-Now, Your turn to solve the equation with JS
-
-=== Solution to Micro Lab
-[source, js]
-----
-let a = 30;
-let b = 6;
-let c = 2;
-let powerOf = Math.pow(b, c); // (6, 2) -> 36
-let multi = powerOf * c; // 36 * 2 -> 72
-let result = multi + a; // 72 + 30 -> 102
-console.log(result); // -> 72
-----
+You'll learn a lot more about working with numbers in your career as a coder. This is really just the very basic of beginnings.
