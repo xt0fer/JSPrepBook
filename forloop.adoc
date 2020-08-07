@@ -62,7 +62,7 @@ Stretch Goal: S/he who dares wins!
 
 * Go back to Arrays
 * Look at an array of donuts
-
+* Create an array of donuts
 * Loop through the array of donuts and print each donut string
 ====
 
