@@ -1,4 +1,4 @@
-=== Switch Statements
+=== TODO Switch Statements
 
 Switch statements are used to perform different actions based on different conditions.
 
@@ -6,14 +6,14 @@ Switch statements are used to perform different actions based on different condi
 ----
 let timeOfDay = "Afternoon";
 switch(timeOfDay){
-case "Morning": 
-console.log("Time to eat breakfast");
-break;
-case "Afternoon":
-console.log("Time to eat lunch");
-break;
-default:
-console.log("Time to eat dinner");
+    case "Morning": 
+        console.log("Time to eat breakfast");
+        break;
+    case "Afternoon":
+        console.log("Time to eat lunch");
+        break;
+    default:
+        console.log("Time to eat dinner");
 }
 ----
 

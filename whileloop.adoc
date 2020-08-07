@@ -4,9 +4,9 @@
 Loops allow you control over repetitive steps you need to do. JavaScript has two different kinds of loops we will talk about, *while* loops and *for* loops. Either one can be used
 interchangeably, but as you will see there are couple cases where using one over the other makes more sense.
 
-=== *While* Loop
+=== While Loop
 
-Loop through a block of code WHILE condition is true. 
+Loop through a block of code (the body) WHILE a condition is true. 
 
 ```
 while (condition_is_true) {
@@ -67,7 +67,7 @@ game.sayToHuman("Game Over!");
 
 Here we are using the continue statement to force the flow of control to the top of the loop. We are also using the break statement to break out of the infinite loop, letting us do other things after the player has 'died'.
 
-==== Do..While Loop
+=== Do..While Loop
 
 There is another kind of loop, a *Do..While* loop.
 Why? well, sometimes you need a loop to go at least once, no matter what

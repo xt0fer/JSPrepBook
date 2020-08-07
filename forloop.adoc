@@ -60,14 +60,19 @@ Jumps out of the loop when p is equal to 4
 ====
 Stretch Goal: S/he who dares wins!
 
-* Create an array of donuts
-* Loop through the array of donuts and print them
+* Go back to Arrays
+* Look at an array of donuts
+
+* Loop through the array of donuts and print each donut string
 ====
 
-=== Solution
+You can do it, I know you can!
+
 [source, js]
 ----
-for(let x = 0; x &lt; donuts.length; x++){
-console.log(donuts[x]);
+for(let x = 0; x < donuts.length; x++){
+    console.log(donuts[x]);
 }
 ----
+
+If you had something like this, buy yourself a donut, you deserve it.
