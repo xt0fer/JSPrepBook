@@ -1,5 +1,8 @@
-== Operators
-=== Arithmetic Operators
+== Arithmetic Operators
+
+JavaScript can do math. And many early programming problems deal with doing fairly easy math. There are ways to do lots of useful things with numbers. 
+
+=== Basics
 
 [cols=",,",options="header",]
 |===
@@ -12,8 +15,6 @@
 |++ |Increment |Increase value by 1
 |- - |Decrement |Decrease value by 1
 |===
-
-=== Demo of Arithmetic Operators
 
 Say we needed to multiply two numbers. Maybe 2 times 3. Now we could easily write a program
 that printed that result.
@@ -57,28 +58,47 @@ console.log(L2); // -> 3
 console.log(L3); // -> 10
 ----
 
-=== How about Modulus|remainder
+=== Division and Remainder
 
+We know that we can do regular division. If have a simple program like this, we know 
+what to expect.
+
+```
+let a = 6 / 3; // -> 2
+let a = 12 / 3; // -> 4
+let a = 15 / 3; // -> 5
+let a = 10 / 4; // -> 2.5
+```
+
+But we have, sometimes, a need to know what the remainder of a division is.
+The remainder operator %, despite its appearance, is not related to percents.
+
+The result of a % b is the remainder of the integer division of a by b.
+```
+console.log( 5 % 2 ); // 1, a remainder of 5 divided by 2
+console.log( 8 % 3 ); // 2, a remainder of 8 divided by 3
+```
 Now what's this about '%' (the remainder) operator?
 
 [source, js]
 ----
-let a = 2; let b = 3;
-//Modulus
-let answer = b % a;
+let a = 3; 
+let b = 2;
+// Modulus (Remainder)
+let answer = a % b;
 console.log(answer); // -> 1
 ----
 
-=== How about Modulus|remainder
 [source, js]
 ----
-let a = 4; let b = 19;
-//Modulus
-let answer = b % a;
+let a = 19; 
+let b = 4;
+// Remainder
+let answer = a % b;
 console.log(answer); // -> 3
 ----
 
-=== Order of Operations
+=== Order is Important
 
 A strange thing about these operators is the order in which they evaluated. Let's take a look at this expression.
 
@@ -127,8 +147,6 @@ So if we have 9 - 6 + 5, we do the subtract first and then the add.
 9 - 6 + 5 is 8
 ====
 
-=== Order of Operations
-
 [TIP]
 ====
 30 + 6 × 2   How should this be solved?
@@ -155,7 +173,6 @@ Now there is another way to force JavaScript to do things "out of order" with pa
 What happens now?
 ====
 
-=== Solution to Micro Lab
 [source, js]
 ----
 let result = (30 + 6) * 2;
@@ -164,7 +181,7 @@ console.log(result);
 
 What's going to happen? Will the answer be 42 or 72?
 
-==== JavaScript Math Object
+=== JavaScript Math Object
 
 There is a useful thing in JavaScript called the Math object which allows you to perform mathematical tasks on numbers.
 
@@ -179,15 +196,16 @@ There is a useful thing in JavaScript called the Math object which allows you to
 
 [IMPORTANT]
 ====
-What does this "returns" mean?
+What does "returns" mean?
 
-When we ask a 'function' like sqrt to some work for us, we have code something like:
+When we ask a 'function' like sqrt to do some work for us, we have code something like:
 ```
-let squareRootOfTwo = Math.sqrt(2.0);
-console.log(squareRootOfTwo);
+let squareRootTwo = Math.sqrt(2.0);
+console.log(squareRootTwo);
 ```
-We will get "1.4142135623730951" in the output. That number is the square root of 2, and it is 
-the result of the function and what the function sqrt "returns".
+We will get "1.4142135623730951" in the output. That number (squareRootTwo) 
+is the square root of 2, and it is 
+the result of the function and _what the function sqrt "returns"'_.
 ====
 
 *Math.pow() Example*

@@ -36,9 +36,9 @@ Solve the equation with JavaScript...
 q = 2j + 20
 
 if j = 5, then q = ?
-====
 
-Takes a moment and write down your solution before looking this one.
+Take a moment and write down your solution before reading on.
+====
 
 [source, js]
 ----
@@ -70,13 +70,15 @@ let x = 5 * y + Math.pow(y, 3) - 7;
 console.log(x); // -> 11
 ----
 
-_Trigonometry_
+=== _Trigonometry_
 
 The word trigonometry comes from the greek word - trigonon "triangle" + metron "measure. 
 We use trigonometry to find angles, distances and areas.
 
 For example, if we wanted to find the area of a triangular piece of land, we could use the
 equation *AreaOfaTriangle = height * base / 2*
+
+(TODO: INSERT a simple triangle diagram)
 
 Therefore we just need to create variables for each and use the operators to calculate the area
 
@@ -102,7 +104,7 @@ console.log(areaOfaTriangle); // -> 100
 Calculate the area of a circle whose radius is 7.7
 Formula: area = Pi * radius^2^
 ====
-Hit: You'll need to use a constant Math property
+Hint: You'll need to use a constant Math property!
 
 
 [source, js]
