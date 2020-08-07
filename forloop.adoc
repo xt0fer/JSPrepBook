@@ -1,13 +1,38 @@
 === For Loop
-[source, js]
-----
-for(let j = 1&#59 j &lt 6&#59  j++){
-console.log(j)&#59
-}
-// print 1 2 3 4 5 
-----
 
-Loop a block of code a CERTAIN amount of times
+The *for* loop is more complex, but it’s also the most commonly used loop.
+
+```
+for (begin; condition; step) {
+
+    // execute the code statements 
+    // in the loop body
+
+}
+```
+
+Here's one where we go from 1 to 5.
+
+```
+for(let j = 1; j < 6;  j++){
+    // loop body code
+    console.log(j);
+}
+// print 
+1 
+2 
+3 
+4 
+5 
+```
+
+Notice how there are THREE parts to the loop's mechanism. 
+
+* begin	j = 1	Executes once upon entering the loop.
+* condition	j < 6	Checked before every loop iteration. If false, the loop stops.
+* body	console.log()	Runs again and again while the condition is true.
+* step    j++	Executes after the body on each iteration.
+
 
 
 ==== Break

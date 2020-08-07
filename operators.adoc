@@ -115,7 +115,7 @@ We can do this one of two ways:
 ** we would then do the add first, 2 + 30 giving us 32
 ** and then we multiply it by 6, and whoa we get 192!
 
-Wait! Which is right? How can they be that different, depending on the Order we do the math in?
+Wait! Which is right? How can the answers be so different, depending on the order we do the math in?
 Well, this shows us that the Order of Operations is important. And people have decided upon
 that order so that this kind of confusion goes away.
 
