@@ -45,11 +45,11 @@ The best way to think about arrays is like all those postal boxes at the post of
 
 Arrays are *indexed* like that. Each array slot has an index number, starting at zero. See how we use the number 2 to _index_ into the playerHealthScore array?
 
-=== JavaScript Arrays
+Arrays:
 
 * Can store multiple values in a single variable
-* We start counting from index position zero
-* Elements can be primitive or/and Objects
+* Start counting from index position zero
+* Elements can be primitive data types or/and Objects
 
 So let's think about an array of donuts for the following examples.
 
@@ -79,7 +79,7 @@ console.log(donuts[0]);  // "chocolate" (we could say "donuts sub zero")
 
 console.log(donuts[2]);  // "jelly"
 ----
-=== Add things tos an Array
+=== Adding to an Array
 
 We can also add things to the end of the array.
 
@@ -92,7 +92,7 @@ donuts[3] = "strawberry"   // notice there is no element 3 before this,
 console.log(donuts);  // but after, there are now 4 things in the array.
 ----
 
-=== Getting the size of an Array
+=== Get the size of an Array
 
 We can use the *length* property to find the size of an array.
 
@@ -106,7 +106,7 @@ console.log(donuts.length);  // it'll print 3
 Note: A string is an ARRAY of single characters
 
 
-=== Grabbing the last element of an Array
+=== Get the last element of an Array
 
 If we use the _length_ property carefully, we can always get the last element in an array.
 

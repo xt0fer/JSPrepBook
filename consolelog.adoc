@@ -1,4 +1,5 @@
-== Output: console.log()
+
+== Output console.log()
 
 Let's start with a really simple program.
 Perhaps the simplest JavaScript program is 
@@ -135,3 +136,4 @@ if (magePower > 120.0) {
 ```
 
 See those curly-braces? They start and stop the _block_, and contain the statements within. You can also see how the code is indented, but the real key are those braces. You'll see lots of blocks when you're looking at JavScript code.
+

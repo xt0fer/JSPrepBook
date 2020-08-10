@@ -1,3 +1,4 @@
+
 == Strings
 
 Strings are perhaps the most important data type in JavaScript. Many other computer languages have strings, and they are used in almost ALL modern program. Knowing how to manage them, create and modify them to do what you need them to do, is a "sub-superpower" within JavaScript.
@@ -214,3 +215,4 @@ console.log(result); // -> POTS
 ----
 
 Strings are perhaps the most important data type in almost any language. Being able to manipulate them easily and do powerful things with them in JavaScript, makes you a better coder.
+

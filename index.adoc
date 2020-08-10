@@ -75,6 +75,7 @@ Okay, let go.
 
 == Programming with JavaScript
 
+
 include::consolelog.adoc[]
 include::variables.adoc[]
 include::operators.adoc[]

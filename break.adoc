@@ -1,3 +1,4 @@
+
 === Break Statement
 
 Normally, a loop exits when its condition becomes false. But we can force the exit at any time using the special *break* statement.
@@ -37,3 +38,4 @@ for (let i = 0; i < 10; i++) {
 What's interesting here is the use of the remainder operator (%) to see if a number is odd.
 Here the expression (i % 2) is zero if the number is even, it not the number must be odd.
 You want to remember this trick, how to find odd or even numbers. It's common programming problem that you will get asked. The continue statement starts the loop over, not letting the console.log to print out the number when it's even.
+

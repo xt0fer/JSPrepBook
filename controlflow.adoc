@@ -1,5 +1,5 @@
 
-== Control Flow
+== Changing the Control Flow
 
 In many of these examples so far, we see a very simple *control flow*. The program starts at the first line, and just goes line by line until runs out of statements.
 

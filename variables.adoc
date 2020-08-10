@@ -1,6 +1,7 @@
+
 == Variables and Data Types
 
-=== What are variables?
+=== Variables
 
 In JavaScript, variables are containers used to store data while the program is running. Variables can be named just about anything, and often are named things that make you think about what you store there.
 
@@ -121,7 +122,7 @@ DATE_OF_BIRTH = "04-10-2005"; // <-error
 An attempt to re-assign a value to a constant will fail.
 
 
-=== JavaScript Data Types
+=== Data Types
 
 JavaScript can keep track of a number of different kinds of data, and these are known
 as "primitive Data Types". There are 5 of them.
@@ -172,6 +173,7 @@ let currentSpeed = 55.0;
 let playerOneName = "Rocco";
 
 // constant integer
+
 const maxPainScore = 150000;
 ```
 Now, you try it, write down a variable name and assign

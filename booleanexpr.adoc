@@ -1,3 +1,4 @@
+
 == Boolean Expressions
 
 Many times the idea of a boolean variable, something that is either true or false, seems like an overly simple thing, something that feels rather useless.
@@ -119,3 +120,4 @@ console.log(houseTemp > 65.0 && thermostatSetting == 68.0)
 ```
 
 These log statements should produce TRUE, TRUE, TRUE and FALSE.
+
