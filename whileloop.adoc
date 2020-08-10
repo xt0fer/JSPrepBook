@@ -1,8 +1,10 @@
 
 == Loops
 
-Loops allow you control over repetitive steps you need to do. JavaScript has two different kinds of loops we will talk about, *while* loops and *for* loops. Either one can be used
+Loops allow you control over repetitive steps you need to do in your _control flow_. JavaScript has two different kinds of loops we will talk about, *while* loops and *for* loops. Either one can be used
 interchangeably, but as you will see there are couple cases where using one over the other makes more sense.
+
+The primary prupose of loops is to avoid having lots of repetitive code.
 
 === While Loop
 
