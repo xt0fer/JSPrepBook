@@ -26,7 +26,7 @@ if (account.balance >= amountRequested) {
 }
 ```
 
-JavaScript also has an *else* part to the *if* statement. When the *if* condition is False, the else part gets run.
+JavaScript also has an *else* part to the *if* statement. When the *if* condition is False, the else part gets run. Here, if the account doesn't have enough money to fulfill the amountRequested, the else part of the statement get run, and the customer gets an insuffcient funds receipt.
 
 ```
 if (account.balance >= amountRequested) {
@@ -36,9 +36,12 @@ if (account.balance >= amountRequested) {
 }
 ```
 
+JavaScript can also "nest" if statements, making them very flexible for complicated situations.
+
 [source, js]
 ----
 let timeOfDay = "Afternoon";
+
 if (timeOfDay == "Morning") {
     console.log("Time to eat breakfast");
 } else if (timeOfDay == "Afternoon") {
@@ -47,6 +50,8 @@ if (timeOfDay == "Morning") {
     console.log("Time to eat dinner");
 }
 ----
+
+Notice how this becomes a 3-way choice, depending on the timeOfDay.
 
 [TIP]
 ====
@@ -60,20 +65,16 @@ You should use an if statement for your solution!
 
 Finally, make sure to change the value of the age variable in the repl, to output out different results and test that all three options can happen. What do you have to do to make the `else` clause happen?
 
-(should there be a page break here?)
-
-==== If Statement solution
 [source, js]
 ----
 let userAge = 17;
 if (userAge < 18) {
-console.log("Cannot party with us");
+    console.log("Cannot party with us");
 } else if (userAge >= 18) {
-console.log("Party over here");
+    console.log("Party over here");
 } else {
-console.log("I do not recognize your age");
+    console.log("I do not recognize your age");
 }
 ----
 
-
-(more...)
+If statements are one of th emost commonly used statements to express logic in a JavaScript program. It's important to know them well.
