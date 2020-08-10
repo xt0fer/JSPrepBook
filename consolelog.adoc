@@ -8,17 +8,13 @@ Perhaps the simplest JavaScript program is
 console.log("Hello, World!");
 ----
 
-And while you might _not yet_ understand this _technical description_, 
+This program just prints "Hello, World!". footnote:[And while you might _not yet_ understand this _technical description_, it is a program of one _line_ of code, which says "call the 'log' method on the 'console' object, using the string "Hello, World!" as the argument to be logged."]
 
-****
-it is a program of one _line_ of code, which says "call the 'log' method on the 'console' object, using the string "Hello, World!" as the argument to be logged."
-****
-
-Logging, in this case, means _outputting_ the string "Hello, World!" somewhere. That somewhere is the _console_ a place JavaScript uses to communicate with a user (in this case, us, the programmers.)
+Logging, in this case, means _outputting_ or _printing_ the "Hello, World!" somewhere. That somewhere is the _console_ a place JavaScript uses to communicate with a user (in this case, us, the programmers.)
 
 (And if you haven't done it yet, go to https://repl.it and create an account for yourself. Once that's done you should create a JavaScript repl, a place where you can type the code from this book to the repl and run it, to see what each code snippet does.)
 
-We will use `console.log` to do a lot in the coming pages. It's a simple statement, one that in other languages might be `print` or `write` or `puts` (and why we all cannot just agree on one way to do this, well, beats me.)
+We will use `console.log` to do a lot in the coming pages. It's a simple statement, one that in other languages might be `print` or `write` or `puts` (and why we all cannot just agree on one way to do this, well, beats me. JavaScript's is `console.log`)
 
 Here's your second JavaScript program: 
 
@@ -126,7 +122,7 @@ When you come across code that goes onto multiple lines, do like JavaScript does
 
 === Block Statement
 
-Very often in JavaScript we will see a *block* of statements. It is a list of statements inside of a pair of curly-braces "{ }".
+Very often in JavaScript we will see a *block* of statements. It is a list of statements inside of a pair of curly-braces "{ }". It acts like a container to make clear what statements are included in the block.
 
 ```
 if (magePower > 120.0) {
