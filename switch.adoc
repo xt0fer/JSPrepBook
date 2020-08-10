@@ -25,7 +25,7 @@ Write code to check if a user is old enough to drink.
 - if the user is under 18. Print out cannot party with us
 - Else if the user is 18 or over. Print out party over here
 - Else print out. I do not recognize your age
-===
+====
 
 You should use a switch statement. 
 Finally, make sure to change the value of the age variable to output out different results.
