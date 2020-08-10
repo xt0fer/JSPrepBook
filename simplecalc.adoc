@@ -93,7 +93,7 @@ we then know that we need 365 cans of food. So we can describe that as
 ```
 let totalCost = 0;
 let cansNeeded = 365;
-let costPerCan = 2.0 / 3,0;
+let costPerCan = 2.0 / 3.0;
 
 totalCost = cansNeeded * costPerCan; // right?
 

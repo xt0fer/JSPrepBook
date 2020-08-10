@@ -82,9 +82,9 @@ The *logical operators* are AND and OR, except in JavaScript we use *&&* for AND
 |===
 
 Both sides of a logical operator need to be Boolean expressions. So it's all right to
-use lots of different comparisons, and ocmbine them with && and ||
+use lots of different comparisons, and combine them with && and ||
 
-****
+```
 // deep in a cash machine application...
 (customer.balance() <= 20.00 
 &&
@@ -93,10 +93,10 @@ customer.hasOverDraftProtection() == true)
 (customer.savings.balance() > 20.0
 &&
 customer.canTransferFromSavings() )
-****
+```
 
 See how these conditions could line up to allow a customer to 
-get cash from the cash machine? Again, this is *why* boolean expressions are impoerant and powerful and
+get cash from the cash machine? Again, this is *why* boolean expressions are important and powerful and
 why coders need to be able to use them to get the software *just right*.
 
 

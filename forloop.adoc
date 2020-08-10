@@ -33,15 +33,14 @@ Notice how there are THREE parts to the loop's mechanism.
 * body	console.log()	Runs again and again while the condition is true.
 * step    j++	Executes after the body on each iteration.
 
+Let's show you first glimpse of the *break* statement.
 
-
-==== Break
 [source, js]
 ----
 for(let p = 1; p &lt; 6; p++){
-if(p == 4){
-break;
-}
+    if(p == 4){
+        break;
+    }
 console.log("Loop " + p + " times");
 }	
 ----

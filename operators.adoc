@@ -100,7 +100,7 @@ console.log(answer); // -> 3
 
 === Order is Important
 
-A strange thing about these operators is the order in which they evaluated. Let's take a look at this expression.
+A strange thing about these operators is the order in which they are evaluated. Let's take a look at this expression.
 
 ****
 6 × 2 + 30
@@ -108,12 +108,12 @@ A strange thing about these operators is the order in which they evaluated. Let'
 
 We can do this one of two ways:
 
-* Say we like to do multiplication (I know, who is that?)
-** we would then do the "6 x 2" part first, giving us 12.
+* Say we like to do multiplication _(I know, who is that?)_
+** we would then do the "6 times 2" part first, giving us 12.
 ** then we'd add the 30 to 12 giving us 42 footnote:[The answer to life, the universe and Everything.]
 * But say we don't like multiplication, and want to save it for later
 ** we would then do the add first, 2 + 30 giving us 32
-** and then we multiply it by 6, and whoa we get 192!
+** and then we multiply it by 6, and, whoa, we get 192!
 
 Wait! Which is right? How can the answers be so different, depending on the order we do the math in?
 Well, this shows us that the Order of Operations is important. And people have decided upon
@@ -128,7 +128,7 @@ There is a simple way to remember this.
 Use this phrase to memorize the default order of operations in JavaScript.
 
 ****
-"Please Excuse My Dear Aunt Sally"
+Please Excuse My Dear Aunt Sally
 
 * Parenthesis ( )
 * Exponents 2^3^
@@ -139,12 +139,12 @@ Use this phrase to memorize the default order of operations in JavaScript.
 [WARNING]
 ====
 Divide and Multiply rank equally (and go left to right)
-So, if we have 5 * 3 / 2, we would do the multiply first and then the divide.
-6 * 3 / 2 is 9
+So, if we have "6 * 3 / 2", we would do the multiply first and then the divide.
+"6 * 3 / 2" is 9
 
 Add and Subtract rank equally (and go left to right)
-So if we have 9 - 6 + 5, we do the subtract first and then the add.
-9 - 6 + 5 is 8
+So if we have "9 - 6 + 5", we do the subtract first and then the add.
+"9 - 6 + 5" is 8
 ====
 
 [TIP]
@@ -154,7 +154,7 @@ So if we have 9 - 6 + 5, we do the subtract first and then the add.
 Right way to solve 30 + 6 × 2 is first multiply, 6 × 2 = 12, then add 30 + 12 = 42
 ====
 
-This is because the multiply is _higher priority_ than the addition, _even though the addition is before the multiply in the expression. Let's check it in JavaScript.
+This is because the multiply is _higher priority_ than the addition, _even though the addition is before the multiply_ in the expression. Let's check it in JavaScript.
 
 [source, js]
 ----

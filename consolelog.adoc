@@ -55,7 +55,7 @@ let flourAmount = 3.5;
 console.log(flourAmount); // -> 3.5
 ```
 
-That comment at the end of the concole.log line is showing what you can expect to see in the output. Here it would be "3.5" printed by itself.
+That comment at the end of the console.log line is showing what you can expect to see in the output. Here it would be "3.5" printed by itself.
 
 We can also added useful stuff to the .log call. 
 

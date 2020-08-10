@@ -109,11 +109,11 @@ console.log(height); // -> very tall
 // and then it's a string.
 ```
 
-_You can't see it, but I am slowly shaking my head in disbelief._
+_You can't see it, but I am slowly shaking my head in disbelief. Some day, maybe I'll explain why._
 
 === Constants
 
-Constants are like let variables but they contain values that do NOT change such as a person’s date of birth. Convention is to capitalized constant variable names.
+Constants are like let variables but they contain values that do NOT change such as a person’s date of birth. Convention is to capitalize constant variable names.
 
 ```
 const DATE_OF_BIRTH = "04-02-2005";
