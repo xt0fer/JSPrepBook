@@ -1,8 +1,9 @@
 
-== TODO Arrays
+== Arrays
 
-* IS a MESS Still*
+Arrays are a very powerful idea in many programming languages. Let's start with *why* we need them.
 
+Imagine you have 
 
 === JavaScript Arrays
 <ol>

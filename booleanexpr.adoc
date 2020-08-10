@@ -1,19 +1,45 @@
-== TODO Boolean Expressions
+== Boolean Expressions
 
-When you are coding, you often have to make a choice about what to do next based on some kind of condition. Something like `is the gas tank empty?` or `are we moving faster than 100mph?` In real life, these are considered to be YES or NO kinds of questions. So when if the tank is empty, the question results in a TRUE condition. If there is some gas in the tank, then the question's result is FALSE, "no, it is NOT empty."
+Many times the idea of a boolean variable, something that is either true or false, seems like an overly simple thing, something that feels rather useless.
+
+In fact, booleans in computer code are *everywhere*. They are simple, but also useful in many ways. You've probably heard about how everything in computers is ones and zeros at the lowest level - and that's true. But on this super simple base of `0 and 1` is built all of the power of the internet, and all the apps you've ever used.
+
+When you are coding, you often have to make a choice about what to do next based on some kind of condition or to do something repetitively (over and over) based on sme condition. Something like `is there gas in the car?` or `are we moving faster than 100mph?` In real life, these are considered to be YES or NO kinds of questions. So when if the tank is empty, the question results in a FALSE condition. If there is some gas in the tank, then the question's result is TRUE, "yes, there is some gas in the tank."
 
 And while this may seem super simple to you, and it is, it is also very powerful when used in a program. 
+
+This idea of a condition that is either TRUE or FALSE, is known as a *boolean expression*. And in JavaScript, they crop up everywhere. They are in _conditional statements_ and they are part of _loops_. 
+
+Boolean expressions can be very complex, or very simple:
+
+****
+playerOne.isAlive() === true
+****
+
+might be a key thing to know inside of a game. But it might be more complicated:
+
+****
+player[1].isAlive() === true
+AND
+player[2].isAlive() === true
+AND
+spacestation.hasAir() === true
+****
+
+All three things need to be true to continue the game. We can build very powerful tests to make sure everything is just as we need it to be.
+
+We also need more kinds of boolean expressions when we are programming. Things like *less than* or *greater than or equal to*, and other *comparison operators*.
 
 === Comparison Operators
 
 [source, JavaScript]
 ----
-let x = 5;
+let healthScore = 5;
 ----
 
-is x less than 7??
+is healthScore less than 7?? (very healthy)
 
-is x greater than or equal to 3??
+is healthScore greater than or equal to 3?? (maybe barely alive?)
 
 [cols=",,",options="header",]
 |===
@@ -28,8 +54,24 @@ is x greater than or equal to 3??
 |<= |Less than or equal to |x \<= 5
 |===
 
+Each of these can be used to make it very clear to someone reading your code what you meant. Imagine a flight simulator, where you're flying a big, old fashioned airplane. The code that keeps track of the status of the plane might need to be able to make decisions on boolean expressions like:
+
+```
+altitude > 500.0   // high enough to not hit any trees!
+airspeed >= 85.0   // fast enough to stay in the air.
+
+fuelAvailable <= 5.0   // need to land to refuel!
+
+totalCargoWeight < 6.0  // more than 6 tons and we can't take off!
+
+pilot.isAlive() && copilot.isAlive()  // everything is fine, keep flying.
+```
+
+Like the ANDs in the examples above or this last boolean expression with the "&&" in it, we have in JavaScript the ability to combine expressions into larger more complex expressions using AND and OR.
 
 === Logical Operators
+
+The *logical operators* are AND and OR, except in JavaScript we use *&&* for AND and *||* for OR.
 
 [cols=",,",options="header",]
 |===
@@ -38,13 +80,42 @@ is x greater than or equal to 3??
 |\|\| |Logical OR |room.Temp > 70 || room.Temp < 75
 |===
 
+Both sides of a logical operator need to be Boolean expressions. So it's all right to
+use lots of different comparisons, and ocmbine them with && and ||
 
-Both sides need to be Boolean expressions
+****
+// deep in a cash machine application...
+(customer.balance() <= 20.00 
+&&
+customer.hasOverDraftProtection() == true)
+||
+(customer.savings.balance() > 20.0
+&&
+customer.canTransferFromSavings() )
+****
+
+See how these conditions could line up to allow a customer to 
+get cash from the cash machine? Again, this is *why* boolean expressions are impoerant and powerful and
+why coders need to be able to use them to get the software *just right*.
 
 
 [TIP]
 ====
-* Create 2 variables to use for comparison 
-* Use at least two comparison operators in JS
-* Just put them in a console.log(2 > 1)
+* Create 2 variables to use for a comparison 
+* Use at least two comparison operators in JavaScript
+* And print them "console.log(2 > 1)"
 ====
+
+Here is an example:
+
+```
+let houseTemp = 67.0;
+let thermostatSetting = 70.0;
+
+console.log(houseTemp >= 55.0);
+console.log(houseTemp <= thermostatSetting);
+console.log(thermostatSetting != 72.0);
+console.log(houseTemp > 65.0 && thermostatSetting == 68.0)
+```
+
+These log statements should produce TRUE, TRUE, TRUE and FALSE.
