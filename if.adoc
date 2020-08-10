@@ -15,9 +15,11 @@ if (something-is-true) doSomething;
 Here are a few simple examples.
 
 ```
-if (speed > speedLimit) driver.getsATicket();
+if (speed > speedLimit) 
+    driver.getsATicket();
 
-if (x <= -1) console.log("Cannot have negative numbers!");
+if (x <= -1) 
+    console.log("Cannot have negative numbers!");
 
 if (account.balance >= amountRequested) {
     subtract(account, amountRequested);
@@ -36,7 +38,7 @@ if (account.balance >= amountRequested) {
 }
 ```
 
-JavaScript can also "nest" if statements, making them very flexible for complicated situations.
+JavaScript can also "nest" if statements, making them very flexible for complicated situations. You can also see here how curly-braces make it clear what statements get excuted based on which case or condition is true.
 
 [source, js]
 ----
@@ -44,10 +46,15 @@ let timeOfDay = "Afternoon";
 
 if (timeOfDay == "Morning") {
     console.log("Time to eat breakfast");
+    eatCereal();
 } else if (timeOfDay == "Afternoon") {
     console.log("Time to eat lunch");
+    haveASandwich();
 } else {
     console.log("Time to eat dinner");
+    makeDinner();
+    eatDinner();
+    doDishes();
 }
 ----
 
