@@ -1,7 +1,7 @@
 :title-page:
 = Zip Code Wilmington's Programming in JavaScript
 Kristofer Younger <kris@zipcodewilmington.com>
-v1.3, 2020-08-6
+v1.4, 2020-08-10
 :doctype: book
 :toc:
 :imagesdir: assets/images
@@ -75,6 +75,9 @@ Okay, let go.
 
 == Programming with JavaScript
 
+_(need a section on getting a repl.it account or (even better) use a repl on ZIPCODEs website? need to think on this.) (if we had a javascript repl, we could see progress and traffic and see how much code prospective students are doing.)_
+
+_any section which is titled with TODO is aone that doesn't have a decent first draft yet._
 
 include::consolelog.adoc[]
 include::variables.adoc[]
