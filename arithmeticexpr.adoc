@@ -79,8 +79,6 @@ We use trigonometry to find angles, distances and areas.
 For example, if we wanted to find the area of a triangular piece of land, we could use the
 equation *AreaOfaTriangle = height * base / 2*
 
-(TODO: INSERT a simple triangle diagram)
-
 Therefore we just need to create variables for each and use the operators to calculate the area
 
 [TIP]
