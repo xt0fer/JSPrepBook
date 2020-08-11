@@ -91,6 +91,7 @@ Ready?
 
 Okay, let go. 
 
+:sectnums:
 == Programming with JavaScript
 
 _(need a section on getting a repl.it account or (even better) use a repl on ZIPCODEs website? need to think on this.) (if we hosted a javascript repl on our site, we could see progress and traffic and see how much code prospective students are doing. it would need basic user accounting.)_
