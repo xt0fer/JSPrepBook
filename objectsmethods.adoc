@@ -8,7 +8,7 @@ In contrast, *objects* are used to store *keyed* collections of various data and
 * arrays
 * functions
 * regular expressions 
-* objects footnote:[Now, unlike a lot of languages, JavaScrip has no notion of _classes_. It uses a different model of _prototypes_.]
+* objects footnote:[Now, unlike a lot of languages, JavaScript has no notion of _classes_. It uses a different model of _prototypes_.]
 
 Objects are used to collect and organize data - and that data can be variable values, functions and few other things. Object can also contain other objects(!), in kind of a "nesting" way. This allows for large data structures to be built using a very simple and elegant mechanism.
 
@@ -39,7 +39,7 @@ Here 'name' is a _key_ and "Rocco" is the _value_. This 'player1' object has 5 k
 
 === Property Retrieval
 
-Values can be retreived from inside an object by using a string expression in a [ ] (bracket) pair. You can also use "dot notation". 
+Values can be retrieved from inside an object by using a string expression in a [ ] (bracket) pair. You can also use "dot notation". 
 
 ```
 player1[name] // "Rocco"
@@ -127,7 +127,11 @@ let scoreCounter = {
         return this.score;
     }
 }
+```
 
+We can use that object, with its function methods like this:
+
+```
 scoreCounter.touchdown(); // add 6
 scoreCounter.pat(); // add 1
 scoreCounter.fieldgoal(); // add 3
@@ -135,10 +139,10 @@ scoreCounter.fieldgoal(); // add 3
 console.log(scoreCounter.get_score()); // ??
 ```
 
-There are two data properties (options and score), and 5(!) functions. These functions are called *methods* (functions whihc are attached to an object), and get invoked when you make the _method call_.
+There are two data properties (options and score), and 5(!) functions. These functions are called *methods* (functions which are attached to an object), and get invoked when you make the _method call_.
 
 Notice the *this* variable. _This_ is the special variable used to refer to the _object itself_. (which is a rather advanced topic for this book, so, we'll leave it right there. When you get a chance, read about _this_ in a deeper JavaScript resource.)
 
 === Follow Ons
 
-We have not covered the ideas of *prototypes* and the *prototype chain* here, that's not really needed for the assessment you may be taking. we lso have not discussed an extrememly powerful concept, *closures*. But rest assured, there is much much more for you to learn about Objects in JavaScript. Master what we've written about here and then forge ahead into more complicated and powerful capabilities.
+We have not covered the ideas of *prototypes* and the *prototype chain* here, that's not really needed for the assessment you may be taking. we lso have not discussed an extremely powerful concept, *closures*. But rest assured, there is much much more for you to learn about Objects in JavaScript. Master what we've written about here and then forge ahead into more complicated and powerful capabilities.

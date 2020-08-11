@@ -117,3 +117,5 @@ include::return.adoc[]
 include::functions.adoc[]
 include::modules.adoc[]
 include::objectsmethods.adoc[]
+
+_We need a series of other resources to go on from here. Javascript.info is a really good one, IMO. I'll bet there are other decent free resources._

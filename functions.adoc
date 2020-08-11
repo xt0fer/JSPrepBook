@@ -1,30 +1,31 @@
 
 == Functions
 
- A function is a block of code designed to perform a particular task. A function encloses a set of statements and is a fundamental modular unit of JavaScript. They let you reuse code, and provide a way for you to organize your programs, keeping them easier to understand and easier to modify. It's often said that the craft of programming is the creation of a set of functions and data structures which implement a solution to some problem or set of requirements.
+A function is a block of code designed to perform a particular task. A function encloses a set of statements and is a fundamental modular unit of JavaScript. They let you reuse code, and provide a way for you to organize your programs, keeping them easier to understand and easier to modify. It's often said that the craft of programming is the creation of a set of functions and data structures which implement a solution to some problem or set of requirements.
  
- Functions are objects, like many things in JavaScript. They can be stored in variables, other objects, or even collected into arrays. Functions are very powerful because in JavaScript, they can be passed as argumetns to other functions, returned from functions, and can even have methods attached to them. The most important thing that functions can do is get *invoked*.
+Functions are objects, like many things in JavaScript. They can be stored in variables, other objects, or even collected into arrays. Functions are very powerful because in JavaScript, they can be passed as argumetns to other functions, returned from functions, and can even have methods attached to them. The most important thing that functions can do is get *invoked*.
 
 You create functions easily.
 
 === Function Literal
 
-[source, js]
-----
+Two examples of how you write a function literal.
+
+```
 let add = function (parameter1, parameter2) {
     return parameter1 + parameter2; 
 }
+```
 
-//or 
-
+```
 function add(p1, p2) {
     return p1 + p2;
 }
-----
+```
 
 In both of these cases, you end up with a function named 'add' that takes two parameters and adds them, returning the result. (Yes, you could just write (p1 + p2) and everyone would understand. It's just a very simple example.) Here is another example.
 
-=== Creating and using a function
+=== Creating a Function
 [source, js]
 ----
 function greetUser(username) {
@@ -58,7 +59,7 @@ function prepFlight(airplane) {
 
 You can wee how functions let you perform different things in a particular order, and while you might have no idea _how_ 'loadBaggage' does what it does, you can see how the program preps the airplane object for flight and makes sure everything important is done. Each of the functions from 'loadBaggage' to 'takeoff', is invoked and returns so the next one can be invoked. This is the power of functions.
 
-=== JS and Anonymous Functions
+=== Anonymous Functions
 
 A common pattern used in JavaScript revolves around an *anonymous* function. It's a function without a name, and one that probably only gets called _once_. Something like:
 
@@ -150,11 +151,11 @@ function addThreeNumbers(a, b, c) {
 
 function determineWinner(home, visitor) {
     if (home.score > visitor.score) {
-        return "Home Team Wins! Let's have a Parade!"
+        return "Home Team Wins! Let's have a Parade!";
     } else if (home.score < visitor.score) {
-        return "Visitors Win! (oh Well)"
+        return "Visitors Win! (oh Well)";
     }
-    return "It's a Tie!"
+    return "It's a Tie!";
 }
 
 function makeNegative(number) {
