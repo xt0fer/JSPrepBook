@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>ZipCodeWilmington JS Repl</title>
+
+    <meta name="description" content="Zip Code Wilmington Javascript REPL">
+    <meta name="author" content="zipcodewilmington">
+
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style type="text/css" media="screen">
+        .ace_editor {
+            border: 1px solid lightgray;
+            margin: auto;
+            height: 200px;
+            /*width: 90%;*/
+        }
+        
+        .scrollmargin {
+            height: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>
+                    ZipCodeWilmington JavaScript REPL
+                </h3>
+                <pre id="editor">
+
+function foo(items) {
+    var i; 
+    for (i = 0; i &lt; items; i++) 
+    {
+        console.log("Ace Rocks " + i); 
+    }
+}
+
+foo(3);
+</pre>
+                <div class="btn-group" role="group">
+                    <button class="btn btn-primary" type="button" id='safe'>Run</button>
+                </div>
+                <pre id="consolewin">
+// console.log() output here
+                </pre>
+                <iframe sandbox='allow-scripts' id='sandboxed' src='exec.html'></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="repl.js "></script>
+</body>
+
+</html>
+
+</html>

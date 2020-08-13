@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>REPL's Frame</title>
+    <script>
+        // window._console = {
+        //     clear: function() {
+        //         output.innerHTML = '';
+        //     },
+        //     log: function() {
+        //         var l = arguments.length,
+        //             i = 0;
+        //         for (; i < l; i++) {
+        //             log('' + arguments[i], true);
+        //         }
+        //     },
+        //     error: function(err) {
+        //         log(err.message || err, 'error');
+        //     }
+        // };
+
+        window.addEventListener('message', function(e) {
+            var mainWindow = e.source;
+            var result = '';
+            try {
+                result = eval(e.data);
+            } catch (e) {
+                result = 'eval() threw an exception.';
+            }
+            if (typeof result === "undefined") {
+                result = "okay.";
+            }
+            console.log("eval:", result, e.origin, e.source);
+            mainWindow.postMessage(result, event.origin);
+        });
+    </script>
+</head>
+
+</html>
