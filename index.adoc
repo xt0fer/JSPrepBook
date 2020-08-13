@@ -34,8 +34,9 @@ Finally, because in this book all we aim to teach you is "programming in the sma
 
 ==== You'll learn it eventually
 
-The truth is, in today's coding world, all of us eventually learn to do things with JavaScript. So, start early, get comfortable with it, and then go on an study other computer 
-languages like Java or Python. JavaScript will always be there, waiting patiently for you to return.
+The truth is, in today's coding world, all of us eventually learn to do things with JavaScript. 
+So, start early, get comfortable with it, and then go on and study other computer languages like Java or Python. 
+JavaScript will always be there, waiting patiently for you to return.
 
 === Coding _The Hard Way_. 
 
