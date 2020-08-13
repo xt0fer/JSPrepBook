@@ -21,9 +21,11 @@ var
 (function () {
     var logg = [];
     console.log = function() {
+        let args = [];
         for (var k = 0; k < arguments.length; k++) {
-            logg.push(arguments[k]);
+            args.push(arguments[k]);
         }
+        logg.push(args.join(" "));
     }
 //pre
 `;
@@ -55,6 +57,7 @@ function evaluate() {
     var frame = document.getElementById('sandboxed');
     // var code = document.getElementById('code').value;
     var code = preamble + editor.getValue() + postamble;
+    clearConsoleWin();
     //console.log(code);
     // Note that we're sending the message to "*", rather than some specific
     // origin. Sandboxed iframes which lack the 'allow-same-origin' header
