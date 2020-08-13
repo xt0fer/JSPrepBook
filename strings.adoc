@@ -175,42 +175,47 @@ Want to bet there is also a "toLowerCase()" method as well?
 
 === Summary of substring methods
 
+Take a look at these various ways of copy out a substring from some source string. In this case, the source string is name 'rapper'. 
+
 ```
 let rapper = "mikaila";
+
 console.log(rapper.substr(0,4));  // mika
 console.log(rapper.substr(1,3));  // ika
+
 console.log(rapper.substring(0,4));  // mika
 console.log(rapper.substring(1,4));  // ika
+
 console.log(rapper.slice(0,4)); // mika
 console.log(rapper.slice(1,4)); // ika
 console.log(rapper.slice(1,3)); // ik
 ```
 
+We're using one of the three different substring methods to copy out some smaller piece of the 'rapper' string.
+
 === Reverse a String
+
+Now let's reverse the string "STOP" to say "POTS".
 
 [TIP]
 ==== 
 To Reverse a String
 
-Now let's reverse the string STOP to say POTS
-
 Step 1 - Use the split() to return an array of strings
 
-Step2 - Use the reverse() method to reverse the newly created array of string characters
+Step 2 - Use the reverse() method to reverse the newly created array of string characters
 
-Use the join() method to join all elements into a String
-
-Print out the reversed string
+Step 3 - Use the join() method to join all elements into a String
 ====
 
 Solution
 [source, js]
 ----
 var str = "Christopher";
-var res = str.substring(4, 8).toUpperCase();   // -> "STOP"
-var spl = res.split("");                       // -> ["S", "T", "O", "P"]
-var rev = spl.reverse();                       // -> ["P", "O", "T", "S"]
-var result = rev.join("");                     // -> "POTS"
+var res = str.substring(4, 8).toUpperCase(); // -> "STOP"
+var spl = res.split("");  // -> ["S", "T", "O", "P"]
+var rev = spl.reverse();  // -> ["P", "O", "T", "S"]
+var result = rev.join("");  // -> "POTS"
 console.log(result); // -> POTS
 ----
 
