@@ -31,8 +31,8 @@
             if (typeof result === "undefined") {
                 result = "okay.";
             }
-            console.log("eval:", result, e.origin, e.source);
-            mainWindow.postMessage(result, event.origin);
+            // console.log("eval:", result, e.origin, e.source);
+            mainWindow.postMessage(result, "*");
         });
     </script>
 </head>

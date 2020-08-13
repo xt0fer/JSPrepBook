@@ -55,11 +55,12 @@ foo(3);
                 <pre id="consolewin">
 // console.log() output here
                 </pre>
-                <iframe sandbox='allow-scripts' id='sandboxed' src='exec.html'></iframe>
+                <iframe sandbox='allow-scripts allow-same-origin' id='sandboxed' src='exec.html'></iframe>
             </div>
         </div>
     </div>
     <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="lib/jailed.js"></script> -->
     <script src="repl.js "></script>
 </body>
 
