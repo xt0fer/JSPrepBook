@@ -40,27 +40,27 @@
                 <pre id="editor">
 
 function foo(items) {
-    var i; 
-    for (i = 0; i &lt; items; i++) 
+    for (let i = 0; i < items; i++) 
     {
-        console.log("Ace Rocks " + i); 
+        console.log("Zip Code Rocks " + i + "!"); 
     }
 }
 
 foo(3);
+
 </pre>
                 <div class="btn-group" role="group">
-                    <button class="btn btn-primary" type="button" id='safe'>Run</button>
+                    <button class="btn btn-primary" type="button" id='safe'>Run <span class="glyphicon glyphicon-play"></span></button>
+                    <button class="btn btn-primary" type="button" id='clear'>Clear <span class="glyphicon glyphicon-play"></span></button>
                 </div>
                 <pre id="consolewin">
 // console.log() output here
                 </pre>
-                <iframe sandbox='allow-scripts allow-same-origin' id='sandboxed' src='exec.html'></iframe>
+                <iframe sandbox='allow-scripts' id='sandboxed' src='exec.html'></iframe>
             </div>
         </div>
     </div>
     <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-    <!-- <script src="lib/jailed.js"></script> -->
     <script src="repl.js "></script>
 </body>
 
