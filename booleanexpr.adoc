@@ -24,7 +24,7 @@ player[1].isAlive() === true
 AND
 player[2].isAlive() === true
 AND
-spacestation.hasAir() === true
+spaceStation.hasAir() === true
 ****
 
 All three things need to be true to continue the game. Using boolean expressions, we can build very powerful tests to make sure everything is just as we need it to be.
@@ -38,9 +38,10 @@ We also need more kinds of boolean expressions when we are programming. Things l
 let healthScore = 5;
 ----
 
-is healthScore less than 7?? (very healthy)
+We need a way to ask about expressions like "is healthScore less than 7?? (very healthy)" or
+"is healthScore greater than or equal to 3?? (maybe barely alive?)"
 
-is healthScore greater than or equal to 3?? (maybe barely alive?)
+To do that we need a bunch of *comparison operators*.
 
 [cols=",,",options="header",]
 |===
@@ -52,7 +53,7 @@ is healthScore greater than or equal to 3?? (maybe barely alive?)
 |> |Greater than |x > 1
 |< |Less than |x < 10
 |>= |Greater than or equal to |x >= 5
-|<= |Less than or equal to |x \<= 5
+|\<= |Less than or equal to |x \<= 5
 |===
 
 Each of these can be used to make it very clear to someone reading your code what you meant. Imagine a flight simulator, where you're flying a big, old fashioned airplane. The code that keeps track of the status of the plane might need to be able to make decisions on boolean expressions like:
