@@ -1,5 +1,5 @@
 :title-page:
-= Zip Code Wilmington's Programming in JavaScript (DRAFT - NOT FOR RELEASE)
+= Zip Code Wilmington's Programming in JavaScript (DRAFT)
 Kristofer Younger <kris@zipcodewilmington.com>
 v1.6.1, 2020-08-17
 :doctype: book
