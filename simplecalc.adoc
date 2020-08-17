@@ -75,15 +75,14 @@ Let's do another.
 
 A friend of ours is offering you a "free cat". You're not allergic to
 cats but before you say yes, you want to know how much it'll cost to feed the 
-cat for a year. (and then, about how much each month.)
+cat for a year. (and then, aproximately how much each month.)
 
 ****
 We find out that cat food costs $2 for 3 cans.
 Each can will feed the cat for 1 day. (Half the can in the morning, the rest
 in the evening.)
-There are 52 weeks in the year and 7 days in the week. (Sometimes you just gotta say the
-Very Obvious to make sure you're thinking it all through.)
-But, we know there are 365 days in a year.
+We know there are 365 days in a year.
+We also know that there are 12 months in the year.
 So how much will it cost to feed the cat for a year?
 ****
 
@@ -97,13 +96,13 @@ let costPerCan = 2.0 / 3.0;
 
 totalCost = cansNeeded * costPerCan; // right?
 
+let monthsPerYear = 12;
+let costPerMonth = totalCost / monthsPerYear;
 // print result of computation
-console.log(totalCost);
+console.log(totalCost, costPerMonth);
 ```
 
-What's going to be the answer? footnote:[totalCost will be $243.33] Run it in your Repl.it window.
-Notice how the weeks stuff disappeared wasn't used in this problem. Sometimes that 
-happens, a problem describes some stuff you can ignore.
+What's going to be the answer? footnote:[totalCost will be $243.33 and $20.28 per month.] Run it in your Repl window to work it all out.
 
 And let's do one more.
 

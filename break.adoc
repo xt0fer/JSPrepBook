@@ -29,7 +29,7 @@ for (let i = 0; i < 10; i++) {
 
   // if true, skip the remaining part of the body
   // will only be true if the number is even
-  if (i % 2 == 0) continue;
+  if (i % 2 === 0) continue;
 
   console.log(i); // prints 1, then 3, 5, 7, 9
 }

@@ -1,6 +1,6 @@
 == Arithmetic Operators
 
-JavaScript can do math. And many early programming problems deal with doing fairly easy math. There are ways to do lots of useful things with numbers. 
+JavaScript can do math. And many early programming problems you will come across deal with doing fairly easy math. There are ways to do lots of useful things with numbers. 
 
 === Basics
 

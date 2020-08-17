@@ -28,7 +28,7 @@ if (account.balance >= amountRequested) {
 }
 ```
 
-JavaScript also has an *else* part to the *if* statement. When the *if* condition is False, the else part gets run. Here, if the account doesn't have enough money to fulfill the amountRequested, the else part of the statement get run, and the customer gets an insuffcient funds receipt.
+JavaScript also has an *else* part to the *if* statement. When the *if* condition is False, the else part gets run. Here, if the account doesn't have enough money to fulfill the amountRequested, the else part of the statement gets run, and the customer gets an insufficient funds receipt.
 
 ```
 if (account.balance >= amountRequested) {
@@ -44,10 +44,10 @@ JavaScript can also "nest" if statements, making them very flexible for complica
 ----
 let timeOfDay = "Afternoon";
 
-if (timeOfDay == "Morning") {
+if (timeOfDay === "Morning") {
     console.log("Time to eat breakfast");
     eatCereal();
-} else if (timeOfDay == "Afternoon") {
+} else if (timeOfDay === "Afternoon") {
     console.log("Time to eat lunch");
     haveASandwich();
 } else {
@@ -64,8 +64,8 @@ Notice how this becomes a 3-way choice, depending on the timeOfDay.
 ====
 Write code to check if a user is old enough to drink.
 
-* if the user is under 18. Print out "Cannot party with us"
-* Else if the user is 18 or over, Print out "Party over here"
+* if the user's age is under 18. Print out "Cannot party with us"
+* Else if the user's age is 18 or over, Print out "Party over here"
 * Else print out, "I do not recognize your age"
 ====
 You should use an if statement for your solution!
