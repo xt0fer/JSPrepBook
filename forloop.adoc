@@ -18,6 +18,11 @@ for(let j = 1; j < 6;  j++){
     // loop body code
     console.log(j);
 }
+```
+
+This loop will print out: 
+
+```
 // print 
 1 
 2 
@@ -26,19 +31,22 @@ for(let j = 1; j < 6;  j++){
 5 
 ```
 
-Notice how there are THREE parts to the loop's mechanism. 
+Notice how there are THREE parts to the FOR loop's mechanism. 
 
 * begin	j = 1	Executes once upon entering the loop.
 * condition	j < 6	Checked before every loop iteration. If false, the loop stops.
-* body	console.log()	Runs again and again while the condition is true.
 * step    j++	Executes after the body on each iteration.
 
-Let's show you first glimpse of the *break* statement.
+and
+
+* body	console.log()	Runs again and again while the condition is true.
+
+Let's show you another glimpse of the *break* statement.
 
 [source, js]
 ----
-for(let p = 1; p &lt; 6; p++){
-    if(p == 4){
+for(let p = 1; p < 6; p++){
+    if(p === 4){
         break;
     }
 console.log("Loop " + p + " times");

@@ -4,7 +4,7 @@
 Loops allow you control over repetitive steps you need to do in your _control flow_. JavaScript has two different kinds of loops we will talk about, *while* loops and *for* loops. Either one can be used
 interchangeably, but as you will see there are couple cases where using one over the other makes more sense.
 
-The primary prupose of loops is to avoid having lots of repetitive code.
+The primary purpose of loops is to avoid having lots of repetitive code.
 
 === While Loop
 
@@ -40,7 +40,7 @@ While loops work well in situations where the condition you are testing at the t
 of the loop is one that may not be related to a simple number. 
 
 ```
-while (player[1].isAlive() == true) {
+while (player[1].isAlive() === true) {
     player[1].takeTurn();
     game.updateStatus(player[1]);
 }
