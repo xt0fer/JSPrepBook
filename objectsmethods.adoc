@@ -3,21 +3,32 @@
 
 There are only a few data types in JavaScript. All but one of them are called “primitive” data types, because their values contain only a single thing (be it a string or a number or whatever).
 
-In contrast, *objects* are used to store *keyed* collections of various data and more complex entities. In JavaScript, objects penetrate almost every aspect of the language. There are a few different objects, all these are actually objects in JavaScript, which makes it rather elegant. 
+In contrast, *objects* are used to store *keyed* collections of various data and more complex entities. _Objects_ add tremendous power to Javascript and penetrate almost every aspect of the language. Here are a few different objects, all these are actually objects in JavaScript, which makes the language rather elegant. 
 
 * arrays
 * functions
 * regular expressions 
 * objects footnote:[Now, unlike a lot of languages, JavaScript has no notion of _classes_. It uses a different model of _prototypes_.]
 
-Objects are used to collect and organize data - and that data can be variable values, functions and few other things. Object can also contain other objects(!), in kind of a "nesting" way. This allows for large data structures to be built using a very simple and elegant mechanism.
+Objects are used to collect and organize data - and that data can be variable values, functions and other things. Object can also contain other objects(!), in kind of a "nesting" way. This allows for large data structures to be built using a very simple and elegant mechanism.
 
-An object (in this case an _object literal_) can be created with figure brackets {…} with an optional list of properties. A property is a “key: value” pair, where key is a string (also called a “property name”), and value can be anything. footnote:[In some languages, a listing of key/value pairs is called a dictionary, an associative array or a hashtable.]
+An object (in this case an _object literal_) can be created with curly braces {…} with an optional list of properties. A property is a “key: value” pair, where key is a string (also called a “property name”), and value can be anything. footnote:[In some languages, a listing of key/value pairs is called a dictionary, an associative array or a hashtable.]
+
+```
+let katniss = {
+    firstname: "Katniss",
+    lastname: "Everdene",
+    homedistrict: 12,
+    skills: ["foraging", "wildlife", "hunting", "survival"]
+}
+```
+
+Notice how you use commas for all but the last one in the list?
 
 === Object Creation
 
-We can imagine an object as container where everything has a key, and we can get data from the key, add data with a key to an object, and delete a key (with it's data value) from the object.
-Each pair can be referred to as a *property*. Properties can be almost any JavaScript data type at all. Let's create a sample player object for a game.
+We can imagine an object as a container where everything has a key, and we can get data from the key, add data with a key to an object, and delete a key (with it's data value) from the object.
+Each pair (of key and value) can be referred to as a *property*. Properties can be almost any JavaScript data type at all. Let's create a sample player object for a game.
 
 ```
 let player1 = {
@@ -65,7 +76,9 @@ console.log(player1.weapons.sword);  // Anduril
 
 === Object Reference
 
-This next little bit will stretch your mind a bit. If I have an object,
+This next little bit will stretch your mind a bit. 
+
+If I have an object,
 
 ```
 let airplane512 = {
@@ -74,9 +87,11 @@ let airplane512 = {
     passengerLimit: 253,
     passengersOnboard: 0
 }
+```
 
-// I have plane object.
+We have built a plane object.
 
+```
 let flight77 = airplane512;  // I'm assigning a plane to a flight
 
 flight77.destination = "Tokyo"; //create two new properties in the object
@@ -91,7 +106,7 @@ console.log(flight77.type); // airbusA330
 console.log(airplane512.type); // airbusA330
 ```
 
-This is because both flight77 and airplane512 _refer to the *same* object.
+This is because both flight77 and airplane512 _refer to the *same* object. so when you make changes through the flight77 name, the properties in the object change, and you can get and/or set properties through the airplane512 name as well. This proves very powerful in many cases.
 
 === Delete Properties
 
@@ -104,13 +119,16 @@ delete flight77.origin;
 
 === Object Functions
 
-Now to make things even more powerful, JavaScript objects can have _functions_ attached to them. Let's build a special counter object, something we might use a program or app somewhere.
+Now to make things even more powerful, JavaScript objects can have _functions_ attached to them. Let's build a special counter object, something we might use in a program or app somewhere.
 
 As you may be aware, in American football there are four common changes to a team's score during a game;  
 ```
 let scoreCounter = {
-    options: {"fieldgoal": 3, "touchdown": 6, "point_after_touchdown": 1, "safety": 2},
+    options: {"fieldgoal": 3, "touchdown": 6, 
+    "point_after_touchdown": 1, "safety": 2},
+    
     score: 0,
+    
     touchdown: function () {
         this.score += this.options["touchdown"];
     },
@@ -139,10 +157,14 @@ scoreCounter.fieldgoal(); // add 3
 console.log(scoreCounter.get_score()); // ??
 ```
 
-There are two data properties (options and score), and 5(!) functions. These functions are called *methods* (functions which are attached to an object), and get invoked when you make the _method call_.
+There are two data properties (options and score), and 5(!) functions. These functions are called *methods* (functions which are attached to an object), and get invoked when you make the _method call_ (or _invoke_ the method on the _object_).
 
 Notice the *this* variable. _This_ is the special variable used to refer to the _object itself_. (which is a rather advanced topic for this book, so, we'll leave it right there. When you get a chance, read about _this_ in a deeper JavaScript resource.)
 
 === Follow Ons
 
-We have not covered the ideas of *prototypes* and the *prototype chain* here, that's not really needed for the assessment you may be taking. we lso have not discussed an extremely powerful concept, *closures*. But rest assured, there is much much more for you to learn about Objects in JavaScript. Master what we've written about here and then forge ahead into more complicated and powerful capabilities.
+There are a number of very powerful things we have left out of this discussion about JavaScript objects.
+We have not covered the ideas of *prototypes* and the *prototype chain* here, that's not really needed for the assessment you may be taking. We also have not discussed an extremely powerful concept, *closures*. But rest assured, there is much much more for you to learn about Objects in JavaScript. 
+Master what we've written about here and then forge ahead into more complicated and powerful capabilities.
+
+There is a lot more to learn about JavaScript.

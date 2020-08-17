@@ -32,7 +32,7 @@ Car's Speed:  55
 
 as the program's output.
 
-Cool, huh? The ability to communicate with you is one of JavaScript's most fundamental capabilities. And you've run two js programs. Congratulations, you're a coder. (well, at least for today you are.)
+Cool, huh? The ability to communicate with you is one of JavaScript's most fundamental capabilities. And you've run two JavaScript programs. Congratulations, you're a coder. (well, at least for today you are.)
 
 == Comments
 
