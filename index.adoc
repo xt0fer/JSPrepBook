@@ -1,7 +1,7 @@
 :title-page:
 = Zip Code Wilmington's Programming in JavaScript (DRAFT - NOT FOR RELEASE)
 Kristofer Younger <kris@zipcodewilmington.com>
-v1.5, 2020-08-11
+v1.6.1, 2020-08-17
 :doctype: book
 :toc:
 :imagesdir: assets/images
@@ -9,10 +9,20 @@ v1.5, 2020-08-11
 :homepage: https://zipcodewilmington.com/jsprep
 :pdf-page-size:  [5.5in, 8.5in]
 :preface-title: Preface
-I'd like to thank the instructors of ZiCodeWilmington for help editing this book: Chris Nobles, Roberto DeDeus, Tyrell Hoxter, L. Dolio Durant, and Mikaila Akeredolu. Without them, this book would have remained a "nice to have".
+I'd like to thank the instructors of ZipCodeWilmington for help editing this book: Chris Nobles, Roberto DeDeus, Tyrell Hoxter, L. Dolio Durant, and Mikaila Akeredolu. Without them, this book would have remained a "nice to have".
 I especially wish to thank Mikaila: without his brilliant prep session slides as the starting point for this book, I would never have thought a small book on the basic fundamentals of programming would be possible or even useful. 
 
 Zip Code Wilmington is a non-profit coding boot-camp in Delaware for people who wish to change their lives by becoming proficient at coding. Find out more about us at https://zipcodewilmington.com
+
+
+[colophon]
+
+The Zip Code Wilmington Press, Wilmington, Delaware
+
+(C) 2020 by Zip Code Wilmington
+
+Published in the U.S.A.
+
 
 == About this book
 
@@ -26,16 +36,17 @@ JavaScript is a fairly easy programming language to learn, and we're going to us
 
 ==== Simple to Use
 
-JavaScript also has the advantage that one can learn to use it without a lot of setup on a computer. In fact, we recommend the use of the <repl.it> web site for the running of the JavaScript examples you'll find in this book. You run almost each code snippet and _see_ what the code does.
+JavaScript also has the advantage that one can learn to use it without a lot of setup on a computer. In fact, we recommend the use of a "REPL" for the running of the JavaScript examples you'll find in this book. The REPL at https://code.zipcode.rocks is a simple webpage where you can edit JavaScript scripts and run them. You can run almost every code snippet in the book and _see_ what the code does.
 
-==== Gets you focused on coding
+==== Focuses on coding
 
 Finally, because in this book all we aim to teach you is "programming in the small", JavaScript is great for that. Many of the examples here are significantly less that 20 lines in length. We want you to get better at looking at small blocks of code to see how they work. These smaller examples and concepts are a core building block as you become proficient in coding. 
 
 ==== You'll learn it eventually
 
-The truth is, in today's coding world, all of us eventually learn to do things with JavaScript. So, start early, get comfortable with it, and then go on an study other computer 
-languages like Java or Python. JavaScript will always be there, waiting patiently for you to return.
+The truth is, in today's coding world, all of us eventually learn to do things with JavaScript. 
+So, start early, get comfortable with it, and then go on and study other computer languages like Java or Python. 
+JavaScript will always be there, waiting patiently for you to return.
 
 === Coding _The Hard Way_. 
 
@@ -94,11 +105,6 @@ Okay, let go.
 :sectnums:
 == Programming with JavaScript
 
-_As I've been thinking on it, maybe instead of a Repl.it account or a Repl on the website, its a just a simple HTML page with a code editor and Run button and a 'console' output text log showing the output from the editor's buffer? We could host such a thing on our site, and when a student was using it, it would all run inside their browser. Make it very simple, no Node or other junk to make it slow and prone to bugs?_
-
-_(need a section on getting a repl.it account or (even better) use a repl on ZIPCODEs website? need to think on this.) (if we hosted a javascript repl on our site, we could see progress and traffic and see how much code prospective students are doing. it would need basic user accounting.)_
-
-
 include::consolelog.adoc[]
 include::variables.adoc[]
 include::operators.adoc[]
@@ -114,6 +120,7 @@ include::whileloop.adoc[]
 include::forloop.adoc[]
 include::break.adoc[]
 include::return.adoc[]
+include::patterns.adoc[]
 include::functions.adoc[]
 include::modules.adoc[]
 include::objectsmethods.adoc[]

@@ -2,6 +2,7 @@ var editor = ace.edit("editor", {
     theme: "ace/theme/tomorrow_night_blue",
     mode: "ace/mode/javascript",
     autoScrollEditorIntoView: true,
+    fontSize: 16,
     maxLines: 15,
     minLines: 15
 });
@@ -10,6 +11,7 @@ var consolewin = ace.edit("consolewin");
 consolewin.setOptions({
     theme: "ace/theme/terminal",
     autoScrollEditorIntoView: true,
+    fontSize: 16,
     maxLines: 8,
     minLines: 8
 });
@@ -19,18 +21,20 @@ var
     preamble = `
 // pre
 (function () {
-    var logg = [];
+    var _logg = [];
     console.log = function() {
+        let args = [];
         for (var k = 0; k < arguments.length; k++) {
-            logg.push(arguments[k]);
+            args.push(arguments[k]);
         }
+        _logg.push(args.join(" "));
     }
 //pre
 `;
 
 var postamble = `
 //post
-return logg.join("\\n") + "\\n";
+return _logg.join("\\n") + "\\n";
 })();
 
 //post
@@ -55,6 +59,7 @@ function evaluate() {
     var frame = document.getElementById('sandboxed');
     // var code = document.getElementById('code').value;
     var code = preamble + editor.getValue() + postamble;
+    clearConsoleWin();
     //console.log(code);
     // Note that we're sending the message to "*", rather than some specific
     // origin. Sandboxed iframes which lack the 'allow-same-origin' header

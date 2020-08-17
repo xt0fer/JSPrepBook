@@ -20,6 +20,7 @@
             border: 1px solid lightgray;
             margin: auto;
             height: 200px;
+            font-size: 18px/normal;
             /*width: 90%;*/
         }
         
@@ -35,21 +36,21 @@
         <div class="row">
             <div class="col-md-12">
                 <h3>
-                    ZipCodeWilmington JavaScript REPL
+                    <img src='https://www.zipcodewilmington.com/hs-fs/hubfs/SI-Images/press/ZipCode_Logo_tag_CMYK_300x200.jpg?width=300&height=200&name=ZipCode_Logo_tag_CMYK_300x200.jpg' height=100px width=134px /> JavaScript Read-Eval-Print Loop (JS-REPL)
                 </h3>
                 <pre id="editor">
 
 function foo(items) {
     for (let i = 0; i < items; i++) 
     {
-        console.log("Zip Code Rocks " + i + "!"); 
+        console.log("Zip Code Rocks " + i + "! "); 
     }
 }
 
 foo(3);
 
 </pre>
-                <div class="btn-group" role="group">
+                <div class="btn-group" role="group ">
                     <button class="btn btn-primary" type="button" id='safe'>Run <span class="glyphicon glyphicon-play"></span></button>
                     <button class="btn btn-primary" type="button" id='clear'>Clear <span class="glyphicon glyphicon-play"></span></button>
                 </div>
@@ -61,9 +62,12 @@ foo(3);
         </div>
     </div>
     <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-    <script src="repl.js "></script>
+    <script src="repl.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Copyright, 2020. Zip Code Wilmington, All Rights Reserved.</span>
+        </div>
+    </footer>
 </body>
-
-</html>
 
 </html>
