@@ -161,7 +161,7 @@ Store a value in each.
 // Here are some samples. 
 
 // integer
-let x=0;
+let x = 0;
 
 // boolean
 let playerOneAlive = true;
