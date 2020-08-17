@@ -3,7 +3,7 @@
 
 A function is a block of code designed to perform a particular task. A function encloses a set of statements and is a fundamental modular unit of JavaScript. They let you reuse code, and provide a way for you to organize your programs, keeping them easier to understand and easier to modify. It's often said that the craft of programming is the creation of a set of functions and data structures which implement a solution to some problem or set of requirements.
  
-Functions are objects, like many things in JavaScript. They can be stored in variables, other objects, or even collected into arrays. Functions are very powerful because in JavaScript, they can be passed as argumetns to other functions, returned from functions, and can even have methods attached to them. The most important thing that functions can do is get *invoked*.
+Functions are objects, like many things in JavaScript. They can be stored in variables, other objects, or even collected into arrays. Functions are very powerful because in JavaScript, they can be passed as arguments to other functions, returned from functions, and can even have methods attached to them. The most important thing that functions can do is get *invoked*.
 
 You create functions easily.
 
@@ -30,6 +30,7 @@ In both of these cases, you end up with a function named 'add' that takes two pa
 ----
 function greetUser(username) {
     console.log( "Hello " + username);
+    return;
 }
 
 //calling/Invoking the function
@@ -38,9 +39,9 @@ greetUser("Mike Jones"); // "Hello Mike Jones"
 
 === Invoking Functions
 
-Functions are meant to be _invoked_. So you can have one function all another and so on, it's very common.
+Functions are meant to be _invoked_. So you can have one function call another function which calls a third function and so on, it's very common.
 
-Imagine we have a program that gets an airplane ready for flight. we can imagine a whole series of functions we'd have to write. Things like 'loadPassengers', 'loadBaggage', 'loadFuel', 'checkTirePressures', and so on. Then we might have a 'higher level' functions which brings all these pieces together:
+Imagine we have a program that gets an airplane ready for flight. We can imagine a whole series of functions we'd have to write. Things like 'loadPassengers', 'loadBaggage', 'loadFuel', 'checkTirePressures', and so on. Then we might have a 'higher level' functions which brings all these pieces together:
 
 ```
 function prepFlight(airplane) {
@@ -53,11 +54,13 @@ function prepFlight(airplane) {
     departGate(airplane);
 
     taxiToRunway(airplane, mainRunway90);
-    takeoff(airplane.pilot, airplane);    
+    takeoff(airplane.pilot, airplane);
+
+    return;
 }
 ```
 
-You can wee how functions let you perform different things in a particular order, and while you might have no idea _how_ 'loadBaggage' does what it does, you can see how the program preps the airplane object for flight and makes sure everything important is done. Each of the functions from 'loadBaggage' to 'takeoff', is invoked and returns so the next one can be invoked. This is the power of functions.
+You can see how functions let you perform different things in a particular order, and while you might have no idea _how_ 'loadBaggage' does what it does, you can see how the program preps the airplane object for flight and makes sure everything important is done. Each of the functions from 'loadBaggage' to 'takeoff', is invoked and returns so the next one can be invoked. This is the power of functions - the ability to take some code and put it a function so that it much easier to understand.
 
 === Anonymous Functions
 
@@ -79,14 +82,14 @@ Look at that last line. What's going on here? Well, first we are creating a func
 You see this often in JavaScript, it's way to put some code into an argument to another function call.
 
 ```
-let milliSecs = 1000;
+let milliSecInASecond = 1000;
 
 setTimeout(function () {
     console.log('We waited for 5 seconds, to print this')
-}, 5 * milliSecs);
+}, 5 * milliSecInASecond);
 ```
 
-See how we pass an anonymous function to 'setTimeout' as one argument, and a timer value as the second argument? The idea here is a the anonymous function gets called at 5 seconds in the future. (Like scheduling an alarm to do something in 5 seconds).
+See how we pass an anonymous function to 'setTimeout' as one argument, and a timer value as the second argument? The idea here is that the anonymous function gets called at 5 seconds in the future. (Like scheduling an alarm to do something in 5 seconds).
 
 === Function Return
 
@@ -167,6 +170,7 @@ function makeNegative(number) {
 }
 ```
 
+Remember how we had the expression ot see if a number was even? ( x % 2 === 0)
 Now, here's a way to decide is number was divisible cleanly by another, it's a standard arithmetic expression:
 
 ```
@@ -180,6 +184,7 @@ console.log((8 % 2 === 0)); // true
 console.log((7 % 2 === 0)); // false
 console.log((4 % 2 === 0)); // true
 ```
+But we can use this to see if something is evenly divisible by 3 or 5.
 
 Try to write a function that will perform the following requirements. 
 
@@ -188,9 +193,9 @@ Try to write a function that will perform the following requirements.
 * Create a function called zipCoder
 * Your function takes one parameter of type number
 * Your function checks and does the following
+* If parameter is divisible by 3 and 5 (15). Print ZipCoder
 * If parameter is divisible by 3. Print Zip
 * If parameter is divisible by 5. Print Coder
-* If parameter is divisible by 3 and 5. Print ZipCoder
 Phew...Finally
 * Call the method and pass in 45 as your parameter
 ====
