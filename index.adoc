@@ -1,7 +1,7 @@
 :title-page:
 = Zip Code Wilmington's Programming in JavaScript (DRAFT - NOT FOR RELEASE)
 Kristofer Younger <kris@zipcodewilmington.com>
-v1.6, 2020-08-14
+v1.6.1, 2020-08-17
 :doctype: book
 :toc:
 :imagesdir: assets/images
@@ -13,6 +13,16 @@ I'd like to thank the instructors of ZipCodeWilmington for help editing this boo
 I especially wish to thank Mikaila: without his brilliant prep session slides as the starting point for this book, I would never have thought a small book on the basic fundamentals of programming would be possible or even useful. 
 
 Zip Code Wilmington is a non-profit coding boot-camp in Delaware for people who wish to change their lives by becoming proficient at coding. Find out more about us at https://zipcodewilmington.com
+
+
+[colophon]
+
+The Zip Code Wilmington Press, Wilmington, Delaware
+
+(C) 2020 by Zip Code Wilmington
+
+Published in the U.S.A.
+
 
 == About this book
 
@@ -26,9 +36,9 @@ JavaScript is a fairly easy programming language to learn, and we're going to us
 
 ==== Simple to Use
 
-JavaScript also has the advantage that one can learn to use it without a lot of setup on a computer. In fact, we recommend the use of the <repl.it> web site for the running of the JavaScript examples you'll find in this book. You run almost each code snippet and _see_ what the code does.
+JavaScript also has the advantage that one can learn to use it without a lot of setup on a computer. In fact, we recommend the use of a "REPL" for the running of the JavaScript examples you'll find in this book. The REPL at https://code.zipcode.rocks is a simple webpage where you can edit JavaScript scripts and run them. You can run almost every code snippet in the book and _see_ what the code does.
 
-==== Gets you focused on coding
+==== Focuses on coding
 
 Finally, because in this book all we aim to teach you is "programming in the small", JavaScript is great for that. Many of the examples here are significantly less that 20 lines in length. We want you to get better at looking at small blocks of code to see how they work. These smaller examples and concepts are a core building block as you become proficient in coding. 
 
