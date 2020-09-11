@@ -9,19 +9,28 @@ v1.6.1, 2020-08-17
 :homepage: https://zipcodewilmington.com/jsprep
 :pdf-page-size:  [5.5in, 8.5in]
 :preface-title: Preface
-I'd like to thank the instructors of ZipCodeWilmington for help editing this book: Chris Nobles, Roberto DeDeus, Tyrell Hoxter, L. Dolio Durant, and Mikaila Akeredolu. Without them, this book would have remained a "nice to have".
+I'd like to thank the instructors of ZipCodeWilmington for help editing this book: Chris Nobles, Roberto DeDeus, Tyrell Hoxter, L. Dolio Durant, and Mikaila Akeredolu. Without them, this book would have remained a "maybe some day".
 I especially wish to thank Mikaila: without his brilliant prep session slides as the starting point for this book, I would never have thought a small book on the basic fundamentals of programming would be possible or even useful. 
 
 Zip Code Wilmington is a non-profit coding boot-camp in Delaware for people who wish to change their lives by becoming proficient at coding. Find out more about us at https://zipcodewilmington.com
 
 
 [colophon]
+Zip Code Wilmington's Programming in JavaScript
+by Kristofer Younger
+
+Copyright (C) 2020 by Zip Code Wilmington. All Rights Reserved.
 
 The Zip Code Wilmington Press, Wilmington, Delaware
 
-(C) 2020 by Zip Code Wilmington
-
 Published in the U.S.A.
+
+September 2020: First Edition
+
+While the publisher and author have used good faith efforts to ensure that the information
+and instructions contained in this work are accurate, the publisher and author disclaim
+all responsibility for for errors or omissions, including without limitation responsibility for damages resulting from the use of or reliance on this work.
+Use of the information and instructions in this work is at your own risk. If any code samples or other information this work contains or describes is subject to open source licenses or the intellectual property rights of others, it is your responsibility to ensure that your use thereof complies with such licenses and/or rights. 
 
 
 == About this book
