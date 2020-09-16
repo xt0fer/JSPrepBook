@@ -18,7 +18,7 @@ is to
 - figure out what b times 3 is (well, if b equals 3, then 3 times 3 is 9)
 - subtract 6 from b times 3 (and then 9 minus 6 is 3)
 
-[source, js]
+[source]
 ----
 // And in JavaScript:
 // a = b3 - 6 
@@ -41,7 +41,7 @@ if j = 5, then q = ?
 Take a moment and write down your solution before reading on.
 ====
 
-[source, js]
+[source]
 ----
 let q = 0; 
 let j = 5;
@@ -64,7 +64,7 @@ and print out x.
 
 
 My solution is pretty simple.
-[source, js]
+[source]
 ----
 let y = 2; 
 let x = 5 * y + Math.pow(y, 3) - 7;
@@ -89,7 +89,7 @@ Base is 10
 Formula: A = h * b / 2
 ====
 
-[source, js]
+[source]
 ----
 let height = 20;
 let base = 10;	
@@ -106,7 +106,7 @@ Formula: area = Pi * radius^2^
 Hint: You'll need to use a constant Math property!
 
 
-[source, js]
+[source]
 ----
 let radius = 7.7;	
 let area  =  Math.PI * Math.pow(radius, 2);

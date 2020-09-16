@@ -2,34 +2,37 @@
 
 The *for* loop is more complex, but it’s also the most commonly used loop.
 
-```
+[source]
+----
 for (begin; condition; step) {
 
     // execute the code statements 
     // in the loop body
 
 }
-```
+----
 
 Here's one where we go from 1 to 5.
 
-```
+[source]
+----
 for(let j = 1; j < 6;  j++){
     // loop body code
     console.log(j);
 }
-```
+----
 
 This loop will print out: 
 
-```
+[source]
+----
 // print 
 1 
 2 
 3 
 4 
 5 
-```
+----
 
 Notice how there are THREE parts to the FOR loop's mechanism. 
 
@@ -43,7 +46,7 @@ and
 
 Let's show you another glimpse of the *break* statement.
 
-[source, js]
+[source]
 ----
 for(let p = 1; p < 6; p++){
     if(p === 4){
@@ -75,7 +78,7 @@ Stretch Goal: S/he who dares wins!
 
 You can do it, I know you can!
 
-[source, js]
+[source]
 ----
 for(let x = 0; x < donuts.length; x++){
     console.log(donuts[x]);

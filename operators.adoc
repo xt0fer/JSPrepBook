@@ -19,9 +19,9 @@ JavaScript can do math. And many early programming problems you will come across
 Say we needed to multiply two numbers. Maybe 2 times 3. Now we could easily write a program
 that printed that result.
 
-```
+----
 console.log(2 * 3); 
-```
+----
 And that will print 6 on the console. But maybe we'd like to make it a little more
 complete.
 
@@ -63,21 +63,21 @@ console.log(L3); // -> 10
 We know that we can do regular division. If have a simple program like this, we know 
 what to expect.
 
-```
+----
 let a = 6 / 3; // -> 2
 let a = 12 / 3; // -> 4
 let a = 15 / 3; // -> 5
 let a = 10 / 4; // -> 2.5
-```
+----
 
 But we have, sometimes, a need to know what the remainder of a division is.
 The remainder operator %, despite its appearance, is not related to percents.
 
 The result of a % b is the remainder of the integer division of a by b.
-```
+----
 console.log( 5 % 2 ); // 1, a remainder of 5 divided by 2
 console.log( 8 % 3 ); // 2, a remainder of 8 divided by 3
-```
+----
 Now what's this about '%' (the remainder) operator?
 
 [source, js]
@@ -199,22 +199,29 @@ There is a useful thing in JavaScript called the Math object which allows you to
 What does "returns" mean?
 
 When we ask a 'function' like sqrt to do some work for us, we have code something like:
-```
+
+[source]
+----
 let squareRootTwo = Math.sqrt(2.0);
 console.log(squareRootTwo);
-```
+----
+
 We will get "1.4142135623730951" in the output. That number (squareRootTwo) 
 is the square root of 2, and it is 
 the result of the function and _what the function sqrt "returns"'_.
+
 ====
 
 *Math.pow() Example*
 
 Say we need to compute "6^2^ + 5"
-```
+
+[source]
+----
 let result = Math.pow(6,2) + 5;
 console.log(result);
-```
+----
+
 What will the answer be? 279936 or 41?
 
 How did JavaScript solve it?

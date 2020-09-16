@@ -3,7 +3,8 @@
 
 Normally, a loop exits when its condition becomes false. But we can force the exit at any time using the special *break* statement.
 
-```
+[source]
+----
 while (true) {
 
   let cmd = +prompt("Enter a command", '');
@@ -13,7 +14,7 @@ while (true) {
   execute(command);
 }
 console.log("Exiting.")
-```
+----
 
 Here are asking the user to type in a command. If the command is "exit", then quit the loop and output "Exiting", and end the program.
 Otherwise, execute the command and go around to the top of the loop and ask for another command.
@@ -24,7 +25,8 @@ The continue statement doesn’t stop the whole loop. Instead, it stops the curr
 
 We can use it if we’re done with the current iteration and would like to move on to the next one. This loops prints odd number less than 10.
 
-```
+[source]
+----
 for (let i = 0; i < 10; i++) {
 
   // if true, skip the remaining part of the body
@@ -33,7 +35,7 @@ for (let i = 0; i < 10; i++) {
 
   console.log(i); // prints 1, then 3, 5, 7, 9
 }
-```
+----
 
 What's interesting here is the use of the remainder operator (%) to see if a number is odd.
 Here the expression (i % 2) is zero if the number is even, it not the number must be odd.

@@ -51,14 +51,14 @@ snippet blockquote-link\n\
 	{% endblockquote %}\n\
 \n\
 snippet bt-codeblock-short\n\
-	```\n\
+	----\n\
 	${1:code_snippet}\n\
-	```\n\
+	----\n\
 \n\
 snippet bt-codeblock-full\n\
-	``` ${1:language} ${2:title} ${3:URL} ${4:link_text}\n\
+	---- ${1:language} ${2:title} ${3:URL} ${4:link_text}\n\
 	${5:code_snippet}\n\
-	```\n\
+	----\n\
 \n\
 snippet codeblock-short\n\
 	{% codeblock %}\n\

@@ -1020,7 +1020,7 @@ var MarkdownHighlightRules = function() {
     HtmlHighlightRules.call(this);
     var codeBlockStartRule = {
         token : "support.function",
-        regex : /^\s*(```+[^`]*|~~~+[^~]*)$/,
+        regex : /^\s*(----+[^`]*|~~~+[^~]*)$/,
         onMatch: function(value, state, stack, line) {
             var m = value.match(/^(\s*)([`~]+)(.*)/);
             var language = /[\w-]+|$/.exec(m[3])[0];

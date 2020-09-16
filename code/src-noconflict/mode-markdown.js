@@ -2565,7 +2565,7 @@ var MarkdownHighlightRules = function() {
     HtmlHighlightRules.call(this);
     var codeBlockStartRule = {
         token : "support.function",
-        regex : /^\s*(```+[^`]*|~~~+[^~]*)$/,
+        regex : /^\s*(----+[^`]*|~~~+[^~]*)$/,
         onMatch: function(value, state, stack, line) {
             var m = value.match(/^(\s*)([`~]+)(.*)/);
             var language = /[\w-]+|$/.exec(m[3])[0];
@@ -2774,14 +2774,14 @@ oop.inherits(FoldMode, BaseFoldMode);
             if (session.bgTokenizer.getState(row) !== "start") {
                 while (++row < maxRow) {
                     line = session.getLine(row);
-                    if (line[0] == "`" & line.substring(0, 3) == "```")
+                    if (line[0] == "`" & line.substring(0, 3) == "----")
                         break;
                 }
                 return new Range(startRow, startColumn, row, 0);
             } else {
                 while (row -- > 0) {
                     line = session.getLine(row);
-                    if (line[0] == "`" & line.substring(0, 3) == "```")
+                    if (line[0] == "`" & line.substring(0, 3) == "----")
                         break;
                 }
                 return new Range(row, line.length, startRow, 0);

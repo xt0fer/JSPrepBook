@@ -5,7 +5,8 @@ v1.6.1, 2020-08-17
 :doctype: book
 :toc:
 :imagesdir: assets/images
-:source-highlighter: highlightjs
+:source-highlighter: rouge
+:rouge-style: github
 :source-language: javascript
 :icons: font
 :homepage: https://zipcodewilmington.com/jsprep
@@ -18,6 +19,8 @@ Zip Code Wilmington is a non-profit coding boot-camp in Delaware for people who 
 
 
 [colophon]
+== Colophon
+
 Zip Code Wilmington's Programming in JavaScript
 by Kristofer Younger
 

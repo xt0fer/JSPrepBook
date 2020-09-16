@@ -58,7 +58,8 @@ To do that we need a bunch of *comparison operators*.
 
 Each of these can be used to make it very clear to someone reading your code what you meant. Imagine a flight simulator, where you're flying a big, old fashioned airplane. The code that keeps track of the status of the plane might need to be able to make decisions on boolean expressions like:
 
-```
+[source]
+----
 altitude > 500.0   // high enough to not hit any trees!
 airspeed >= 85.0   // fast enough to stay in the air.
 
@@ -67,7 +68,7 @@ fuelAvailable <= 5.0   // need to land to refuel!
 totalCargoWeight < 6.0  // more than 6 tons and we can't take off!
 
 pilot.isAlive() && copilot.isAlive()  // everything is fine, keep flying.
-```
+----
 
 If you're puzzling about the difference between the '===' equals and the '==' equals, until you learn a lot more about JavaScript, just use the triple '===' equals. That goes for the 'not equals' too; always use the '!==' not equals.
 
@@ -86,27 +87,30 @@ The *logical operators* are AND and OR, except in JavaScript we use *&&* for AND
 
 The AND operator, '&&', is an operator where BOTH sides have to be true for the expression to be true.
 
-```
+[source]
+----
 (5 < 9) && (6-3 === 3)  // true
-```
+----
 
 See how both expressions on either side of the '&&' are true? That makes the entire line true.
 
 The OR operator, '||' footnote:[shift-backslash '\' on most keyboards], is an operator where if ONE or the OTHER or BOTH boolean expressions are true, the entire expression is true.
 
 
-```
+[source]
+----
 (5 < 9) || (6-3 === 3) // true
 
 (5 === 4) || (7 > 3)   // true!
 
 (5 === 4) || (6 === 2) // false (both are false)
-```
+----
 
 Both sides of a logical operator need to be Boolean expressions. So it's all right to
 use lots of different comparisons, and combine them with && and ||
 
-```
+[source]
+----
 // deep in a cash machine application...
 (customer.balance() <= 20.00 
 &&
@@ -115,7 +119,7 @@ customer.hasOverDraftProtection() == true)
 (customer.savings.balance() > 20.0
 &&
 customer.canTransferFromSavings() )
-```
+----
 
 See how these conditions could line up to allow a customer to 
 get cash from the cash machine? Again, this is *why* boolean expressions are important and powerful and
@@ -131,7 +135,8 @@ why coders need to be able to use them to get the software *just right*.
 
 Here is an example:
 
-```
+[source]
+----
 let houseTemp = 67.0;
 let thermostatSetting = 70.0;
 
@@ -139,7 +144,7 @@ console.log(houseTemp >= 55.0);
 console.log(houseTemp <= thermostatSetting);
 console.log(thermostatSetting != 72.0);
 console.log(houseTemp > 65.0 && thermostatSetting == 68.0)
-```
+----
 
 These log statements should produce TRUE, TRUE, TRUE and FALSE.
 
