@@ -5,6 +5,8 @@ v1.6.1, 2020-08-17
 :doctype: book
 :toc:
 :imagesdir: assets/images
+:source-highlighter: highlightjs
+:source-language: javascript
 :icons: font
 :homepage: https://zipcodewilmington.com/jsprep
 :pdf-page-size:  [5.5in, 8.5in]
@@ -112,7 +114,6 @@ Ready?
 Okay, let go. 
 
 :sectnums:
-== Programming with JavaScript
 
 include::consolelog.adoc[]
 include::variables.adoc[]
@@ -129,8 +130,8 @@ include::whileloop.adoc[]
 include::forloop.adoc[]
 include::break.adoc[]
 include::patterns.adoc[]
-include::return.adoc[]
 include::functions.adoc[]
+include::return.adoc[]
 include::modules.adoc[]
 include::objectsmethods.adoc[]
 

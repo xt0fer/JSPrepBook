@@ -1,4 +1,4 @@
-===  Return statement
+==  Return statement
 
 The *return* statement is a very simple one. It just finishes the running of code in the current function and "returns" to the function's caller.
 

@@ -61,11 +61,11 @@ let average = sum / n;
 console.log(average);
 ```
 
-Pretty easy, yes? And the other common pattern here is doing a *product* of all the numbers from 1 to n. (Maybe 1 to 50?)
+Pretty easy, yes? And the other common pattern here is doing a *product* of all the numbers from 1 to n. (Let's try 20)
 
 ```
-let product = 0;
-let n = 50;
+let product = 1;
+let n = 20;
 for (let i = 1; i < n; i++) {
     product = product * i;
 }
@@ -121,7 +121,7 @@ console.log(max);
 ```
 
 Carefully look at the code, comparing to the one above. What's different? Well, for one, we changed the variable from 'min' to 'max'. (But did we need to do that? we could have left it max, but it's cleaner to make the change so people who read it aren't confused.)
-We also changed the comparison from "less than <" to "greater than >" which lets us decide if the new number is larger than the previous largest we found.
+We also changed the comparison in the 'if' statement from "less than <" to "greater than >" which lets us decide if the new number is larger than the previous largest we found.
 
 In both of these cases, we start with an initial value, then we step through the array, look at each value comparing it to the smallest (or largest) value we have yet found. If we need to update the 'carrying variable', we do, otherwise we just ignore the value.
 
@@ -161,3 +161,4 @@ console.log(a);
 ```
 
 It can be useful to look at the "longer" way to continue to get a feel for how to do small, useful things with simple logic.
+

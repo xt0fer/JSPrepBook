@@ -1,9 +1,9 @@
 
 == Strings
 
-Strings are perhaps the most important data type in JavaScript. Many other computer languages have strings, and they are used in almost ALL modern program. Knowing how to manage them, create and modify them to do what you need them to do, is a "sub-superpower" within JavaScript.
+Strings are perhaps the most important data type in JavaScript. Many other computer languages have strings, and they are used in almost ALL modern programs. Knowing how to manage them, create and modify them to do what you need them to do, is a "sub-superpower" within JavaScript.
 
-Pay close attention, this stuff is Very Important.
+Pay close attention, this stuff is *very important*.
 
 === What is a String?
 
@@ -37,8 +37,8 @@ Here are some strings for you to consider.
 "He said, \"Wait there is more!\""
 ```
 
-Strings can be thought of tightly packed list. Each item, each letter, is numbered. The entire string can be "indexed", meaning I can reach in copy out, say, the fifth letter easily.
-String indexes are zero-based therefore the first character(element) is in index position 0
+Strings can be thought of tightly packed list. Each item, each letter, is numbered. The entire string can be "indexed", meaning I can reach in and copy out, say, the fifth letter easily.
+String indexes are zero-based therefore the first character (element) is in index position 0.
 
 ```
 Index  -> 012345
