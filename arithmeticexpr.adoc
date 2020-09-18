@@ -3,8 +3,7 @@
 
 Some of the most fundamental of computer programs have been ones that
 take the drudgery of doing math by a person, and making the computer do the math.
-These kinds of _computations_ rely on the fact that the computer won't do the wrong thing, if it's programed
-carefully.
+These kinds of _computations_ rely on the fact that the computer won't do the wrong thing if it's programed carefully.
 
 Given a simple math equation like:
 [TIP]
@@ -73,13 +72,13 @@ console.log(x); // -> 11
 
 === _Trigonometry_
 
-The word trigonometry comes from the greek word - trigonon "triangle" + metron "measure. 
+The word trigonometry comes from the Greek words, trigonon ("triangle") + metron ("measure"). 
 We use trigonometry to find angles, distances and areas.
 
 For example, if we wanted to find the area of a triangular piece of land, we could use the
 equation *AreaOfaTriangle = height * base / 2*
 
-Therefore we just need to create variables for each and use the operators to calculate the area
+Therefore we just need to create variables for each and use the operators to calculate the area.
 
 [TIP]
 ====

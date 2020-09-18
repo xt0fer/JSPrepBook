@@ -61,7 +61,7 @@ console.log(L3); // -> 10
 === Division and Remainder
 
 We know that we can do regular division. If have a simple program like this, we know 
-what to expect.
+what to expect:
 
 ----
 let a = 6 / 3; // -> 2
@@ -70,7 +70,7 @@ let a = 15 / 3; // -> 5
 let a = 10 / 4; // -> 2.5
 ----
 
-But we have, sometimes, a need to know what the remainder of a division is.
+But sometimes, we have a need to know what the remainder of a division is.
 The remainder operator %, despite its appearance, is not related to percents.
 
 The result of a % b is the remainder of the integer division of a by b.
@@ -111,8 +111,8 @@ We can do this one of two ways:
 * Say we like to do multiplication _(I know, who is that?)_
 ** we would then do the "6 times 2" part first, giving us 12.
 ** then we'd add the 30 to 12 giving us 42 footnote:[The answer to life, the universe and Everything.]
-* But say we don't like multiplication, and want to save it for later
-** we would then do the add first, 2 + 30 giving us 32
+* But say we don't like multiplication, and want to save it for later...
+** we would add 2+30 first, giving us 32
 ** and then we multiply it by 6, and, whoa, we get 192!
 
 Wait! Which is right? How can the answers be so different, depending on the order we do the math in?
@@ -139,11 +139,11 @@ Please Excuse My Dear Aunt Sally
 [WARNING]
 ====
 Divide and Multiply rank equally (and go left to right)
-So, if we have "6 * 3 / 2", we would do the multiply first and then the divide.
+So, if we have "6 * 3 / 2", we would multiply first and then divide.
 "6 * 3 / 2" is 9
 
 Add and Subtract rank equally (and go left to right)
-So if we have "9 - 6 + 5", we do the subtract first and then the add.
+So if we have "9 - 6 + 5", we subtract first and then add.
 "9 - 6 + 5" is 8
 ====
 
@@ -154,7 +154,7 @@ So if we have "9 - 6 + 5", we do the subtract first and then the add.
 Right way to solve 30 + 6 × 2 is first multiply, 6 × 2 = 12, then add 30 + 12 = 42
 ====
 
-This is because the multiply is _higher priority_ than the addition, _even though the addition is before the multiply_ in the expression. Let's check it in JavaScript.
+This is because the multiplication is _higher priority_ than the addition, _even though the addition is before the multiplication_ in the expression. Let's check it in JavaScript:
 
 [source, js]
 ----
@@ -162,7 +162,7 @@ let result = 30 + 6 * 2;
 console.log(result);
 ----
 
-Gives us 42. 
+This gives us 42. 
 
 Now there is another way to force JavaScript to do things "out of order" with parenthesis. 
 
@@ -198,7 +198,7 @@ There is a useful thing in JavaScript called the Math object which allows you to
 ====
 What does "returns" mean?
 
-When we ask a 'function' like sqrt to do some work for us, we have code something like:
+When we ask a 'function' like sqrt to do some work for us, we have to code something like:
 
 [source]
 ----

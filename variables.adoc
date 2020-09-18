@@ -17,7 +17,7 @@ There are some rules about variables.
 - Reserved words (like JavaScript keywords) cannot be used as names
 - All variable names must be unique (no two alike)
 
-So this means the following are fine for variable names in JavaScript.
+So this means the following are fine for variable names in JavaScript:
 
 [source]
 ----
@@ -60,7 +60,7 @@ console.log(x);  // -> undefined
 ----
 There is _nothing_ there. 
 
-If we were to declare a variable named 'cats' and assign it the value 3. 
+If we were to declare a variable named 'cats' and assign it the value 3:
 
 [source]
 ----
@@ -137,7 +137,7 @@ An attempt to re-assign a value to a constant will fail.
 === Data Types
 
 JavaScript can keep track of a number of different kinds of data, and these are known
-as "primitive Data Types". There are 5 of them.
+as "primitive data types". There are 5 of them.
 
 * *Number* - there are two kinds of numbers: integers and floats
 ** *Integers* are like 0, -4, 5, 6, 1234
@@ -190,6 +190,6 @@ let playerOneName = "Rocco";
 const maxPainScore = 150000;
 ----
 
-Now, you try it, write down a variable name and assign
+Now, you try it. Write down a variable name and assign
 a normal value to it.
 

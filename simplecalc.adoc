@@ -13,7 +13,7 @@ how many miles can we drive (total miles driven) using the whole tank of gas?
 
 BONUS:
 
-how long will it take us to drive all those miles?
+How long will it take us to drive all those miles?
 ****
 
 What do we need figure out? We need a variable for our
@@ -75,7 +75,7 @@ Let's do another.
 
 A friend of ours is offering you a "free cat". You're not allergic to
 cats but before you say yes, you want to know how much it'll cost to feed the 
-cat for a year. (and then, aproximately how much each month.)
+cat for a year (and then, approximately how much much each month).
 
 ****
 We find out that cat food costs $2 for 3 cans.

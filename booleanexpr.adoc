@@ -1,7 +1,7 @@
 
 == Boolean Expressions
 
-When starting out in programming, the idea of a boolean variable, something that is either just true or false, seems like an overly simple thing, something that feels rather useless.
+When starting out in programming, the idea of a boolean variable, something that is either just true or false, seems like an overly simple thing... something that feels rather useless.
 
 In fact, booleans in computer code are *everywhere*. They are simple, but also useful in many ways. You've probably heard about how everything in computers is ones and zeros at the lowest level - and that's true. But on this super simple base of `0 and 1` is built all of the power of the internet, and all the apps you've ever used.
 
@@ -82,7 +82,7 @@ The *logical operators* are AND and OR, except in JavaScript we use *&&* for AND
 |===
 |Operator |Description |
 |&& |Logical AND |playerOneStatus == 'alive' && spacecraft.hasAir()
-|\|\| |Logical OR |room.Temp > 70 || room.Temp < 75
+|\|\| |Logical OR |room.Temp > 70 \|\| room.Temp < 75
 |===
 
 The AND operator, '&&', is an operator where BOTH sides have to be true for the expression to be true.
@@ -107,7 +107,7 @@ The OR operator, '||' footnote:[shift-backslash '\' on most keyboards], is an op
 ----
 
 Both sides of a logical operator need to be Boolean expressions. So it's all right to
-use lots of different comparisons, and combine them with && and ||
+use lots of different comparisons, and combine them with && and ||.
 
 [source]
 ----
