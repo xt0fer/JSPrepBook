@@ -9,7 +9,7 @@ You create functions easily.
 
 === Function Literal
 
-Two examples of how you write a function literal.
+Two examples of how you write a function literal:
 
 [source]
 ----
@@ -25,7 +25,7 @@ function add(p1, p2) {
 }
 ----
 
-In both of these cases, you end up with a function named 'add' that takes two parameters and adds them, returning the result. (Yes, you could just write (p1 + p2) and everyone would understand. It's just a very simple example.) Here is another example.
+In both of these cases, you end up with a function named 'add' that takes two parameters and adds them, returning the result. (Yes, you could just write (p1 + p2) and everyone would understand. It's just a very simple example.) Here is another example:
 
 === Creating a Function
 
@@ -42,7 +42,7 @@ greetUser("Mike Jones"); // "Hello Mike Jones"
 
 === Invoking Functions
 
-Functions are meant to be _invoked_. So you can have one function call another function which calls a third function and so on, it's very common.
+Functions are meant to be _invoked_. So you can have one function call another function which calls a third function and so on; it's very common.
 
 Imagine we have a program that gets an airplane ready for flight. We can imagine a whole series of functions we'd have to write. Things like 'loadPassengers', 'loadBaggage', 'loadFuel', 'checkTirePressures', and so on. Then we might have a 'higher level' functions which brings all these pieces together:
 
@@ -64,7 +64,7 @@ function prepFlight(airplane) {
 }
 ----
 
-You can see how functions let you perform different things in a particular order, and while you might have no idea _how_ 'loadBaggage' does what it does, you can see how the program preps the airplane object for flight and makes sure everything important is done. Each of the functions from 'loadBaggage' to 'takeoff', is invoked and returns so the next one can be invoked. This is the power of functions - the ability to take some code and put it a function so that it much easier to understand.
+You can see how functions let you perform different things in a particular order, and while you might have no idea _how_ 'loadBaggage' does what it does, you can see how the program preps the airplane object for flight and makes sure everything important is done. Each of the functions from 'loadBaggage' to 'takeoff' is invoked and returns so the next one can be invoked. This is the power of functions - the ability to take some code and put it a function so that it much easier to understand.
 
 === Anonymous Functions
 
@@ -84,7 +84,7 @@ function () {
 
 Look at that last line. What's going on here? Well, first we are creating a function object _without a name_ (so it's _anonymous_). Then on the last line, we are _invoking_ the function once (see those two parentheses? '()'?), so all the code inside gets run. (x get printed out).
 
-You see this often in JavaScript, it's way to put some code into an argument to another function call.
+You see this often in JavaScript. It's a way to put some code into an argument to another function call.
 
 [source]
 ----
@@ -112,7 +112,7 @@ let result = greetUser("Welcome back, Mike Jones");
 console.log(result); // will print "Hello Welcome back, Mike Jones" 
 ----
 
-or like this:
+Or like this:
 
 [source]
 ----
@@ -188,7 +188,7 @@ Now, here's a way to decide is number was divisible cleanly by another, it's a s
 (number % divisor === 0)
 ----
 
-So to see if a number is even, we could use '(number % 2 == 0)', since
+So to see if a number is even, we could use '(number % 2 == 0)':
 
 [source]
 ----
@@ -196,9 +196,9 @@ console.log((8 % 2 === 0)); // true
 console.log((7 % 2 === 0)); // false
 console.log((4 % 2 === 0)); // true
 ----
-But we can use this to see if something is evenly divisible by 3 or 5.
+And we can use the same technique to see if a number is evenly divisible by 3 or 5.
 
-Try to write a function that will perform the following requirements. 
+Try to write a function that will perform the following requirements:
 
 [TIP]
 ====
@@ -216,7 +216,7 @@ OKAY! Write it yourself!
 
 Do it.
 
-Just Write it yourself.
+Just write it yourself.
 
 C'mon, write your own version first.
 
@@ -226,17 +226,18 @@ Wait.
 
 Do you want to be a ZipCoder, or just a Copy-Paste Stylist?
 
-Well, here's one solution. 
-
-=== Function ZipCoder
+Well, here's one solution:
 
 [source]
 ----
+// Function ZipCoder
+
 function zipCoder(aNumber) {
 if (aNumber % 15 == 0) console.log("ZipCoder");
 else if (aNumber % 3 == 0) console.log("Zip");
 else if (aNumber % 5 == 0) console.log("Coder");
 }
+
 zipCoder(45); // -> ZipCoder
 ----
 

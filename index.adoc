@@ -1,7 +1,7 @@
 :title-page:
 = Zip Code Wilmington's Programming in JavaScript (DRAFT)
 Kristofer Younger <kris@zipcodewilmington.com>
-v1.6.1, 2020-08-17
+v1.8, 2020-09-22
 :doctype: book
 :toc:
 :imagesdir: assets/images
@@ -12,7 +12,10 @@ v1.6.1, 2020-08-17
 :homepage: https://zipcodewilmington.com/jsprep
 :pdf-page-size:  [5.5in, 8.5in]
 :preface-title: Preface
-I'd like to thank the instructors of ZipCodeWilmington for help editing this book: Chris Nobles, Roberto DeDeus, Tyrell Hoxter, L. Dolio Durant, and Mikaila Akeredolu. Without them, this book would have remained a "maybe some day".
+I'd like to thank the instructors of ZipCodeWilmington for inspiring this book: Chris Nobles, Roberto DeDeus, Tyrell Hoxter, L. Dolio Durant, and Mikaila Akeredolu. 
+Without them, this book would have remained in "maybe some day" category. 
+My thanks to Dan Stabb and Roberto, who made corrections to the text. 
+I hope you get a chance to code someday, Dan!
 I especially wish to thank Mikaila: without his brilliant prep session slides as the starting point for this book, I would never have thought a small book on the basic fundamentals of programming would be possible or even useful. 
 
 Zip Code Wilmington is a non-profit coding boot-camp in Delaware for people who wish to change their lives by becoming proficient at coding. Find out more about us at https://zipcodewilmington.com
@@ -40,7 +43,13 @@ Use of the information and instructions in this work is at your own risk. If any
 
 == About this book
 
-This book's aim is to provide you with the most basic of fundamentals regarding JavaScript, the world's most popular programming language. It comes from the preparation sessions we often give prospective Zip Code applicants on how to do well on the Zip Code application coding assessment. By reading this book or taking one of those prep sessions, someone who has never coded in any language before can use this as a place to start, study and get ready to take that assessment. To someone who has spent some time with programming languages, this might be just a breezy intro to JavaScript. If you have almost any serious coding experience, this book is probably too elementary for you.
+This book's aim is to provide you with the most basic of fundamentals regarding JavaScript, the world's most popular programming language. 
+It comes from the preparation sessions we often give prospective Zip Code applicants on how to do well on the Zip Code application coding assessment. 
+By reading this book or taking one of those prep sessions, someone who has never coded in any language before can use this as a place to start, study and get ready to take that assessment. 
+To someone who has spent some time with programming languages, this might be just a breezy intro to JavaScript. 
+If you have almost any serious coding experience, this book is probably too elementary for you.
+You might, however, find the ideas in the Appendices interesting.
+There I've added some material that have a few advanced ideas in them, plus there is a full code listing of a lunar lander simulation.
 
 You may be aware that Zip Code doesn't focus on JavaScript _per se_, and that can leave you wondering why the first book we wrote was all about JavaScript. Well...
 
@@ -140,7 +149,10 @@ include::functions.adoc[]
 include::return.adoc[]
 include::modules.adoc[]
 include::objectsmethods.adoc[]
+include::appendixa.adoc[]
+include::appendixb.adoc[]
 
+[appendix]
 == Additional JavaScript Resources
 
 _Here are a series of other resources to go on from this point. Javascript.info is a really good one._

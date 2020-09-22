@@ -16,7 +16,7 @@ while (true) {
 console.log("Exiting.")
 ----
 
-Here are asking the user to type in a command. If the command is "exit", then quit the loop and output "Exiting", and end the program.
+Here, you are asking the user to type in a command. If the command is "exit", then quit the loop and output "Exiting", and end the program.
 Otherwise, execute the command and go around to the top of the loop and ask for another command.
 
 === Continue Statement
@@ -38,6 +38,8 @@ for (let i = 0; i < 10; i++) {
 ----
 
 What's interesting here is the use of the remainder operator (%) to see if a number is odd.
-Here the expression (i % 2) is zero if the number is even, it not the number must be odd.
-You want to remember this trick, how to find odd or even numbers. It's common programming problem that you will get asked. The continue statement starts the loop over, not letting the console.log to print out the number when it's even.
+The expression (i % 2) is zero if the number is even, if not, the number must be odd.
+You want to remember this trick of how to find odd or even numbers. 
+It's a common programming problem that you will get asked. 
+The continue statement starts the loop over, not letting the console.log to print out the number when it's even.
 

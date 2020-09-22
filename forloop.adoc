@@ -36,13 +36,13 @@ This loop will print out:
 
 Notice how there are THREE parts to the FOR loop's mechanism. 
 
-* begin	j = 1	Executes once upon entering the loop.
-* condition	j < 6	Checked before every loop iteration. If false, the loop stops.
-* step    j++	Executes after the body on each iteration.
+* begin: j = 1  // Executes once upon entering the loop.
+* condition: j < 6  // Checked before every loop iteration. If false, the loop stops.
+* loop step: j++  // Executes after the body on each iteration.
 
 and
 
-* body	console.log()	Runs again and again while the condition is true.
+* body:	console.log()  // Runs again and again while the condition is true.
 
 Let's show you another glimpse of the *break* statement.
 
@@ -56,7 +56,7 @@ console.log("Loop " + p + " times");
 }	
 ----
 
-Jumps out of the loop when p is equal to 4
+Jumps out of the loop when p is equal to 4.
 
 
 
