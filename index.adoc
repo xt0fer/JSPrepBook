@@ -1,25 +1,17 @@
 :title-page:
-= Zip Code Wilmington's Programming in JavaScript (DRAFT)
+= Zip Code Wilmington's Programming in JavaScript
 Kristofer Younger <kris@zipcodewilmington.com>
-v1.8, 2020-09-22
+v1.8.2, 2020-09-25
 :doctype: book
-:toc:
-:imagesdir: assets/images
+:imagesdir: images
 :source-highlighter: rouge
 :rouge-style: github
 :source-language: javascript
 :icons: font
 :homepage: https://zipcodewilmington.com/jsprep
 :pdf-page-size:  [5.5in, 8.5in]
-:preface-title: Preface
-I'd like to thank the instructors of ZipCodeWilmington for inspiring this book: Chris Nobles, Roberto DeDeus, Tyrell Hoxter, L. Dolio Durant, and Mikaila Akeredolu. 
-Without them, this book would have remained in "maybe some day" category. 
-My thanks to Dan Stabb and Roberto, who made corrections to the text. 
-I hope you get a chance to code someday, Dan!
-I especially wish to thank Mikaila: without his brilliant prep session slides as the starting point for this book, I would never have thought a small book on the basic fundamentals of programming would be possible or even useful. 
-
-Zip Code Wilmington is a non-profit coding boot-camp in Delaware for people who wish to change their lives by becoming proficient at coding. Find out more about us at https://zipcodewilmington.com
-
+:front-cover-image: ZCW_JS-Book-FNL.png
+:toc:
 
 [colophon]
 == Colophon
@@ -31,6 +23,8 @@ Copyright (C) 2020 by Zip Code Wilmington. All Rights Reserved.
 
 The Zip Code Wilmington Press, Wilmington, Delaware
 
+Cover Design: Janelle Bowman
+
 Published in the U.S.A.
 
 September 2020: First Edition
@@ -40,6 +34,16 @@ and instructions contained in this work are accurate, the publisher and author d
 all responsibility for for errors or omissions, including without limitation responsibility for damages resulting from the use of or reliance on this work.
 Use of the information and instructions in this work is at your own risk. If any code samples or other information this work contains or describes is subject to open source licenses or the intellectual property rights of others, it is your responsibility to ensure that your use thereof complies with such licenses and/or rights. 
 
+[preface]
+== Preface
+
+I'd like to thank the instructors of ZipCodeWilmington for inspiring this book: Chris Nobles, Roberto DeDeus, Tyrell Hoxter, L. Dolio Durant, and Mikaila Akeredolu. 
+Without them, this book would have remained in "maybe some day" category. 
+My thanks to Dan Stabb and Roberto, who made corrections to the text. 
+I hope you get a chance to code someday, Dan! 
+I especially wish to thank Mikaila: without his brilliant prep session slides as the starting point for this book, I would never have thought a small book on the basic fundamentals of programming would be possible or even useful. 
+
+Zip Code Wilmington is a non-profit coding boot-camp in Delaware for people who wish to change their lives by becoming proficient at coding. Find out more about us at https://zipcodewilmington.com
 
 == About this book
 

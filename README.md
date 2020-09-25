@@ -15,6 +15,6 @@ asciidoctor-pdf -v
 
 to generate targets:
 use `asciidoctor-pdf index.adoc` to get index.pdf
-use `asciidoctor-epub -D EPUB index.adoc` to get EPUB/index.epub
+use `/usr/local/bin/asciidoctor-epub3 -D EPUB index.adoc` to get EPUB/index.epub
 
 remember https://javascript.info/object-basics is a really good site.
