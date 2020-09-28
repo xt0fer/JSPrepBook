@@ -111,7 +111,7 @@ In JavaScript, variables are dynamic (can contain any data) which means a variab
 
 [source]
 ----
-let height = 62.0 // inches maybe?
+let height = 62.0; // inches maybe?
 console.log(height); // -> 62
 
 height = "very tall";
