@@ -3,9 +3,10 @@
 == Advanced Ideas
 
 We're going to look at a few "modern" ways of handling a collection of data. 
-Often times, you have a list, or an array, of data that needs to be gone through to print it out, transform it in some way, or to summarize it (such as a total or an average). As you have seen in the code patterns section, there are common loops used for such things, a simple pattern that you can memorize.
+Frequently, you have a list, or an array, of data that needs to be gone through to print it out, transform it in some way, or to summarize it (such as a total or an average). 
+As you have seen in the code patterns section, there are common loops used for such things, a simple pattern that you can memorize.
 
-There are other ways of doing this things, and we're going to discuss a few of them here.
+There are other methods of doing these things, and we're going to discuss a few of them here.
 These ideas are based primarily on methods made popular by Hadoop and other "big data" applications and tools.
 And what's good for "big" data is often good for "small" data as well.
 
@@ -40,11 +41,11 @@ const groceries = [
 ];
 ----
 
-A common grocery list, we have this as a list (or array) of objects (a key/value data structure).
+A common grocery list, we have this as a list (or array) of objects (what's known as a key/value data structure).
 
 === Simplifying Loops
 
-Now, if you wanted to print out each item in the grocery list to the console, you could do something like this: 
+Now, if you wanted to print out each item's name in the grocery list to the console, you could do something like this: 
 
 [source]
 ----
@@ -68,7 +69,7 @@ groceries.forEach((item) => {
 });
 ----
 
-`forEach` is a `higher-order function` that takes in another function as an argument and executes the provided function once for each element in the array. 
+`forEach` is a _higher-order function_ that takes in another function as an argument and executes the provided function once for each element in the array. 
 It is meant to simplify your code.
 By using forEach, we remove the extraneous code for tracking and accessing the array using an index, and focus on our logic: printing out the name of each grocery item.
 
@@ -99,7 +100,7 @@ let prices = groceries.map((item) => {
 });
 ----
 
-The value of prices would be: `[5.5,14.99,6.49,4.79,3.99]`. And if we were to want something a little more useful than just producing a list, we would do this if using a loop: 
+The value of prices would be: `[5.5,14.99,6.49,4.79,3.99]`. And if we were to want something a little more useful than just producing a list, we would do this when using a loop: 
 
 [source]
 ----
@@ -111,6 +112,7 @@ while (index < groceries.length) {
 }
 ----
 
+Now we are tracking _two_ pieces of information, the index and the total.
 With the sum of all the prices ending up in `total`.
 
 But look how much simpler our code can be if we use `reduce`, another higher-order function. 
@@ -122,7 +124,7 @@ let total = groceries.reduce((sum, item) => {
 }, 0);
 ----
 
-The result, if we print it is the awkward number `35.760000000000005`, and why that is, well, later we'll discuss it.
+The result, if we print `total` is the awkward number `35.760000000000005`, and why that is, well, later we'll discuss it. But, `35.76` should suffice.
 
 If we wanted to pull out all the even numbers from a list of numbers, we'd need a function like this to decide if a number if even. (Remember the trick using modulus?)
 
@@ -165,23 +167,25 @@ function even (value) {
     return value % 2 === 0;
 }
 
-let a = [1,2,3,4];
+let dataList = [1,2,3,4];
 
 console.log(
-    filter(a, even)
+    filter(dataList, even)
 ); // produces [2,4]
 
 ----
 
-See what I've done? 
+See what I've done? First, I've shown you how to express `filter` with both a loop and an `if` statement, expressing the function in more verbose code to give you the idea of what's going on. 
+Second, I've then used it to show it in action.
+
 I've defined two functions, `filter` and `even`. 
-Then created a short array/list called `a`. 
-Finally, I've printed the result of calling `filter(a,even)`. 
+Then created a short array/list called `dataList`. 
+Finally, I've printed the result of calling `filter(dataList,even)`. 
 Wait, what? I passed the function's name, `even` as an argument to another function. 
 Well, sure, why not? Functions in JavaScript are called `first class objects`, just like a variable or an object or a value.
 
 And it turns out JavaScript already has a function called `filter`, a higher order function. 
-And I can reduce it to something like this:
+And I can reduce it even more to something like this:
 
 [source]
 ----
@@ -189,15 +193,15 @@ let result = [1,2,3,4].filter(
     function (value) {return value % 2 === 0}
 );
 
-// or, If I have 'a' defined as [1,2,3,4]
-let result = a.filter(
+// or, If I have 'dataList' defined as [1,2,3,4]
+let result = dataList.filter(
     function (value) {return value % 2 === 0}
 );
 ----
 
 And as you will see further down, we can even reduce that to a simpler form, called a `lambda`.
 
-In these four cases, we see how we can use a different form of computing, a _functional_ form, to simplify our code by removing loops and their trappings and replacing them with higher-order functions, letting us hand some of our logic to the language itself.
+In these four cases, we see how we can use a different form of computing, a _functional_ form, to simplify our code by removing loops and their trappings and replacing them with higher-order functions, letting us hand some of our logic to the language itself. And making our code more elegant in the process.
 
 === Simplifying Conditionals
 
@@ -209,6 +213,7 @@ Every time you add an else statement, you increase the complexity of your code t
 Conditional constructs like if-else and switch statements are foundational blocks in the world of programming. 
 But they can also get in the way when you want to write clean, extensible code.
 
+Let's create a function that computes a discount for a price amount based on sone discount code.
 We might, happily, build something like this:
 
 [source]
@@ -228,7 +233,7 @@ const discount = (amount, code) => {
 let netprice = discount(200.00, 'HALFOFF'); // would be 100.
 ----
 
-but think about adding another discount, we'd have to add another `if`, more braces, and make sure we nest it in there carefully, otherwise we break the whole, ricketey, mess.
+But think about adding another discount, we'd have to add another `if`, more braces, and make sure we nest it in there carefully, otherwise we break the whole, rickety, mess.
 
 I know! Let's use a `switch` statement, and simplify! Well...
 
@@ -253,7 +258,7 @@ let netprice = discount(200.00, 'HALFOFF'); // would be 100.
 We have to add two lines of code for each `case`. 
 And if you make a mistake, you break the whole contraption.
 
-But consider this idea: use a combination of a data structure and a small piece of code (called an arrow function (or "lambda")). 
+But consider this idea: use a combination of a simple data structure and a small piece of code (called an arrow function (or "lambda")). 
 
 [source]
 ----
@@ -263,13 +268,14 @@ const DISCOUNT_MULTIPLIER = {
   'HALFOFF': 0.50,
 };
 
-const discount = (amount, code) => {
+const discount = (amount, code) => { // look at that arrow '=>'?
   return amount * DISCOUNT_MULTIPLIER[code];
 };
 ----
 
-Whoa! How easy is it to add another 1, 3 or 7 discount cases? Just one line each.
-This re-factor effectively decouples the data we use from the core calculation logic, which makes it much easier to modify either independently.
+Whoa! How easy is it to add another 1, 3 or 7 discount cases? 
+Just one line each.
+This re-factor effectively decouples the data we use from the core calculation logic, which makes it much easier to modify either independently. No `ifs`, `elses` or `switches`, just an object holding data, a simple lambda (arrow) function which does simple math.
 
 === Lambdas (or Arrow Functions)
 
@@ -294,6 +300,8 @@ We could write the above example as:
 
 [source]
 ----
+var anon = function (a, b) { return a + b }; // from above
+
 var anon = (a, b) => a + b; // Sweet!
 
 // or we could
@@ -311,14 +319,16 @@ var () => {} // this does nothing. So who cares?
 [1,2,3,4].filter(value => value % 2 === 0);
 ----
 
-See how much easier to read the last line is over the previous filter using the anonymous function?
+See how much easier it is to read the last line in the example over the previous filter using the anonymous function?
 Lambdas are a powerful way to express small functions, and use them in a variety of ways. 
 They are often paired with higher-order functions, as they simplify the code quite a bit.
 
 === Polymorphism and K.I.S.S.
 
-Remember "keep it simple, stupid"? Yeah, we suffer from over-complicating things in coding as well.
-Another way to replace conditionals is by using a key feature of object-oriented programming languages: polymorphism. Let's show some code which helps bill a customer.
+Remember "keep it simple, stupid"? 
+Yeah, we suffer from over-complicating things in coding as well.
+Another way to replace conditionals is by using a key feature of object-oriented programming languages: polymorphism. 
+Let's show some code which helps bill a customer.
 
 [source]
 ----
@@ -417,7 +427,7 @@ I am using a `class` in this example, well, three of them actually. One for each
 I can put the complex code within each class, and if I set them all up to have a `charge` method (a method being the term we use to talk about a function wired to a class), I know I just need to call `charge` on each customer, and the classes will all figure out which piece of code to use.
 This is an example of polymorphism, "many forms, same name".
 
-Another example, commonly used in explaining this, is a series of geometric shapes, like Square, Triangle and Circle. 
+Another example, commonly used in explaining polymorphism, is a series of geometric shapes, like Square, Triangle and Circle. 
 Each of those shapes has a different way of computing the `area` of itself. 
 A Square's `area()` is `(side * side)`, right? 
 But a Circle's `area()` is `(Math.PI * (radius * radius))`. 
