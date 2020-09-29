@@ -1,7 +1,7 @@
 :title-page:
 = Zip Code Wilmington's Programming in JavaScript
 Kristofer Younger <kris@zipcodewilmington.com>
-v1.8.2, 2020-09-25
+v1.8.3, 2020-09-25
 :doctype: book
 :imagesdir: images
 :source-highlighter: rouge
