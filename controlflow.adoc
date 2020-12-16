@@ -16,10 +16,11 @@ When programs start to get more sophisticated, the _control flow_ can be changed
 [source]
 ----
 let q = 0; 
-let j = 5;
+let j = 6;
 while (j > 0) {
     q = j * 4 - 20;
     console.log(q);
+    j--;
     if (q > 0) {
         console.log("q is still positive");
     }
