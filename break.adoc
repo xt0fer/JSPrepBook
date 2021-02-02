@@ -11,7 +11,7 @@ while (true) {
 
   if (cmd == "exit") break; 
 
-  execute(command);
+  execute(cmd);
 }
 console.log("Exiting.")
 ----

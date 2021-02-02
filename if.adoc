@@ -41,7 +41,7 @@ if (account.balance >= amountRequested) {
 }
 ----
 
-JavaScript can also "nest" if statements, making them very flexible for complicated situations. You can also see here how curly-braces make it clear what statements get excuted based on which case or condition is true.
+JavaScript can also "nest" if statements, making them very flexible for complicated situations. You can also see here how curly-braces make it clear what statements get executed based on which case or condition is true.
 
 [source]
 ----
