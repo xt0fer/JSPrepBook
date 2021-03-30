@@ -1,0 +1,174 @@
+
+== Algebra Exercises
+
+You can use the https://code.zipcode.rocks REPL to work these problems out. (You can also just work them out in your hear or on paper; either way you arrive at the right answer and get the points.)
+
+=== Y equals ?
+
+
+Given the following formula,
+ 
+y = (5 * x) + 100
+
+what is y, if x = 3?
+
+
+Given the following formula,
+ 
+y = (4 * x) - 5
+
+what is y, if x = 5?
+
+
+Given the following formula,
+ 
+y = (6 * x) - 7
+
+what is y, if x = 2?
+
+Given the following formula,
+ 
+y = (15 / x) * 8
+
+what is y, if x = 5?
+
+
+=== Velocities
+
+If a car is moving at an initial velocity V, and accelerates at rate of A for a set time period of T, the formula to determine it final velocity S is: 
+ 
+S = V + A*T
+
+What is S if (V = 10), (A = 4), (T = 3)?
+
+What is S if (V = 0), (A = 5), (T = 20)?
+
+What is S if (V = 17), (A = 2), (T = 14)?
+
+=== F of (x, y)
+
+Given the following function utilizing x and y: 
+ 
+f(x, y) = x2 + y -27
+ 
+If f(1, 2) = -23
+
+What is:
+
+f(20, 8) = ?
+f(6, 25) = ?
+f(5, 2) = ?
+f(0, 0) = ?
+
+=== Complete the answer (20)
+
+Complete the blanks in the following question with the appropriate answer.
+
+dog + fish = 25
+dog + bird = 35
+bird + fish = 30
+ 
+dog + bird + fish = ?
+
+45
+
+== JavaScript Coding
+
+=== Triangle Area (15)
+
+Triangle diagram
+The area of a triangle is calculated using the following function:
+
+A = (h*b)/2
+ 
+where A represents the area, h represents the height perpendicular to the length of its base, b.
+
+What is A, if h = 4 and b = 5 ?
+What is A, if h = 2 and b = 6 ?
+
+What do you need to do to this function to make it use the triangle equation?
+
+[source]
+----
+function triangleArea(h, b) {
+    A = 0;
+    return A
+}
+
+console.log(triangleArea(4,5));
+console.log(triangleArea(2,6));
+----
+
+=== Maths (10)
+
+Complete the function to calculate multiplication of two input values. 4 x 4 should print 16.
+Return the remainder (modulus) of the following equation:  118 % 31
+Using Arithmetic Operators, return the product of 789 x 123.
+Complete the function to calculate the square of an input value. Remember that the square of a number is the result of multiplying that number times itself.
+=== Variables (10)
+
+Create a variable with the value 1024 and return the variable.
+
+=== Functions (15)
+Make a function that:
+Return the string value "Zip Code" from the given function.
+and more...
+
+Using the length method, return the length of the string "ZipCodeRocks" using the given function.
+ 
+Example 1
+input: "hello".length
+output: 5
+ 
+Example 2
+input: "Delaware"
+output: 8
+
+=== Arrays (30)
+
+Complete the function below to swap two elements in an array and return the result. Your function should take three arguments: An array and two integers. The integers are the indexes of the two elements in the array you should swap.
+ 
+Example 1:
+ 
+Input:
+[7,4,9,3,6,2], 4, 2
+ 
+Output:
+[7,4,6,3,9,2],
+
+=== First and Last (50)
+
+Given a string, create a new string made up of its last two letters, reversed and separated by a space.
+ 
+Example
+Given the word 'bat', return 't a'.
+ 
+Function Description
+Complete the function lastLetters in the editor below.
+ 
+lastLetters has the following parameter(s):
+    string word:  a string to process
+ 
+Returns:
+    string: a string of two space-separated characters
+ 
+Constraint
+2 ≤ length of word ≤ 100
+
+=== Sum something (50)
+
+Calculate the sum of an array of integers.
+ 
+Example
+numbers = [3, 13, 4, 11, 9]
+ 
+The sum is 3 + 13 + 4 + 11 + 9 = 40.
+ 
+Function Description 
+Complete the function arraySum in the editor below.
+ 
+arraySum has the following parameter(s):
+    int numbers[n]: an array of integers
+Returns
+    int: integer sum of the numbers array
+
