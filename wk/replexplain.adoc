@@ -86,3 +86,17 @@ building a professional career as a coder.
 As you will see, if you do make coding a professional endeavor, learning is 
 something you will do all the time.
 
+== Just to be clear
+
+When we are computing, we express math in a slightly different way than we do in Algebra class.
+Take your mind back to Mrs Johnson's 7th grade algebra class. 
+(Weren't all our 7th grade algebra teachers named Mrs Johnson?? No?, are you sure?)
+
+In algebra, we might say *4x* or *3x*. We mean, of course, *4 times x* or *3 times x*.
+
+Well, in coding we usually write `3 * x` or `4 * x` - the *** (an asterisk or shift-8 on your keyboard) means mutiply or times.
+
+Division, too is different. In algebra we used the old divide sign *÷*, but in code we use a slash */*.
+So, *5 divided by 2* is written *5 / 2*.
+
+It's okay, you'll get used to *** and */* for times and divide.

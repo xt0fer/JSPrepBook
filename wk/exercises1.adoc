@@ -134,34 +134,43 @@ f(0, 0) = ?
 
 === Complete the answer
 
-Complete the blanks in the following question with the appropriate answer.
-
+For this problem, you need to figure out the correct answer to the last expression. 
 ----
 dog + fish = 25
 dog + bird = 35
 bird + fish = 30
- 
+----
+
+If the above expressions are true, what is the answer to this?
+
+----
 dog + bird + fish = ?
 ----
 
-45
-
 == JavaScript Coding
 
-=== Triangle Area (15)
+=== Area of a Triangle
+  
+image::TriangleArea.png[Triangle]
 
-Triangle diagram
 The area of a triangle is calculated using the following function:
 
 ****
-A = (h*b)/2
+Area = (h*b)/2
 ****
 
-where A represents the area, h represents the height perpendicular to the length of its base, b.
+where Area represents the area, h represents the height perpendicular to the length of its base, b.
 
 ----
-What is A, if h = 4 and b = 5 ?
-What is A, if h = 2 and b = 6 ?
+if h = 6 and b = 4,
+(6 * 4) is 24
+24 / 2 is 12
+= 12
+----
+
+----
+What is Area, if h = 4 and b = 5 ?
+What is Area, if h = 2 and b = 6 ?
 ----
 
 What do you need to do to this function to make it use the triangle equation?
@@ -169,18 +178,33 @@ What do you need to do to this function to make it use the triangle equation?
 [source]
 ----
 function triangleArea(h, b) {
-    A = 0;
-    return A
+    area = 0;
+    return area
 }
 
 console.log(triangleArea(4,5));
 console.log(triangleArea(2,6));
 ----
 
-=== Maths (10)
+=== Javascript Math
 
+If asked to write a function that 
 Complete the function to calculate multiplication of two input values. 4 x 4 should print 16.
-Return the remainder (modulus) of the following equation:  118 % 31
+
+----
+function square(x) {
+    return x;
+}
+----
+
+Write a simple function that returns the remainder (modulus) of the following equation:  118 % 31
+
+----
+function foo() {
+    return 
+}
+----
+
 Using Arithmetic Operators, return the product of 789 x 123.
 Complete the function to calculate the square of an input value. Remember that the square of a number is the result of multiplying that number times itself.
 === Variables (10)
