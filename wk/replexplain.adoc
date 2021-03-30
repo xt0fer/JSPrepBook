@@ -74,3 +74,15 @@ You've just written a Javascript program.
 
 Maybe you are Zip Code material after all.
 
+=== Coding Assessments
+
+To attend a Zip Code Wilmington cohort, 
+Zip Code asks you to complete a JavaScript coding assessment.
+Usually, this is done on a website like HackerRank.
+By asking you to solve some pretty simple programming challenges, we get a chance to see 
+how you do when learning something entirely new.
+The ability to learn new and different things continually is a very important aspect of 
+building a professional career as a coder.
+As you will see, if you do make coding a professional endeavor, learning is 
+something you will do all the time.
+
