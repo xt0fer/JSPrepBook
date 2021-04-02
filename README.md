@@ -14,7 +14,11 @@ asciidoctor-pdf -v
 *Asciidoctor PDF* is a native PDF converter for AsciiDoc.
 
 to generate targets:
-use `asciidoctor-pdf index.adoc` to get index.pdf
+use `asciidoctor-pdf -D PDF index.adoc` to get index.pdf
 use `/usr/local/bin/asciidoctor-epub3 -D EPUB index.adoc` to get EPUB/index.epub
+
+to generate targets:
+use `asciidoctor-pdf  -D PDF workbook.adoc` to get index.pdf
+use `/usr/local/bin/asciidoctor-epub3 -D EPUB workbook.adoc` to get EPUB/index.epub
 
 remember https://javascript.info/object-basics is a really good site.

@@ -22,7 +22,9 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-index.pdf
+PDF/index.pdf
 EPUB/index.epub
+PDF/workbook.pdf
+EPUB/workbook.epub
 ZCW-JS-Prep.epub
 ZCW-JS-Prep.pdf
