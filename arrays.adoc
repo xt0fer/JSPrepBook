@@ -1,6 +1,4 @@
 
-== Arrays
-
 Arrays are a very powerful idea in many programming languages. Let's start with *why* we need them.
 
 Imagine you have a small number of things you want to track. Let's use our vague computer game we've been using for an example. The game has 5 players, friends that get together over the internet to play a dungeon game.

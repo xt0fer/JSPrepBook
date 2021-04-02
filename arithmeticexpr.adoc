@@ -1,5 +1,4 @@
 
-== Algebraic Equations
 
 Some of the most fundamental of computer programs have been ones that
 take the drudgery of doing math by a person, and making the computer do the math.

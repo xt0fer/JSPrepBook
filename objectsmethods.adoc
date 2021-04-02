@@ -182,8 +182,15 @@ Notice the *this* variable. _This_ is the special variable used to refer to the 
 
 === Follow Ons
 
+We have tried to give you some of the very basic parts of JavaScript, in order for you to be able to
+do well on the Zip Code Wilmington assessment. (Or for you to get a very basic understanding of coding in JavaScript and whether or not you enjoy learning this sort of thing.)
+
 There are a number of very powerful things we have left out of this discussion about JavaScript objects.
-We have not covered the ideas of *prototypes* and the *prototype chain* here, which are not really needed for the assessment you may be taking. We also have not discussed an extremely powerful concept, *closures*. But rest assured, there is much much more for you to learn about Objects in JavaScript. 
+We have not covered the ideas of *prototypes* and the *prototype chain* here, which are not really needed for the assessment you may be taking. 
+
+We also have not discussed an extremely powerful concept, *closures*. But rest assured, there is much much more for you to learn about Objects in JavaScript. 
+
 Master what we've written about here and then forge ahead into more complicated and powerful capabilities.
 
 There is a lot more to learn about JavaScript.
+But you made it this far, so perhaps you have what it takes to learn the 21st century super-power of coding.

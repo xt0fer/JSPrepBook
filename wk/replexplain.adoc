@@ -1,6 +1,4 @@
 
-== Using the REPL
-
 A "REPL" is a special kind of program. 
 It allows you to type in a Javascript program, run it, and see what happens.
 Even though it is simple and easy to use, it is a pretty powerful computer programming tool.
@@ -86,4 +84,3 @@ building a professional career as a coder.
 As you will see, if you do make coding a professional endeavor, learning is 
 something you will do all the time.
 
-   

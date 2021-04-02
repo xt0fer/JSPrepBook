@@ -1,6 +1,4 @@
 
-== Output console.log()
-
 Let's start with a really simple program.
 Perhaps the simplest JavaScript program is:
 

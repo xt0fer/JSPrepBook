@@ -1,6 +1,4 @@
 
-== Variables and Data Types
-
 === Variables
 
 In JavaScript, variables are containers used to store data while the program is running. Variables can be named just about anything, and often are named things that make you think about what you store there.

@@ -41,9 +41,8 @@ Zip Code Wilmington is a non-profit coding boot-camp in Delaware for people who 
 
 This book's aim is to provide you with exercises to assist in learning the most basic fundamentals of JavaScript, the world's most popular programming language. 
 It comes from the preparation sessions we often give prospective Zip Code applicants on how to do well on the Zip Code application coding assessment. 
-By completing these exercises, reading the companion _Fundamentals of Javascript_ book or taking one of ZipCodeWilmington's preparation sessions, someone who has never coded in any language before can use this as a place to start, to study and to get ready to take the ZipCodeWilmington admissions assessment. 
+By completing these exercises, reading the companion _Fundamentals of Javascript_ book and/or taking one of ZipCodeWilmington's preparation sessions, someone who has never coded in any language before can use this as a place to start, to study and to get ready to take the ZipCodeWilmington admissions assessment. 
 If you have almost any serious coding experience, this book is probably too elementary for you.
-You might, however, find the ideas in the Appendices interesting.
 
 You may be aware that Zip Code doesn't focus on JavaScript _per se_, and that can leave you wondering why the first book we wrote was all about JavaScript. Well...
 
@@ -124,8 +123,18 @@ Okay, let's go.
 
 :sectnums:
 
+
+== Using the REPL
+
 include::wk/replexplain.adoc[]
+
+== Algebra Exercises
+
 include::wk/exercises1.adoc[]
+
+== JavaScript Coding
+
+include::wk/exercises2.adoc[]
 
 [appendix]
 == Additional JavaScript Resources
