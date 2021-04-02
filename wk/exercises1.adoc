@@ -1,17 +1,78 @@
 
 Let's look at a series of problems that you can solve to get a feel for what we're looking for on the Zip Code admissions assessment.
+If you're able to reason through these problems, you should just fine on the assessment.
+
+Feel free to use the https://code.zipcode.rocks REPL to work these problems out. 
+(You can also just work them out in your head or on paper)
 
 == Algebra Exercises
 
-Computing is often programming a computer to math.
-By solving these problems, you'll get a feel for the kind of algebra problems we'd like to be able to solve.
-
-Fell free to use the https://code.zipcode.rocks REPL to work these problems out. 
-(You can also just work them out in your head or on paper)
+Computing is often programming a computer to do math. 
+The use of variables, like in algebra, can make the computation quite flexible.
+By solving these problems, you'll get a feel for the kind of easy algebra problems we'd like you to be able to solve.
 
 As with many kinds of programming tasks, these problems can be solved a large number of ways.
 
 === Y equals ?
+
+Look at each of these formulas, and determine what *y* is based on substituting the given value of *x*.
+
+----
+If y = 3x + 5 and x = 2
+----
+
+****
+x = 2
+
+y = 3x + 5
+
+y = (3 times x) plus 5
+
+y = (3 times 2) plus 5
+
+y = 6 plus 5
+
+y = 11
+****
+
+Now, here are a few problems for you to solve.
+
+==== ?
+
+----
+Given the following formula,
+ 
+y = 6x - 7
+
+what is y, if x = 2?
+----
+
+==== ?
+
+----
+Given the following formula,
+ 
+y = 3x + 8
+
+what is y, if x = 5?
+----
+
+[sidebar]
+.Multiply and Divide
+--
+When we are computing, we express math in a slightly different way than we do in Algebra class.
+Take your mind back to Mrs Johnson's 7th grade algebra class. 
+(Weren't all our 7th grade algebra teachers named Mrs Johnson?? No? Are you sure?)
+
+In algebra, we might say *4x* or *3x*. We mean, of course, *4 times x* or *3 times x*.
+
+Well, in coding we usually write `3 * x` or `4 * x` - the *** (an asterisk or shift-8 on your keyboard) means *multiply* or *times*.
+
+Division, too is different. In algebra we used the old divide sign *÷* whenever we divided *9 ÷ 4*, but in JavaScript code we use a slash */*.
+So, *5 divided by 2* is written *5 / 2*.
+
+It's okay, you'll get used to *** and */* for times and divide.
+--
 
 ----
 Given the following formula,
@@ -24,10 +85,12 @@ what is y, if x = 3?
 For each of these problems, you need to compute the value of *y*. 
 In each case the value of *x* is different, and so is the formula you need to compute.
 
-For this first one, if *x equals 3*, you would first multiple *5* times *3*, and then add 100 to it.
+For this first one, if *x equals 3*, you would first multiply *5* times *3*, and then add 100 to it.
 So a correct answer is *15 + 100* or *115*.
 
 Each of these below are computed in pretty much the same way.
+
+==== ?
 
 ----
 Given the following formula,
@@ -37,6 +100,8 @@ y = (4 * x) - 5
 what is y, if x = 5?
 ----
 
+==== ?
+
 ----
 Given the following formula,
  
@@ -44,6 +109,8 @@ y = (6 * x) - 7
 
 what is y, if x = 2?
 ----
+
+==== ?
 
 ----
 Given the following formula,
@@ -63,30 +130,50 @@ If a car is moving at an initial velocity V, and accelerates at rate of A for a 
 period of T, the formula to determine it final velocity S is: 
 
 ****
-S = V + A*T
+S = A*T + V
 ****
+
+So if we have a *A=2*, *T=3*, and *V=4*, we would compute 
+****
+S = (2 * 3) + 4
+
+S = 6 + 4
+
+S = 10
+****
+
+You substitute each variable (V, A and T) into the formula and compute the result.
+
+==== ?
 
 ----
 What is S if (V = 10), (A = 4), (T = 3)?
+----
 
+==== ?
+
+----
 What is S if (V = 0), (A = 5), (T = 20)?
+----
 
+==== ?
+
+----
 What is S if (V = 17), (A = 2), (T = 14)?
 ----
 
-You substitute each variable (V, A and T) in turn into the formula and compute the result.
+=== F of x or F(x)
 
-=== F of X or F(x)
-
-Sometimes you will see a formula expressed as a function which takes one argument, *x*. 
-This is an algebraic function, not a Javascript function.
+Sometimes you will see a formula expressed as a function which takes one parameter, *x*. 
+an _parameter_ to a function is it's input value.
+This is an algebraic (or math) function, not a Javascript function.
 
 ****
 F(x) = 3x + 4
 ****
 
-My point is, this is just another way of describing a simple computation.
-Some might say that F(x) (which is pronounced _F of x_), is the same as *y* was
+This is just another way of describing a simple computation.
+The result of the function, F(x) (which is pronounced _F of x_), is the same as *y* was
 in the problems above.
 
 ****
@@ -97,11 +184,67 @@ y = 3x + 4
 So is _F of x_ is also the answer to the computation.
 Don't overthink this, *y* and *f of x* are just two ways of saying the same thing.
 
+The other thing to notice is the *3x* portion. In JavaScript, you need to change it to *3 * x* so a correct form of a JavaScript function would be 
+
+----
+function f(x) {
+    return (3 * x) + 4;
+}
+----
+
+Write out these three formulas as JavaScript functions.
+Use the example above to help with your answers.
+
+==== ? 
+
+****
+f(x) = 5x - 7
+****
+
+==== ?
+
+****
+g(x) = 6x + 3
+****
+
+==== ?
+
+****
+h(x) = 123x - 68
+****
+
+
+[sidebar]
+.Parameters and Arguments
+--
+As you learn to code, you will be using this thing called a *function*. 
+Functions are the main *building blocks* of a program. 
+They allow the code to be called many times without repetition.
+
+So, a programmer bundles up smaller pieces of their program into functions.
+
+In JavaScript, and many other programming languages (yes, there are many!), we often need to supply a function with data.
+And that data can often change.
+
+When we supply a function with data, we *pass* some *parameters* to the function.
+
+Say I have a function that does something really simple, it takes a number a divides it by 2:
+[source]
+----
+function halve(x) {
+    return x / 2;
+}
+----
+
+In this example, *x* is a *parameter*. It is also called an *argument*.
+I'll try to use *parameter* throughout this booklet, but in some problems you may see on-line,
+you may also see *x* in the above function described as an *argument*.
+--
 
 === F of (x, y)
 
-Well, so if _F of x_ is the result of a function, _F of x and y_ is also the result of a function.
-But in this case, the functions takes two arguments *x* and *y*.
+Well, so if *F of x* is the result of a function of one parameter *x*, *F of x and y* is also the result of a function.
+But in this case, the functions takes two parameters, *x* and *y*.
 
 Given the following function using x and y: 
 
@@ -111,26 +254,45 @@ F(x, y) = 2x + y -27
 
 And then if _F(1, 2) = -23_, well, how did we get that result?
 
-The idea is that you think it trhough like this
+The idea is that you think it through like this:
 
-----
-given F(1, 2),
-we assign x=1 and y=2.
-we substitute these two variables and compute the result.
-(2 * x) + y - 27
-(2 * 1) + 2 - 27
-2 + 2 - 27
-= 23
-----
+****
+given F(1, 2), we assign x=1 and y=2 and substitute these two variables to compute the result.
 
-Using that as a *pattern*, what is:
+F(1,2) = (2 * x) + y - 27
 
-----
+F(1,2) = (2 * 1) + 2 - 27
+
+F(1,2) = 2 + 2 - 27
+
+F(1,2) = 23
+****
+
+Using that as a *pattern*, work through these problems:
+
+==== ?
+
+****
 f(20, 8) = ?
+****
+
+==== ?
+
+****
 f(6, 25) = ?
+****
+
+==== ?
+
+****
 f(5, 2) = ?
+****
+
+==== ?
+
+****
 f(0, 0) = ?
-----
+****
 
 === Complete the answer
 
@@ -196,7 +358,7 @@ function f(x) {
 }
 ----
 
-*x* is the argument, the number we want to divide by 2. We just `return x / 2`. 
+*x* is the parameter, the number we want to divide by 2. We just `return x / 2`. 
 So if x=6, the number returned by the function will be *3*.
 
 If asked to produce a function that calculated a more complicated expression, perhaps
@@ -250,6 +412,9 @@ function square(y) {
 
 === Variables
 
+Variables, as you will remember, allow a program to "name" various data and keep track of it as it changes during the running of a program.
+You can imagine that a computer game which tracks the scores of each player, would keep these values in variables as the game is played.
+
 Write a function *one* which creates a variable called *t* with the value 1024 and return the variable.
 
 ----
@@ -260,7 +425,8 @@ function one() {
 }
 ----
 
-How about writing out a series of JavaScript variables
+Write out a series of JavaScript variables.
+
 
 ----
 a variable named foot equal to 12
@@ -297,7 +463,7 @@ output: 8
 
 === Array
 
-Complete the function below to swap two elements in an array and return the result. Your function should take three arguments: An array and two integers. The integers are the indexes of the two elements in the array you should swap.
+Complete the function below to swap two elements in an array and return the result. Your function should take three parameters: An array and two integers. The integers are the indexes of the two elements in the array you should swap.
  
 Example 1:
  
@@ -307,14 +473,21 @@ Input:
 Output:
 [7,4,6,3,9,2],
 
-=== First and Last (50)
+=== First and Last
 
-Given a string, create a new string made up of its last two letters, reversed and separated by a space.
- 
+This problem is a little harder.
+We need to take a string and copy out the first an last letters, and then return them reversed in order and with a space in between them.
+
+[sidebar]
+.First and Last
+--
+Given a string, create a new string made up of its first and last letters, reversed and separated by a space.
+
 Example
-Given the word 'bat', return 't a'.
+Given the word 'bat', return 't b'.
+Given the word 'motor', return 'r m'.
  
-Function Description
+Function Description 
 Complete the function lastLetters in the editor below.
  
 lastLetters has the following parameter(s):
@@ -325,9 +498,36 @@ Returns:
  
 Constraint
 2 ≤ length of word ≤ 100
+--
 
 === Sum Something
 
+An array is a list of some kind of data. 
+Here is an example of an array of fruits.
+
+[source]
+----
+let fruits = ["Apple", "Orange", "Plum"];
+
+console.log( fruits[0] ); // Apple
+console.log( fruits[1] ); // Orange
+console.log( fruits[2] ); // Plum
+----
+
+Notice how the phrase *fruits[0]* prints out just *Apple* from the array.
+The list of fruits is *ordered*, and *indexed* from 0 to 2.
+
+Below, we will be using a list of numbers.
+Imagine we have an array of numbers like this:
+
+[source]
+----
+let numbers = [3, 13, 4, 11, 9];
+----
+
+[sidebar]
+.Sum an Array
+--
 Calculate the sum of an array of integers.
  
 Example
@@ -342,4 +542,9 @@ arraySum has the following parameter(s):
     int numbers[n]: an array of integers
 Returns
     int: integer sum of the numbers array
+--
+
+This problem expects us to make a function that returns the sum of all the numbers in the array.
+
+How are we going to do this?
 
