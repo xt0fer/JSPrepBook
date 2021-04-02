@@ -295,6 +295,7 @@ f(0, 0) = ?
 === Complete the answer
 
 For this problem, you need to figure out the correct answer to the last expression. 
+
 ----
 dog + fish = 25
 dog + bird = 35
@@ -306,3 +307,4 @@ If the above expressions are true, what is the answer to this?
 ----
 dog + bird + fish = ?
 ----
+

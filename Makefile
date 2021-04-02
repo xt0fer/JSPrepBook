@@ -15,6 +15,14 @@ $(WORKB_NAME).pdf: prepare
 $(WORKB_NAME).epub: prepare
 	/usr/local/bin/asciidoctor-epub3 -D epub workbook.adoc
 
+index: prepare
+	asciidoctor-pdf -D pdf index.adoc
+	open index.pdf
+
+workbook: prepare
+	asciidoctor-pdf -D pdf workbook.adoc
+	open workbook.pdf
+
 prepare:
 	mkdir -p pdf
 	mkdir -p epub
