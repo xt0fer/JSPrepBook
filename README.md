@@ -19,6 +19,9 @@ As of April 2021 use `make all` to make the products.
 Use `make index` to preview the JSPrepBook.
 Use `make workbook` to preview the JSPrepWorkbook.
 
+Notes on S3 on Ruit Oceano Nox.
+
+
 ### previously
 to generate targets:
 use `asciidoctor-pdf -D PDF index.adoc` to get index.pdf
