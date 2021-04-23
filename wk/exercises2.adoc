@@ -63,13 +63,28 @@ function whoa() {
 }
 ----
 
+If asked to produce a function that calculated a more complicated expression, perhaps
+
+****
+x + y * 564
+****
+
+You could just write
+
+----
+function whoa(x, y) {
+    return x + y * 564;
+}
+----
+
+
 Use these as *patterns* to solve the problems below.
 
-Complete the function to calculate multiplication of two input values. 4 x 4 should print 16.
+Complete the function to calculate multiplication of two input values. x=4 and y=4 should print 16.
 
 ----
 function multiply(x, y) {
-    return 
+    return 0;
 }
 ----
 
@@ -77,7 +92,7 @@ Write a simple function that returns the remainder (modulus) of the following eq
 
 ----
 function foo() {
-    return 
+    return 0;
 }
 ----
 
@@ -85,7 +100,7 @@ Using Arithmetic Operators, write a function to return the product of 789 x 123.
 
 ----
 function m() {
-    return
+    return 0;
 }
 ----
 
@@ -94,7 +109,7 @@ Remember that the square of a number is the result of multiplying that number ti
 
 ----
 function square(y) {
-    return 
+    return 0;
 }
 ----
 
