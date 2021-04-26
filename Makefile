@@ -29,3 +29,9 @@ prepare:
 
 clean:
 	rm -rf pdf/ epub/
+	rm -rf ZCW-JS-Prep.pdf ZCW-JS-Prep.epub
+	rm -rf workbook.pdf index.pdf
+
+pub:
+	cp pdf/index.pdf ZCW-JS-Prep.pdf
+	cp epub/index.epub ZCW-JS-Prep.epub
