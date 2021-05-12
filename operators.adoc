@@ -18,6 +18,7 @@ JavaScript can do math. And many early programming problems you will come across
 Say we needed to multiply two numbers. Maybe 2 times 3. Now we could easily write a program
 that printed that result.
 
+[source, js]
 ----
 console.log(2 * 3); 
 ----
@@ -32,6 +33,9 @@ let b = 3;
 let answer = a * b;
 console.log(answer); // -> 6
 ----
+
+Here we have set up two variables, a and b, for our _operands_ and a final _answer_ variable.
+But, it's pretty much the same as the more simple example above.
 
 Using this as a model, how would you write programs to solve these problems?
 

@@ -17,11 +17,15 @@ $(WORKB_NAME).epub: prepare
 
 index: prepare
 	asciidoctor-pdf -D pdf index.adoc
-	open index.pdf
+	open pdf/index.pdf
+
+prepress: prepare
+	asciidoctor-pdf -D pdf printindex.adoc
+	open pdf/printindex.pdf
 
 workbook: prepare
 	asciidoctor-pdf -D pdf workbook.adoc
-	open workbook.pdf
+	open pdf/workbook.pdf
 
 prepare:
 	mkdir -p pdf

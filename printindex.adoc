@@ -1,16 +1,17 @@
-:title-page:
-= Zip Code Wilmington's Programming in JavaScript
-Kristofer Younger <kris@zipcodewilmington.com>
-v1.8.7, 2021-05-12
 :doctype: book
+:media: prepress
+:pdf-theme: jspreptheme.yml
 :imagesdir: images
 :source-highlighter: rouge
 :rouge-style: github
 :source-language: javascript
 :icons: font
+:title-page:
+= Zip Code Wilmington's Programming in JavaScript
+Kristofer Younger <kris@zipcodewilmington.com>
+v1.8.7, 2021-05-12
 :homepage: https://zipcodewilmington.com/jsprep
 :pdf-page-size:  [5.5in, 8.5in]
-:front-cover-image: ZCW_JS-Book-FNL.png
 :toc:
 
 [colophon]
