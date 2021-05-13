@@ -19,13 +19,13 @@ v1.8.7, 2021-05-12
 Zip Code Wilmington's Programming in JavaScript
 by Kristofer Younger
 
-Copyright (C) 2020 by Zip Code Wilmington. All Rights Reserved.
+Copyright (C) 2020-2021 by Zip Code Wilmington. All Rights Reserved.
 
 Cover Design: Janelle Bowman
 
 Published in the U.S.A.
 
-September 2020: First Edition
+May 2021: Second Edition
 
 While the publisher and author have used good faith efforts to ensure that the information
 and instructions contained in this work are accurate, the publisher and author disclaim

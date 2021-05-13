@@ -10,7 +10,7 @@ JavaScript can do math. And many early programming problems you will come across
 |- |Subtraction |Subtract one from another
 |* |Multiplication |Multiply 2 values
 |/ |Division |Divide 2 numbers
-|% |Modulus |returns the remainder
+|% |Modulus |Remainder after division
 |++ |Increment |Increase value by 1
 |- - |Decrement |Decrease value by 1
 |===
@@ -44,6 +44,7 @@ Using this as a model, how would you write programs to solve these problems?
 * Lab 1: Subtract A from B and print the result
 * Lab 2: Divide A by B and print the result
 * Lab 3: Use an operator to increase A by 1 and print result
+* Lab 4: Find remainder of A of b
 ====
 
 [source, javascript]
@@ -56,9 +57,13 @@ let L2 = a / b;
 let L3 = a + 1;
 //or using increment
 L3 = a++;
+let L4 = a % b;
 console.log(L1); // -> -6
 console.log(L2); // -> 3
 console.log(L3); // -> 10
+console.log(L4); // -> 0
+L4 = 10 % b;
+console.log(L4); // now -> 1
 ----
 
 === Division and Remainder
@@ -77,10 +82,13 @@ But sometimes, we have a need to know what the remainder of a division is.
 The remainder operator %, despite its appearance, is not related to percents.
 
 The result of a % b is the remainder of the integer division of a by b.
+
+[source, js]
 ----
 console.log( 5 % 2 ); // 1, a remainder of 5 divided by 2
 console.log( 8 % 3 ); // 2, a remainder of 8 divided by 3
 ----
+
 Now what's this about '%' (the remainder) operator?
 
 [source, js]
@@ -99,6 +107,26 @@ let b = 4;
 // Remainder
 let answer = a % b;
 console.log(answer); // -> 3
+----
+
+[source, js]
+----
+let a = 4; 
+let b = 4;
+// Remainder
+
+for (a = 4; a < 13; a++) {
+    console.log(a, a % b); // would produce
+}
+// 4 0
+// 5 1
+// 6 2
+// 7 3
+// 8 0
+// 9 1
+// 10 2
+// 11 3
+// 12 0
 ----
 
 === Order is Important
