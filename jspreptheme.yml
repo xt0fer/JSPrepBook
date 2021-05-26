@@ -10,4 +10,4 @@ heading:
   h3_font_size: floor($base_font_size * 1.5)
 code:
   font_color: $base_font_color
-  font_size: floor($base_font_size)
+  font_size: $base_font_size - 1

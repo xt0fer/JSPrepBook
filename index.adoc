@@ -1,10 +1,9 @@
+:doctype: book
 :title-page:
 = Zip Code Wilmington's Programming in JavaScript
 Kristofer Younger <kris@zipcodewilmington.com>
 v1.8.7, 2021-05-12
-:doctype: book
 :imagesdir: images
-:source-highlighter: rouge
 :rouge-style: github
 :source-language: javascript
 :icons: font
@@ -51,7 +50,7 @@ By reading this book or taking one of those prep sessions, someone who has never
 To someone who has spent some time with programming languages, this might be just a breezy intro to JavaScript. 
 If you have almost any serious coding experience, this book is probably too elementary for you.
 You might, however, find the ideas in the Appendices interesting.
-There I've added some material that have a few advanced ideas in them, plus there is a full code listing of a lunar lander simulation.
+There I've added some material that have a few advanced ideas in them, plus there is a full code listing of a mars lander simulation.
 
 You may be aware that Zip Code doesn't focus on JavaScript _per se_, and that can leave you wondering why the first book we wrote was all about JavaScript. Well...
 

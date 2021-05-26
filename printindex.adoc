@@ -1,15 +1,13 @@
 :doctype: book
-:media: prepress
-:pdf-theme: jspreptheme.yml
 :imagesdir: images
-:source-highlighter: rouge
 :rouge-style: github
 :source-language: javascript
 :icons: font
+:pdf-theme: jspreptheme.yml
 :title-page:
 = Zip Code Wilmington's Programming in JavaScript
 Kristofer Younger <kris@zipcodewilmington.com>
-v1.8.7, 2021-05-12
+v1.8.8, 2021-05-26
 :homepage: https://zipcodewilmington.com/jsprep
 :pdf-page-size:  [5.5in, 8.5in]
 :toc:
@@ -52,9 +50,9 @@ By reading this book or taking one of those prep sessions, someone who has never
 To someone who has spent some time with programming languages, this might be just a breezy intro to JavaScript. 
 If you have almost any serious coding experience, this book is probably too elementary for you.
 You might, however, find the ideas in the Appendices interesting.
-There I've added some material that have a few advanced ideas in them, plus there is a full code listing of a lunar lander simulation.
+There I've added some material that have a few advanced ideas in them, plus there is a full code listing of a mars lander simulation.
 
-You may be aware that Zip Code doesn't focus on JavaScript _per se_, and that can leave you wondering why the first book we wrote was all about JavaScript. Well...
+You may be aware that Zip Code doesn't focus on JavaScript _per se_, we don't focus on JavaScript in any of our current courses and that can leave you wondering why the first book we wrote was all about JavaScript. Well...
 
 === JavaScript: Easy to Understand
 
@@ -62,17 +60,26 @@ JavaScript is a fairly easy programming language to learn, and we're going to us
 
 ==== Simple to Use
 
-JavaScript also has the advantage that one can learn to use it without a lot of setup on a computer. In fact, we recommend the use of a "REPL" for the running of the JavaScript examples you'll find in this book. The REPL at https://code.zipcode.rocks is a simple webpage where you can edit JavaScript scripts and run them. You can run almost every code snippet in the book and _see_ what the code does.
+JavaScript also has the advantage that one can learn to use it without a lot of setup on a computer. In fact, we recommend the use of a "REPL" for the running of the JavaScript examples you'll find in this book. The REPL at https://code.zipcode.rocks is a simple webpage where you can edit JavaScript scripts, click a button, and run them. You can run almost every code snippet in the book and _see_ what the code does.
 
 ==== Focuses on coding
 
-Finally, because in this book all we aim to teach you is "programming in the small", JavaScript is great for that. Many of the examples here are significantly less that 20 lines in length. We want you to get better at looking at small blocks of code to see how they work. These smaller examples and concepts are a core building block as you become proficient in coding. 
+Finally, because in this book all we aim to teach you is "programming in the small", JavaScript is great for that. Many of the examples here are significantly less that 20 lines in length. We want you to get better at looking at small blocks of code to see how they work. These smaller examples and concepts are core building blocks (and patterns) as you become proficient in coding. 
 
 ==== You'll learn it eventually
 
 The truth is, in today's coding world, all of us eventually learn to do things with JavaScript. 
 So, start early, get comfortable with it, and then go on and study other computer languages like Java or Python. 
 JavaScript will always be there, waiting patiently for you to return.
+
+==== Besides, the Assessment
+
+And, of course, this book exists because we've chosen JavaScript as the language we use to see if you can learn enough
+coding to solve some some beginner problems on the ZipCode admissions assessment.
+After some modest study, a successful aspiring Zipcoder should be able to apply what they have learned to produce code
+which runs and produces the right answers. 
+If you like what you have to do to prep for the assessment, if you find it interesting and challenging and find the activity
+empowering, you may have what it takes to enjoy a career using software to solve problems.
 
 === Coding _The Hard Way_. 
 
@@ -88,7 +95,7 @@ So you can ask them: Did you write _today_? _How many words?_
 And the excuses flow: "Oh, I have to pick up the kids" "Ran out of time, I'm so busy at work." "I had to cut the grass" and so on.
 Well, I'm here to tell you that all the excuses in the world don't stop a real writer from writing. They just sit down and do it. As often as they can, sometimes even when they can't (or shouldn't).
 
-Coding, like writing, isn't something you can do when all your other chores, obligations, and entertainments are done. If you're serious about learning coding, you must make time for coding. 
+Coding, like writing, isn't something you can do when all your other chores, obligations, and entertainments are done. If you're serious about learning coding, you must make time for coding. If you're serious about coding, you'll find a way to do it.
 
 Watching hours of YouTube videos _will not_ make you a coder.
 
@@ -96,7 +103,7 @@ Reading dozens of blog posts, Medium articles, and books _will not_ make you a c
 
 Following along with endless step-by-step tutorials _will not_ make you a coder.
 
-The only way you're going to learn to code is by doing it. Trying to solve a problem. Making mistakes, fixing them, learning from what worked and what didn't at the keyboard. 
+The only way you're going to learn to code is by doing it, by typing in code. Trying to solve a problem. Making mistakes, fixing them, learning from what worked and what didn't at the keyboard. 
 
 Many have heard my often-repeated admonition: *If you coded today, you're a coder. If not, you're not a coder.* It really is as simple as that.
 
@@ -107,7 +114,7 @@ Time and time again, I've seen that the ability to learn to code is evenly distr
 
 And fortune favors the prepared. Some day, you may be working at a great company, making a decent living, working with professionals in a great technical job. Your friends may say "You are so lucky!"
 
-And you will think: *Nope. It wasn't luck.* You'll know that truly. You got there by preparing yourself to get there, and by working to get there, working _very hard_. Ain't no luck involved, just hard work. You make your own luck by working hard.
+And you will think: *Nope. It wasn't luck.* You'll know that truly. You got there by preparing yourself to get there, and by working to get there, working _very hard_ to get there. Ain't no luck involved, just hard work. You make your own luck by working hard.
 
 As many know, getting a spot in a Zip Code cohort is a hard thing to do. Many try but only a  few manage it. I often get asked "what can I do to prepare to get into Zip Code?"
 
@@ -115,7 +122,7 @@ The best way is to start solving coding problems on sites like https://hackerran
 
 Spending even 20 minutes a day, making progress on a programming task can make all the difference. Day after day your skills will grow, and before long you'll look back on the early things you did and be astonished as to how simple the assignments were. You may even experience embarrassment at remembering how hard these simple exercises seemed at the time you did them. (It's okay, we've all felt it. It's part of the gig.)
 
-Working on code every day makes you a coder. And coding everyday will help with your ability to eventually score high enough on the Zip Code admissions assessment that you get asked to group and potentially final interviews. And then, well, then you get to learn Java or Python and work yourself to exhaustion doing so. Lots and lots more hours. 
+Working on code every day makes you a coder. And coding everyday will help with your ability to eventually score high enough on the Zip Code admissions assessment that you get asked to a group interview, and potentially, final interviews. And then, well, then you get to learn Java or Python and work yourself to exhaustion doing so. Lots and lots more work. 
 
 Why? 
 
@@ -133,8 +140,7 @@ Okay, let's go.
 
 :sectnums:
 
-
-== Output console.log()
+== Output & console.log()
 
 include::consolelog.adoc[]
 

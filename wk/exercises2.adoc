@@ -66,21 +66,21 @@ function whoa() {
 If asked to produce a function that calculated a more complicated expression, perhaps
 
 ****
-x + y * 564
+234 * 76 / 89 * 564
 ****
 
 You could just write
 
 ----
-function whoa(x, y) {
-    return x + y * 564;
+function whoa() {
+    return 234 * 76 / 89 * 564;
 }
 ----
 
 
 Use these as *patterns* to solve the problems below.
 
-Complete the function to calculate multiplication of two input values. x=4 and y=4 should print 16.
+Complete the function to calculate multiplication of two input values. 4 x 4 should print 16.
 
 ----
 function multiply(x, y) {
