@@ -153,7 +153,7 @@ What about finding the average of the values in the array? Well, we do it a lot 
 ----
 let sum = 0;
 for (let i = 0; i < a.length; i++) {
-    sum = sum + i;
+    sum = sum + a[i];
 }
 let average = sum / a.length ; // whoa! lookee there?
 
